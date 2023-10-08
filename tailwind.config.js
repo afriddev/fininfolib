@@ -16,7 +16,15 @@ module.exports = {
         'darkBlue':'#010521',
         'lightGreen':'#048071',
         "lightOrange":'#ef8b33',
-        'primaryGreen':"#048071"
+        'primaryGreen':"#048071",
+        "lg":"#d7ffe0",
+        "lo":"#ff7924",
+        'lt':"#00C0A7",
+        'g':"#00E97C",
+        'o1':'#FE5500',
+        
+        'o2':'#9b3503',
+
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],

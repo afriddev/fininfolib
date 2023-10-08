@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function Home() {
   return (
     <>
-      
+
       <div>
         <div
           className="flex text-white flex-col items-start bg-primary 
@@ -69,6 +69,48 @@ export default function Home() {
               streamlined proccess management approach.
             </p>
           </div>
+        </div>
+        <div className="flex flex-col bg-lg mt-6 justify-center items-center ">
+          <div>
+            <label className="text-2xl font-bold text-primaryGreen">
+              Our Service </label>
+          </div>
+          <div className="flex flex-col justify-center items-center space-y-6 m-10">
+            <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
+                flex justify-center items-center">
+                  <img src="itServices.png" className="h-10 w-10" />
+                </div>
+              </div>
+
+              <div className="w-[2px] h-12 bg-gray-800">
+
+              </div>
+              <div className="flex flex-col justify-center items-center relative">
+                <div className=" bg-gradient-to-r from-o1 to-o2 w-48 h-10 absolute top-4">
+
+                </div>
+                <div className="relative flex justify-between w-48 ">
+               
+                <div className=" absolute right-0 w-11  overflow-hidden inline-block">
+                    <div className=" h-16  bg-black rotate-45 transform origin-top-right"></div>
+                </div> 
+                <div className="absolute left-0  w-11  overflow-hidden inline-block">
+                    <div className=" h-16  bg-black -rotate-45 transform origin-top-left"></div>
+                  </div>
+                  
+                  
+                </div>
+                <div className="flex flex-col justify-center items-center 
+                 bg-gradient-to-tr from-darkBlue to-darkBlue w-44 h-40 rounded-tl-xl rounded-tr-xl">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
         <div className="">
           <h1 className="m-4 text-2xl font-bold text-orange-500 ">Our Services</h1>
@@ -256,10 +298,10 @@ export default function Home() {
 
         </div>
 
-       <LetsTalk/>
-       <div className="mt-6">
-       <BottomFooter/>
-       </div>
+        <LetsTalk />
+        <div className="mt-6">
+          <BottomFooter />
+        </div>
       </div>
 
     </>
