@@ -12,7 +12,10 @@ module.exports = {
     extend: {
       colors:{
         'primary':"#0d1e67",
-        'lightBlue':'#007bff'
+        'lightBlue':'#007bff',
+        'darkBlue':'#010521',
+        'lightGreen':'#048071',
+        "lightOrange":'#ef8b33'
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
