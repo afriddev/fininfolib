@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <h1 className="m-4 text-3xl ">Our Services</h1>
+          <h1 className="m-4 text-xl font-bold text-orange-500">Our Services</h1>
           <div className="flex flex-col justify-center items-center space-y-6">
             <div
               className="flex flex-col justify-center items-center w-4/5 rounded-xl 
@@ -146,6 +146,107 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="flex flex-col mt-6">
+          <div className="flex flex-col m-4 ">
+            <h4 className="text-orange-500 text-xl font-bold ">INDUSTRIES & COMPANIES</h4>
+            <h2 className="text-lg ml-2 mr-2 mt-2 text-green-700">Bridging tech gaps for companies of all scales</h2>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <div className="flex m-4">
+              <img src="startup.png" className="w-20 h-14"/>
+              <div className="flex flex-col  ml-4">
+                <label className="text-2xl text-green-700">Startup company</label>
+                <p className="text-sm font-light ">we can help you get of the ground by providing the necessary support
+                  and resources to help you grow and succees . Our team of experts can assist
+                  you with everything from product drvelopment to marketing and sales.
+                </p>
+              </div>
+            </div>
+            <div className="flex m-4">
+              <img src="manufacturing.png" className="w-20 h-14"/>
+              <div className="flex flex-col  ml-4">
+                <label className="text-2xl text-green-700">Manufacturing company</label>
+                <p className="text-sm font-light ">we can help you optimize your production processes and improve
+                your product quality to meet the demands of your customers.Our team of experts can assist you with 
+                everything from proccess optimization to supply chain management to ensure that your operation run
+                smoothly and efficiently
+                </p>
+              </div>
+            </div>
+            <div className="flex m-4">
+              <img src="productbased.png" className="w-20 h-14"/>
+              <div className="flex flex-col  ml-4">
+                <label className="text-2xl text-green-700">Product-based company</label>
+                <p className="text-sm font-light ">we can help you streamline your optimization and optimize your supply chain
+                to increase efficiency and reduce costs. We can also assist you with product design, prototypin, and testing
+                to ensure that your products. meet the highest standards of quality and functionality.
+                </p>
+              </div>
+            </div>
+            <div className="flex m-4">
+              <img src="saascompany.png" className="w-20 h-14"/>
+              <div className="flex flex-col  ml-4">
+                <label className="text-2xl text-green-700">A SAAS company</label>
+                <p className="text-sm font-light ">We can help you develop and implement innovative solutions
+                 to help you stand out in a crowded market. We can assist you with everything from software
+                 development to customer support to help you grow and scale your business.
+                </p>
+              </div>
+            </div>
+            <div className="flex m-4">
+              <img src="serviesbased.png" className="w-20 h-14"/>
+              <div className="flex flex-col  ml-4">
+                <label className="text-2xl text-green-700">Services-based company</label>
+                <p className="text-sm font-light ">We can help you develop and implement innovative solutions to
+                 help you stand out in a competitive market. We can assist you with everything from marketing and sales to
+                 customer support to help you grow and scale your business.
+
+                </p>
+              </div>
+            </div>
+            
+          
+          </div>
+        </div>
+        <div className="absolute mt-6 w-full h-full bg-gradient-to-r from-green-400 to-orange-500 ">
+        <div className="absolute right-0 w-3/5 bg-blue-950 h-full rounded-bl-[200px]">
+        </div>
+          <div className="relative h-full w-full ">
+            <div className="relative h-full w-full " >
+              <div className="flex flex-col text-white 
+              space-y-5">
+                <div>
+                  <h3 className="text-xl font-bold text-orange-500 mt-4 ml-20">About Us </h3>
+                </div>
+                <div className="flex flex-col justify-center items-center m-4">
+                  <label className=" text-5xl">We help cliennts invent their future.</label>
+                  <div className="m-4 flex flex-col space-y-10">
+                  <p className="">
+                  At INFOLIB , we are committed to delivering exceptional customer service 
+                  and producing high-quality work. Our team is dedicated to providing tailored 
+                  solutions that meet your specific requirements and preferences. 
+                  </p>
+                  <p>We work closely with our clients to ensure that their projects are
+                     completed within
+                     their specified timeframe, budget, and to the highest standards.
+                  </p>
+                  <button className=" flex ml-12 
+                  bg-orange-500 h-fit w-fit px-10 py-3 text-xl items-center rounded-3xl
+                  shadow-xl ">Read More 
+                  <span className="pl-2 text-2xl"><AiOutlineArrowRight /></span></button>
+                  </div>
+                </div>
+              </div>
+              
+
+            <img className=" absolute bottom-0 left-[-100px]" src="about-dot.png"/>
+            </div>
+            
+          </div>
+          
+
+        </div>
+
       </div>
     </>
   );
