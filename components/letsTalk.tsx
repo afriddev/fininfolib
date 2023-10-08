@@ -34,7 +34,8 @@ export default function LetsTalk(){
             w-5/6 ml-4"></textarea>
             </div>
             <div className="flex justify-center items-center">
-              <button className="bg-orange-500 text-white h-fit w-fit px-8 py-1 rounded-sm">Submit</button>
+              <button className="bg-orange-500 text-white h-fit w-fit
+               px-8 py-2 text-xl rounded-md ml-4">Submit</button>
 
             </div>
             

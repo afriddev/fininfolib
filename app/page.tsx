@@ -1,3 +1,4 @@
+import BottomFooter from "@/components/bottomFooter";
 import LetsTalk from "@/components/letsTalk";
 import NavBar from "@/components/navBar";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -257,6 +258,9 @@ export default function Home() {
         </div>
 
        <LetsTalk/>
+       <div className="mt-6">
+       <BottomFooter/>
+       </div>
       </div>
 
     </>
