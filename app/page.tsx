@@ -5,14 +5,14 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function Home() {
   return (
     <>
-      <NavBar />
+      
       <div>
         <div
           className="flex text-white flex-col items-start bg-primary 
         h-1/2  w-full p-4  "
         >
           <h1 className=" font-ro  text-2xl ">
-            Infolib Technology offers <br />
+            Fin infolib Technology offers <br />
             the best{" "}
           </h1>
           <p className=" text-xs pt-4 pl-4">
@@ -39,22 +39,21 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="flex justify-center items-center mt-10">
+          <div className="flex  ml-3 mt-10">
             <label
-              className="bg-blue-50 px-6 py-1 rounded-md text-blue-800
-           text-md
+              className="text-orange-500 font-bold text-2xl 
           "
             >
               Our Focus
             </label>
           </div>
           <div className="flex flex-col justify-center items-center p-4 w-full">
-            <label className="text-2xl text-green-800 ">
+            <label className="text-2xl text-primaryGreen">
               Optimizing your IT infrastructure for maximum performance
             </label>
             <embed src="home3.webp" className="w-full p-4 mt-4  object-fill" />
             <p className="text-sm p-4 font-light ">
-              INFOLIB is a renowned offshore development services provided
+              Fin infolib is a renowned offshore development services provided
               commited to helping organizations accomplish their objectives by
               granting them access to skilled and cost-effective resources that
               can improve their efficiency.
@@ -72,7 +71,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <h1 className="m-4 text-xl font-bold text-orange-500">Our Services</h1>
+          <h1 className="m-4 text-2xl font-bold text-orange-500 ">Our Services</h1>
           <div className="flex flex-col justify-center items-center space-y-10 mt-10">
             <div
               className="flex flex-col justify-center items-center w-4/5 rounded-xl 
@@ -86,7 +85,7 @@ export default function Home() {
               <p className="text-sm font-light ml-5 mr-5">
                 Our team of experts is dedicated to providing top-tier IT
                 services to help your business and succeed in the digital
-                world..
+                world.
               </p>
               <a
                 className="flex justify-center mt-4 items-center mb-4
@@ -132,7 +131,7 @@ export default function Home() {
 
               <h2 className="text-xl  m-4 ">CUSTOMER SUPPORT </h2>
               <p className="text-sm font-light ml-5 mr-5">
-                Infolib has established partnership with clients to facilitate
+                Fin infolib has established partnership with clients to facilitate
                 the smooth transition of critical business processes to our
                 state-of-the-art.
               </p>
@@ -224,7 +223,7 @@ export default function Home() {
                   <label className=" text-4xl m-5">We help cliennts invent their future.</label>
                   <div className="ml-6 mr-6 flex flex-col space-y-10">
                     <p className="">
-                      At INFOLIB , we are committed to delivering exceptional customer service
+                      At Fin infolib , we are committed to delivering exceptional customer service
                       and producing high-quality work. Our team is dedicated to providing tailored
                       solutions that meet your specific requirements and preferences.
                     </p>
