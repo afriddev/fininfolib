@@ -71,12 +71,12 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col bg-lg mt-6 justify-center items-center ">
-          <div>
+          <div className="mt-6">
             <label className="text-2xl font-bold text-primaryGreen">
               Our Service </label>
           </div>
-          <div className="flex flex-col justify-center items-center space-y-6 m-10">
-            <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center space-y-14 m-10 w-full">
+            <div className="flex flex-col justify-center items-center w-full">
               <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
                 flex justify-center items-center">
@@ -85,114 +85,157 @@ export default function Home() {
               </div>
 
               <div className="w-[2px] h-12 bg-gray-800">
-
               </div>
-              <div className="flex flex-col justify-center items-center relative">
-                <div className=" bg-gradient-to-r from-o1 to-o2 w-48 h-10 absolute top-4">
-
+              <div className="flex flex-col w-4/5 justify-center items-center relative ">
+                <div className="flex justify-center items-center  bg-gradient-to-r from-o1 to-o2 
+                    absolute top-4 w-full shadow-xl ">
+                  <label className=" py-2 text-white text-md font-bold">DIGITAL IT SERVICES</label>
                 </div>
-                <div className="relative flex justify-between w-48 ">
-               
-                <div className=" absolute right-0 w-11  overflow-hidden inline-block">
-                    <div className=" h-16  bg-black rotate-45 transform origin-top-right"></div>
-                </div> 
-                <div className="absolute left-0  w-11  overflow-hidden inline-block">
-                    <div className=" h-16  bg-black -rotate-45 transform origin-top-left"></div>
+                <div className="absolute top-14 flex justify-between w-full">
+                  <div className="w-6  overflow-hidden inline-block">
+                    <div className=" h-16  bg-o1 -rotate-45 transform origin-top-left"></div>
                   </div>
-                  
-                  
+                  <div className="w-6  overflow-hidden inline-block">
+                    <div className=" h-16  bg-o2 rotate-45 transform origin-top-right"></div>
+                  </div>
                 </div>
-                <div className="flex flex-col justify-center items-center 
-                 bg-gradient-to-tr from-darkBlue to-darkBlue w-44 h-40 rounded-tl-xl rounded-tr-xl">
+                <div className="flex flex-col justify-center items-center  
+                 bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
+                 rounded-tl-xl rounded-tr-xl ">
+                  <div className="flex flex-col justify-center items-center ">
+                    <p className="text-sm text-gray-300 ml-5 mr-5 pt-20 ">
+                      Our team of experts is dedicated to providing top-tier IT
+                      services to help your business and succeed in the digital
+                      world.
+                    </p>
+                    <a
+                      className="flex justify-center mt-4 items-center mb-4
+          w-fit h-fit px-8  bg-lt rounded-xl text-white "
+                    >
+                      More{" "}
+                      <span className="pl-2">
+                        <AiOutlineArrowRight />
+                      </span>
+                    </a>
 
+                  </div>
                 </div>
               </div>
 
             </div>
-          </div>
+            {
 
-        </div>
-        <div className="">
-          <h1 className="m-4 text-2xl font-bold text-orange-500 ">Our Services</h1>
-          <div className="flex flex-col justify-center items-center space-y-10 mt-10">
-            <div
-              className="flex flex-col justify-center items-center w-4/5 rounded-xl 
-         shadow-xl"
-            >
-              <div className="bg-orange-500 rounded-full w-14 p-3 ">
-                <img src="itServices.png" className="" />
+            }
+            <div className="flex flex-col justify-center items-center w-full">
+              <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-o1 to-o2
+                flex justify-center items-center">
+                  <img src="outsourcing.png" className="h-10 w-10" />
+                </div>
               </div>
 
-              <h2 className="text-xl  m-4 ">DIGITAL IT SERVICES</h2>
-              <p className="text-sm font-light ml-5 mr-5">
-                Our team of experts is dedicated to providing top-tier IT
-                services to help your business and succeed in the digital
-                world.
-              </p>
-              <a
-                className="flex justify-center mt-4 items-center mb-4
-          w-fit h-fit px-12 py-1 bg-orange-500 rounded-xl text-white"
-              >
-                More{" "}
-                <span className="pl-2">
-                  <AiOutlineArrowRight />
-                </span>
-              </a>
-            </div>
-            <div
-              className="flex flex-col justify-center items-center w-4/5 rounded-xl
-         shadow-xl"
-            >
-              <div className="bg-cyan-500 rounded-full w-14 p-3 ">
-                <img src="outsourcing.png" className="" />
+              <div className="w-[2px] h-12 bg-gray-800">
               </div>
-
-              <h2 className="text-xl  m-4 text-center">OUTSOURCING SERVICES</h2>
-              <p className="text-sm font-light ml-5 mr-5">
-                We provide dedicated tech employees to work on your projects.
+              <div className="flex flex-col w-4/5 justify-center items-center relative ">
+                <div className="flex justify-center items-center  bg-gradient-to-r from-o1 to-o2 
+                    absolute top-4 w-full shadow-xl ">
+                  <label className=" py-2 text-white text-md font-bold">OUTSOURCING SERVICES</label>
+                </div>
+                <div className="absolute top-14 flex justify-between w-full">
+                  <div className="w-6  overflow-hidden inline-block">
+                    <div className=" h-16  bg-o1 -rotate-45 transform origin-top-left"></div>
+                  </div>
+                  <div className="w-6  overflow-hidden inline-block">
+                    <div className=" h-16  bg-o2 rotate-45 transform origin-top-right"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center items-center  
+                 bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
+                 rounded-tl-xl rounded-tr-xl ">
+                  <div className="flex flex-col justify-center items-center ">
+                    <p className="text-sm text-gray-300 ml-5 mr-5  pt-20 ">
+                    We provide dedicated tech employees to work on your projects.
                 ensure that you have access to the right talent to complete your
                 projects.
-              </p>
-              <a
-                className="flex justify-center mt-4 items-center mb-4
-          w-fit h-fit px-12 py-1 bg-cyan-500 rounded-xl text-white"
-              >
-                More{" "}
-                <span className="pl-2">
-                  <AiOutlineArrowRight />
-                </span>
-              </a>
-            </div>
-            <div
-              className="flex flex-col justify-center items-center w-4/5 rounded-xl
-         shadow-xl"
-            >
-              <div className="bg-purple-500 rounded-full w-14 p-3 ">
-                <img src="support.png" className="" />
+                    </p>
+                    <a
+                      className="flex justify-center mt-4 items-center mb-4
+          w-fit h-fit px-8  bg-o1 rounded-xl text-white"
+                    >
+                      More{" "}
+                      <span className="pl-2">
+                        <AiOutlineArrowRight />
+                      </span>
+                    </a>
+
+                  </div>
+                </div>
               </div>
 
-              <h2 className="text-xl  m-4 ">CUSTOMER SUPPORT </h2>
-              <p className="text-sm font-light ml-5 mr-5">
-                Fin infolib has established partnership with clients to facilitate
+            </div>
+            {
+
+            }
+            <div className="flex flex-col justify-center items-center w-full">
+              <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
+                flex justify-center items-center">
+                  <img src="support.png" className="h-10 w-10" />
+                </div>
+              </div>
+
+              <div className="w-[2px] h-12 bg-gray-800">
+              </div>
+              <div className="flex flex-col w-4/5 justify-center items-center relative ">
+                <div className="flex justify-center items-center  bg-gradient-to-r from-o1 to-o2 
+                    absolute top-4 w-full shadow-xl ">
+                  <label className=" py-2 text-white text-md font-bold">CUSTOMER SUPPORT</label>
+                </div>
+                <div className="absolute top-14 flex justify-between w-full">
+                  <div className="w-6  overflow-hidden inline-block">
+                    <div className=" h-16  bg-o1 -rotate-45 transform origin-top-left"></div>
+                  </div>
+                  <div className="w-6  overflow-hidden inline-block">
+                    <div className=" h-16  bg-o2 rotate-45 transform origin-top-right"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center items-center  
+                 bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
+                 rounded-tl-xl rounded-tr-xl ">
+                  <div className="flex flex-col justify-center items-center ">
+                    <p className="text-sm text-gray-300 ml-5 mr-5 pt-20 ">
+                    Fin infolib has established partnership with clients to facilitate
                 the smooth transition of critical business processes to our
                 state-of-the-art.
-              </p>
-              <a
-                className="flex justify-center mt-4 items-center mb-4
-          w-fit h-fit px-12 py-1 bg-purple-500 rounded-xl text-white"
-              >
-                More{" "}
-                <span className="pl-2">
-                  <AiOutlineArrowRight />
-                </span>
-              </a>
+                    </p>
+                    <a
+                      className="flex justify-center mt-4 items-center mb-4
+          w-fit h-fit px-8  bg-lt rounded-xl text-white"
+                    >
+                      More{" "}
+                      <span className="pl-2">
+                        <AiOutlineArrowRight />
+                      </span>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
+
         </div>
+        {
+          /**
+           * 
+           */
+        }
+        
         <div className="flex flex-col mt-6">
           <div className="flex flex-col m-4 ">
             <h4 className="text-orange-500 text-xl font-bold ">INDUSTRIES & COMPANIES</h4>
-            <h2 className="text-lg ml-2 mr-2 mt-2 text-green-700">Bridging tech gaps for companies of all scales</h2>
+            <h2 className="text-lg ml-2 mr-2 mt-2 text-green-600">Bridging tech gaps for companies of all scales</h2>
           </div>
           <div className="flex flex-col space-y-4">
             <div className="flex m-4">
