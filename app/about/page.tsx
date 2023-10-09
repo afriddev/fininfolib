@@ -1,6 +1,57 @@
+import BottomFooter from "@/components/bottomFooter";
+import LetsTalk from "@/components/letsTalk";
 import NavBar from "@/components/navBar";
 
 const About = () => {
+    const technologies = [
+        {
+            name: "Android",
+            image: 'brand-icon-1.png'
+        },
+        {
+            name: "Codeigniter",
+            image: 'brand-icon-2.png'
+        },
+        {
+            name: "Flutter",
+            image: 'brand-icon-3.png'
+        },
+        {
+            name: "NodeJs",
+            image: 'brand-icon-4.png'
+        },
+        {
+            name: "python",
+            image: 'brand-icon-5.png'
+        },
+        {
+            name: "React",
+            image: 'brand-icon-6.png'
+        },
+        {
+            name: "MYSQL",
+            image: 'brand-icon-7.png'
+        },
+        {
+            name: "Angular",
+            image: 'brand-icon-8.png'
+        },
+        {
+            name: "Salesforce",
+            image: 'brand-icon-9.png'
+        },
+        {
+            name: "Java",
+            image: 'brand-icon-10.png'
+        }, {
+            name: "UI/UX",
+            image: 'brand-icon-11.png'
+        }, {
+            name: "Larvel",
+            image: 'brand-icon-12.png'
+        },
+
+    ]
     return (
         <>
             <div>
@@ -24,7 +75,7 @@ const About = () => {
                             As a comprehensive service provider, FinInfolib can handle all the details for
                             you.
                         </p>
-                        <p className="pl-5 pt-6  text-gray-700 text-center pr-5 text-sm">
+                        <p className="pl-5 pt-6 pb-6 text-gray-700 text-center pr-5 text-sm">
                             FinInfolib has been helping its customers achieve a promising future by collaborating with them to succeed.
                             We have achieved an award-winning reputation with cutting-edge technologies and industry knowledge
                             across all business sectors, establishing strong relationships with our customers. Being the best means
@@ -35,12 +86,45 @@ const About = () => {
                     </div>
 
                 </div>
-                <div className="p-8">
-                    <img src="partner_img.webp"/>
+                <div className="m-6 mt-12">
+                    <img src="partner_img.webp" />
+                </div>
+                <div className="flex flex-col p-4 pt-8 space-y-4">
+                    <h3 className="font-bold text-xl text-primaryGreen ">Partner with us for customized solutions</h3>
+                    <p className="pb-2 text-light text-gray-700 ">At FIN Infolib, we are committed to delivering exceptional customer service
+                        and producing high-quality work. Our team is dedicated to providing tailored
+                        solutions that meet your specific requirements
+                        and preferences. We work closely with our clients to ensure that their projects
+                        are completed within their specified timeframe, budget, and to the highest
+                        standards.</p>
+                </div>
+                <div className="flex flex-col justify-center items-center p-4 pt-10 ">
+                    <h3 className="font-bold text-primaryGreen text-xl"> Technologies We Use</h3>
+                    <div className="flex flex-col space-y-6 w-full pt-10">
+                        {
+                            technologies.map(a=>{
+                                return <div className=" w-full h-fit bg-gray-100 rounded-lg flex
+                                 justify-start items-center">
+                                    <img src={a.image} className="w-12 h-12 m-4 p-2 rounded-lg shadow-xl bg-white 
+                                    "/>
+                                    <label className="pl-3 text-lg font-bold text-gray-700">{a.name}</label>
+
+                                </div>
+                            })
+                        }
+                    </div>
                 </div>
 
 
             </div>
+            <div className="mt-8">
+                <LetsTalk/>
+            </div>
+            <div className="mt-12">
+                <BottomFooter/>
+            </div>
+
+
         </>
     )
 }
