@@ -23,12 +23,12 @@ export default function BottomFooter() {
                     <li><a>Sitemap</a></li>
                     </ul>
                 </div>
-                <div className="w-3/5">
+                <div className="w-2/5">
                     <ul className='flex justify-between'>
                         
-                        <a className='text-primaryGreen w-fit h-fi px-2 py-2 text-2xl font-bold'><CiFacebook /></a>
-                        <a className='text-primaryGreen w-fit h-fi px-2 py-2 text-2xl font-bold'><CiInstagram/></a>
-                        <a className='text-primaryGreen w-fit h-fi px-2 py-2 text-2xl font-bold'><CiLinkedin/></a>
+                        <a className='text-primaryGreen w-fit h-fi px-2 py-2 text-3xl font-bold'><CiFacebook /></a>
+                        <a className='text-primaryGreen w-fit h-fi px-2 py-2 text-3xl font-bold'><CiInstagram/></a>
+                        <a className='text-primaryGreen w-fit h-fi px-2 py-2 text-3xl font-bold'><CiLinkedin/></a>
                     </ul>
 
                 </div>

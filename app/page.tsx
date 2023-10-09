@@ -8,14 +8,12 @@ export default function Home() {
 
       <div>
         <div
-          className="flex text-white flex-col items-start bg-primary 
-        h-1/2  w-full p-4  "
-        >
+          className="flex text-white flex-col items-start bg-primary h-1/2  w-full p-4 ">
           <h1 className=" font-ro  text-2xl ">
-            Fin infolib Technology offers <br />
+            Fin infolib Technology offers < br />
             the best{" "}
           </h1>
-          <p className=" text-xs pt-4 pl-4">
+          <p className=" text-md pt-4 pl-4">
             Cyber security,network security and End to End It services
           </p>
           <button
@@ -41,14 +39,14 @@ export default function Home() {
         <div>
           <div className="flex  ml-3 mt-10">
             <label
-              className="text-orange-500 font-bold text-2xl 
+              className="text-o1 font-bold text-2xl 
           "
             >
               Our Focus
             </label>
           </div>
-          <div className="flex flex-col justify-center items-center p-4 w-full">
-            <label className="text-2xl text-primaryGreen">
+          <div className="flex flex-col justify-center items-center pl-4 pt-2 pr-4 pb-2 w-full">
+            <label className="text-xl text-primaryGreen">
               Optimizing your IT infrastructure for maximum performance
             </label>
             <embed src="home3.webp" className="w-full p-4 mt-4  object-fill" />
@@ -70,7 +68,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col bg-lg mt-6 justify-center items-center ">
+        <div className="flex flex-col bg-lG mt-6 justify-center items-center ">
           <div className="mt-6">
             <label className="text-2xl font-bold text-primaryGreen">
               Our Service </label>
@@ -235,14 +233,14 @@ export default function Home() {
         <div className="flex flex-col mt-6">
           <div className="flex flex-col m-4 ">
             <h4 className="text-orange-500 text-xl font-bold ">INDUSTRIES & COMPANIES</h4>
-            <h2 className="text-lg ml-2 mr-2 mt-2 text-green-600">Bridging tech gaps for companies of all scales</h2>
+            <h2 className="text-xl ml-2 mr-2 mt-2 text-primaryGreen">Bridging tech gaps for companies of all scales</h2>
           </div>
           <div className="flex flex-col space-y-4">
             <div className="flex m-4">
               <img src="startup.png" className="w-20 h-14" />
               <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-green-700">Startup company</label>
-                <p className="text-sm font-light ">we can help you get of the ground by providing the necessary support
+                <label className="text-lg font-bold text-primaryGreen">Startup company</label>
+                <p className="text-sm font-light pt-2">we can help you get of the ground by providing the necessary support
                   and resources to help you grow and succees . Our team of experts can assist
                   you with everything from product drvelopment to marketing and sales.
                 </p>
@@ -251,8 +249,8 @@ export default function Home() {
             <div className="flex m-4">
               <img src="manufacturing.png" className="w-20 h-14" />
               <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-green-700">Manufacturing company</label>
-                <p className="text-sm font-light ">we can help you optimize your production processes and improve
+                <label className="text-2xl text-primaryGreen font-bold">Manufacturing company</label>
+                <p className="text-sm font-light pt-2 ">we can help you optimize your production processes and improve
                   your product quality to meet the demands of your customers.Our team of experts can assist you with
                   everything from proccess optimization to supply chain management to ensure that your operation run
                   smoothly and efficiently
@@ -262,8 +260,8 @@ export default function Home() {
             <div className="flex m-4">
               <img src="productbased.png" className="w-20 h-14" />
               <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-green-700">Product-based company</label>
-                <p className="text-sm font-light ">we can help you streamline your optimization and optimize your supply chain
+                <label className="text-2xl text-primaryGreen font-bold">Product-based company</label>
+                <p className="text-sm font-light pt-2">we can help you streamline your optimization and optimize your supply chain
                   to increase efficiency and reduce costs. We can also assist you with product design, prototypin, and testing
                   to ensure that your products. meet the highest standards of quality and functionality.
                 </p>
@@ -272,8 +270,8 @@ export default function Home() {
             <div className="flex m-4">
               <img src="saascompany.png" className="w-20 h-14" />
               <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-green-700">A SAAS company</label>
-                <p className="text-sm font-light ">We can help you develop and implement innovative solutions
+                <label className="text-2xl text-primaryGreen font-bold">A SAAS company</label>
+                <p className="text-sm font-light pt-2 ">We can help you develop and implement innovative solutions
                   to help you stand out in a crowded market. We can assist you with everything from software
                   development to customer support to help you grow and scale your business.
                 </p>
@@ -282,8 +280,8 @@ export default function Home() {
             <div className="flex m-4">
               <img src="serviesbased.png" className="w-20 h-14" />
               <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-green-700">Services-based company</label>
-                <p className="text-sm font-light ">We can help you develop and implement innovative solutions to
+                <label className="text-2xl text-primaryGreen font-bold">Services-based company</label>
+                <p className="text-sm font-light pt-2">We can help you develop and implement innovative solutions to
                   help you stand out in a competitive market. We can assist you with everything from marketing and sales to
                   customer support to help you grow and scale your business.
 
@@ -300,14 +298,14 @@ export default function Home() {
           <div className="relative h-full w-full pb-14 mb-4">
             <div className="relative h-full w-full " >
               <div className="flex flex-col text-white 
-              space-y-5">
-                <div>
-                  <h3 className="text-3xl font-bold text-orange-500 mt-4 ml-20">About Us </h3>
+              ">
+                <div className="flex justify-start items-start">
+                  <h3 className="text-lg mt-5 font-bold pl-16 text-orange-500 ">About Us </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center m-4">
-                  <label className=" text-4xl m-5">We help cliennts invent their future.</label>
-                  <div className="ml-6 mr-6 flex flex-col space-y-10">
-                    <p className="">
+                  <label className=" text-4xl">We help cliennts invent their future.</label>
+                  <div className=" flex flex-col space-y-8 ml-10 mr-4 mt-8 text-gray-300">
+                    <p className="text-md ">
                       At Fin infolib , we are committed to delivering exceptional customer service
                       and producing high-quality work. Our team is dedicated to providing tailored
                       solutions that meet your specific requirements and preferences.
@@ -319,7 +317,7 @@ export default function Home() {
 
                     <div className="w-full flex justify-center items-center">
                       <button className=" flex 
-                  bg-orange-500 h-fit w-fit px-10 py-3 text-xl items-center rounded-3xl
+                  bg-o1 h-fit w-fit mt-6 px-10 py-3 text-xl items-center rounded-3xl
                   shadow-xl ">Read More
                         <span className="pl-2 text-2xl"><AiOutlineArrowRight /></span></button>
 
@@ -330,7 +328,7 @@ export default function Home() {
               </div>
 
               <div className="flex ">
-                <img className=" absolute bottom-0 left-[-100px] opacity-70" src="about-dot.png" />
+                <img className=" absolute bottom-0 left-[-100px] opacity-50" src="about-dot.png" />
 
               </div>
 
