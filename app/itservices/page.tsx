@@ -1,3 +1,6 @@
+import BottomFooter from "@/components/bottomFooter"
+import LetsTalk from "@/components/letsTalk"
+
 const IteServices: () => void = () => {
     return (
         <>
@@ -32,7 +35,7 @@ const IteServices: () => void = () => {
 
                     </div>
                 </div>
-                <div className="mt-6 mb-6 p-4">
+                <div className="mb-6 p-4">
                     <div className="mt-10">
                         <h2 className="font-bold text-2xl text-primaryGreen">
                             Our expertise in Web Application Development</h2>
@@ -57,7 +60,7 @@ const IteServices: () => void = () => {
                         <h4 className="text-lg text-primaryGreen ">Working Process</h4>
                         <h2 className="mt-2 font-bold text-2xl text-center text-primaryGreen">Industry Best Practices to the Core</h2>
                     </div>
-                    <div className="mt-10 flex flex-col ">
+                    <div className="mt-10 flex flex-col space-y-10 ">
 
                         <div className="">
                             <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
@@ -74,12 +77,118 @@ const IteServices: () => void = () => {
                                         based on a thorough  understanding of their business needs.
                                     </p>
                                 </div>
-
                             </div>
-
                         </div>
+                        <div className="">
+                            <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
+                                <a className=" bg-sec flex justify-center items-center 
+                                w-14 h-14 rounded-full text-xl font-bold text-white">02</a>
+                            </div>
+                            <div className="relative mt-6 ">
+                                <div className=" absolute w-8  top-[-21px] left-[35px] overflow-hidden ">
+                                    <div className="-mt-8 h-16 bg-gray-200 -rotate-45 transform origin-bottom-right"></div>
+                                </div>
+                                <div className="  mt-8 flex flex-col w-full bg-gray-200 rounded-xs p-6">
+                                    <h2 className="text-2xl font-bold ">Planning</h2>
+                                    <p className="text-xs font-light mt-2">in order to estimate the time, cos ,resources,and
+                                    other factory , we engage in through project planning and prepare a project scope document.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
+                                <a className=" bg-sec flex justify-center items-center 
+                                w-14 h-14 rounded-full text-xl font-bold text-white">03</a>
+                            </div>
+                            <div className="relative mt-6 ">
+                                <div className=" absolute w-8  top-[-21px] left-[35px] overflow-hidden ">
+                                    <div className="-mt-8 h-16 bg-gray-200 -rotate-45 transform origin-bottom-right"></div>
+                                </div>
+                                <div className="  mt-8 flex flex-col w-full bg-gray-200 rounded-xs p-6">
+                                    <h2 className="text-2xl font-bold ">Design</h2>
+                                    <p className="text-xs font-light mt-2">To meet our customer's specific business
+                                    needs. we leverage AI and various other tools to develop the application
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="">
+                            <div className="w-20 ml-10 h-20 rounded-full bg-white  shadow-2xl flex justify-center items-center">
+                                <a className=" bg-sec flex justify-center items-center 
+                                w-14 h-14 rounded-full text-xl font-bold text-white">04</a>
+                            </div>
+                            <div className="relative mt-6 ">
+                                <div className=" absolute w-8  top-[-21px] left-[35px] overflow-hidden ">
+                                    <div className="-mt-8 h-16 bg-gray-200 -rotate-45 transform origin-bottom-right"></div>
+                                </div>
+                                <div className="  mt-8 flex flex-col w-full bg-gray-200 rounded-xs p-6">
+                                    <h2 className="text-2xl font-bold ">Testing</h2>
+                                    <p className="text-xs font-light mt-2">Before progressing to the production phase, each development phase must 
+                                    successfully pass multiple testing scenarios.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
+                                <a className=" bg-sec flex justify-center items-center 
+                                w-14 h-14 rounded-full text-xl font-bold text-white">05</a>
+                            </div>
+                            <div className="relative mt-6 ">
+                                <div className=" absolute w-8  top-[-21px] left-[35px] overflow-hidden ">
+                                    <div className="-mt-8 h-16 bg-gray-200 -rotate-45 transform origin-bottom-right"></div>
+                                </div>
+                                <div className="  mt-8 flex flex-col w-full bg-gray-200 rounded-xs p-6">
+                                    <h2 className="text-2xl font-bold ">Project Delivery</h2>
+                                    <p className="text-xs font-light mt-2">Upon receiving approval from our quality assurance team, we will
+                                    proceed with deploying the project to the Live environment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
+                <div className="flex flex-col justify-center items-center space-y-10 mt-10 m-4">
+                    <div className="rounded-md shadow-xl p-4">
+                        <label  className="text-2xl font-bold text-primaryGreen">IT Consulting</label>
+                        <p className="font-light text-sm mt-4">Our IT consulting services are designed to help you make informed decisions about your IT infrastructure 
+                            and technology investments. We provide expert advice and guidance on a wide range of IT-related topics,
+                             including cybersecurity, cloud computing, software development, and digital transformation.</p>
+                    </div>
+                    <div className="rounded-md shadow-xl p-4">
+                        <label  className="text-2xl font-bold text-primaryGreen">Digital Marketing</label>
+                        <p className="font-light text-sm mt-4">To succeed in the digital world, your business needs a strong online presence. Our digital 
+                            marketing services are designed to help you increase your 
+                            online visibility and attract more customers to your business. We provide a wide range of digital
+                             marketing services, including search engine optimization (SEO), social media marketing, email marketing,
+                              and content marketing.</p>
+                    </div>
+                    <div className="rounded-md shadow-xl p-4">
+                        <label  className="text-2xl font-bold text-primaryGreen">Software Development</label>
+                        <p className="font-light text-sm mt-4">Our software development services are designed to help you develop custom software solutions 
+                            that streamline your business operations and improve your efficiency. We have a team of experienced
+                             developers
+                             who specialize in developing software solutions that are tailored to your business needs.</p>
+                    </div>
+                    <div className="rounded-md shadow-xl p-4">
+                        <label  className="text-2xl font-bold text-primaryGreen">Cloud Services</label>
+                        <p className="font-light text-sm mt-4">Our cloud services are designed to help you move your business to the cloud, giving you access
+                             to a wide range of benefits, including increased flexibility, scalability, and security. 
+                             Our team of experts will help you migrate your business 
+                            to the cloud and provide ongoing support to ensure that your business runs smoothly.</p>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div className="mt-10">
+                <LetsTalk/>
+            </div>
+            <div className="mt-10">
+                <BottomFooter/>
             </div>
         </>
     )
