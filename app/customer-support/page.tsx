@@ -50,12 +50,12 @@ const CustomerSupport:()=>void = ()=>{
                     </p>
                     <img className="mt-4 p-4" src="business.webp"/>
                 </div>
-                <div className="flex flex-col p-4 mt-6 ">
+                <div className="flex flex-col p-4 mt-6 space-y-6 ">
                     <div className="flex flex-col p-4 space-y-2 border border-primaryGreen rounded-2xl">
                         <img className="w-20 h-24 mt-4"  src="chatsupport.png" />
                         <h2 className="font-bold text-primaryGreen text-xl ">Live Chat Support Services</h2>
                         <p className="text-sm tex-gray-600 font-light pb-4">
-                        Fininfocom's live chat support services offer a strategic and
+                        Fininfolib's live chat support services offer a strategic and
                          cost-effective solution to provide 24/7 live chat support to our clients.
                           Our expert professionals take the time to understand your requirements and
                            provide convincing answers to resolve customer queries, ultimately persuading 
@@ -68,7 +68,7 @@ const CustomerSupport:()=>void = ()=>{
                         <img className="w-20 h-24 mt-4"  src="customer.png" />
                         <h2 className="font-bold text-primaryGreen text-xl ">Customer Support Services</h2>
                         <p className="text-sm tex-gray-600 font-light pb-4">
-                        At Fininfocom, our certified and experienced team provides
+                        At Fininfolib, our certified and experienced team provides
                          round-the-clock customer support that effectively boosts your sales,
                           allowing you to outsource customer services and focus on growing your business.
                            Our customer support team provides assistance across multiple channels, enhances
@@ -82,32 +82,84 @@ const CustomerSupport:()=>void = ()=>{
                         <img className="w-20 h-24 mt-4"  src="call-center.png" />
                         <h2 className="font-bold text-primaryGreen text-xl ">Product Support Services</h2>
                         <p className="text-sm tex-gray-600 font-light pb-4">
-                        At Fininfocom, our customer service outsourcing company provides a
-                         broad range of product support services focused on delivering excellent
-                          customer satisfaction. Our expert team fulfills the specific needs of businesses
-                           with our customized product support services and system-level reports.
-                            We understand the importance of providing timely and effective product support
-                             to customers, and we work diligently to ensure that their needs are met. With
-                              our services, you can rest assured that your customers are receiving top-notch
-                               product support, allowing you to focus on other aspects of your business.
+                        At Fininfolib, our customer service outsourcing company provides 
+                        a broad range of product support services focused on delivering excellent
+                         customer satisfaction. Our expert team fulfills the specific needs of 
+                         businesses with our customized product support services and system-level
+                          reports. We understand the importance of providing timely and effective product
+                           support to customers, and we work diligently to ensure that their needs are met.
+                            With our services, you can rest assured that your customers are receiving 
+                            top-notch product support, allowing you to focus on other aspects of your 
+                            business.
                         
                         </p>
                     </div>
                     <div className="flex flex-col p-4 space-y-2 border border-primaryGreen rounded-2xl">
-                        <img className="w-20 h-24 mt-4"  src="chatsupport.png" />
-                        <h2 className="font-bold text-primaryGreen text-xl ">Live Chat Support Services</h2>
+                        <img className="w-20 h-24 mt-4"  src="technical.png" />
+                        <h2 className="font-bold text-primaryGreen text-xl ">Technical Support Services</h2>
                         <p className="text-sm tex-gray-600 font-light pb-4">
-                        Fininfocom's live chat support services offer a strategic and
-                         cost-effective solution to provide 24/7 live chat support to our clients.
-                          Our expert professionals take the time to understand your requirements and
-                           provide convincing answers to resolve customer queries, ultimately persuading 
-                           them to convert. With our live chat support services, you can obtain real-time 
-                           assistance, convert visitors into customers, reduce cart abandonment rates, and
-                            gather detailed information about your visitors.
+                        At Fininfocom, we help you build long-lasting customer
+                         relationships with our post-purchase technical support
+                          services. Our technical experts handle a wide range of 
+                          issues, from tier one i.e. solving simple queries to 
+                          providing multiple tier support applications. We 
+                          understand the importance of providing timely and
+                           effective technical support to customers, and we work 
+                           diligently to ensure that their needs are met.
+                            Through regular feedback cycles obtained from our
+                             clients, we continuously monitor the performance 
+                             of our tech support professionals and strive to
+                              improve our services. 
+                        
+                        </p>
+                    </div>
+                    <div className="flex flex-col p-4 space-y-2 border border-primaryGreen rounded-2xl">
+                        <img className="w-20 h-24 mt-4"  src="order-processing.png" />
+                        <h2 className="font-bold text-primaryGreen text-xl ">Order Proccessing Services</h2>
+                        <p className="text-sm tex-gray-600 font-light pb-4">
+                        At Fininfocom, we offer a complete range of order processing services, 
+                        which includes management of order taking, upselling and cross-selling, 
+                        and inbound sales. Our operators provide customized responses to your customers,
+                         ensuring that their orders are processed efficiently and accurately. We understand 
+                         the importance of providing an excellent customer experience during the order processing stage,
+                          and our team works diligently to ensure 
+                        that your customers receive top-notch service. With our order processing services. 
+
                         </p>
                     </div>
                     
+                    
 
+                </div>
+                <div className = "flex flex-col mt-12 justify-center items-center p-4">
+                    <h2 className="text-center font-bold text-xl text-primaryGreen">Outsourcing Support </h2>
+                    <p className="font-light text-sm text-center  pt-4">
+                    We are a perfect business partner for any company as we deliver cost-effective and
+                     scalable outsourcing customer
+                     service solutions by understanding the value of a good customer relationship.
+                    </p>
+
+                </div>
+                <div  className="p-4 mt-4">
+                    <div className="bg-white flex flex-col p-4 rounded-2xl shadow-xl ">
+                        <label className="text-2xl font-bold pt-4 text-primaryGreen pb-4 " >Why Choose Us</label>
+                        <p className="font-light text-sm pb-3">
+                        We understand that every business is unique, and we work closely with our 
+                        clients to deeply analyze their business and fulfill all their requirements.
+                         Whether you are looking for cost-effective solutions, technical improvements, 
+                         or improvement in the quality of services, we are experts in all areas as a
+                          leading BPO service provider and customer service outsourcing provider.
+                
+                        </p>
+                        <p>
+                        We pride ourselves on offering flexible business solutions and unique offerings
+                         that allow our clients to easily expand their business operations in the long run. 
+                         Our team of experts is dedicated to providing high-quality services that exceed our clients' 
+                         expectations,
+                         ensuring that they receive the best possible value from our partnership.
+                        </p>
+                        <img src="chooseus.webp" />
+                    </div>
                 </div>
             </div>
         </>
