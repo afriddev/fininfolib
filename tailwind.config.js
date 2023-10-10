@@ -11,6 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        'y':'#ffd60a',
+        'shake':'#fdf0d5',
+        'lB':'#fef9ff',
+        'white':'#ffffff',
+        'o':"#ff5400",
+        'pH':"#007bff",
+        'sH':"010521",
+        
         'primary':"#0d1e67",
         'lightBlue':'#007bff',
         'darkBlue':'#010521',
@@ -25,13 +33,14 @@ module.exports = {
         'red':'#ff0000',
         'o2':"#dc3545",
         'sec':"#674df3",
-        'bg2':"#c6ffeb"
+        'bg2':"#c6ffeb",
 
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif']
+        roboto: ['Roboto', 'sans-serif'],
+        m:['Montserrat','sans-serif']
       }
     },
   },

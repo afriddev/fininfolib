@@ -1,61 +1,47 @@
 import BottomFooter from "@/components/bottomFooter";
 import LetsTalk from "@/components/letsTalk";
-import NavBar from "@/components/navBar";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import {FaArrowRight} from 'react-icons/fa'
 export default function Home() {
   return (
     <>
 
       <div>
-        <div
-          className="flex text-white flex-col items-start bg-primary h-1/2  w-full p-4 ">
-          <h1 className=" font-ro  text-2xl ">
-            Fin infolib Technology offers < br />
-            the best{" "}
-          </h1>
-          <p className=" text-md pt-4 pl-4">
-            Cyber security,network security and End to End It services
-          </p>
-          <button
-            className="flex items-start  h-fit w-fit px-6 py-2 text-md
-        bg-lightBlue rounded-lg mt-4 mb-4  shadow-xl"
-          >
-            Reach Us{" "}
-          </button>
-          <div className="flex justify-center items-center mt-4">
-            <div className="relative">
-              <img
-                className="relative left-[14vh] top-24  animate-pulse  w-6 flex"
-                src="sliderHome.png"
-              />
-              <img
-                className="relative left-10 top-8 animate-pulse  w-6 flex"
-                src="sliderHome.png"
-              />
-            </div>
-            <img src="home1.png" className="w-3/5 justify-center " />
+        <div className=" relative flex flex-col w-full h-[52vh] justify-center items-center  ">
+          <div className="realative top-0 ">
+            <img className="w-full h-[52vh] object-cover" src="banner.webp" />
+          </div>
+          <div className="flex flex-col w-full h-[52vh] justify-center items-center p-6 absolute top-0 ">
+            <h1 className="text-[23px] font-bold text-center  text-white">OFFSHORE Development & IT<br/>
+            <span className="text-[26px] font-bold pl-[2px] " > Consultancy</span> Services</h1>
+            <p className=" text-[12px] text-gray-300 text-center mt-2 ">Our aim is to assist our clients in enhancing their productivity 
+            and efficiency by 
+              offering a range of services. We have a team of skilled resources who specialize in talent and can
+               undertake projects of varying magnitudes, from small to large-scale.</p>
+               <button className="flex text-center mt-8 text-sm  text-white items-center
+                bg-o w-fit h-fit px-6 py-2 rounded-3xl  ">ENQUIRY NOW<a className="pl-2"><FaArrowRight/></a> </button>
           </div>
         </div>
-        <div>
-          <div className="flex  ml-3 mt-10">
 
+        <div>
+          <div className="flex  ml-3 mt-6">
           </div>
           <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
-            <label className="text-lg text-primaryGreen font-bold text-center">
+            <label className="text-lg text-pH font-bold text-center">
               Optimizing your IT infrastructure for maximum performance
             </label>
             <embed src="home3.webp" className="w-full p-4 mt-4  object-fill" />
-            <p className="text-sm p-4 font-light ">
+            <p className="text-sm p-4 font-light text-center ">
               Fininfolib is a renowned offshore development services provided
               commited to helping organizations accomplish their objectives by
               granting them access to skilled and cost-effective resources that
               can improve their efficiency.
             </p>
-            <p className="text-sm pl-4 pr-4 font-light pb-4">
+            <p className="text-sm pl-4 pr-4 font-light pb-4 text-center">
               We Recognize the difficulties that businesses encounter when
               searching for free
             </p>
-            <p className="text-sm pl-4 pr-4 font-light">
+            <p className="text-sm pl-4 pr-4 font-light text-center">
               appropriate talent, which is why we provide an all-inclusive
               solution that incorporates a pool of proficient developers ,UI &
               UX designers,customer support and technical staff,along with a
