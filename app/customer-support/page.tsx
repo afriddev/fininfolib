@@ -1,3 +1,6 @@
+import BottomFooter from "@/components/bottomFooter"
+import LetsTalk from "@/components/letsTalk"
+
 const CustomerSupport:()=>void = ()=>{
 
     return(
@@ -140,8 +143,8 @@ const CustomerSupport:()=>void = ()=>{
                     </p>
 
                 </div>
-                <div  className="p-4 mt-4">
-                    <div className="bg-white flex flex-col p-4 rounded-2xl shadow-xl ">
+                <div  className="p-4 ">
+                    <div className="bg-white flex flex-col p-4 rounded-2xl shadow-2xl ">
                         <label className="text-2xl font-bold pt-4 text-primaryGreen pb-4 " >Why Choose Us</label>
                         <p className="font-light text-sm pb-3">
                         We understand that every business is unique, and we work closely with our 
@@ -151,16 +154,22 @@ const CustomerSupport:()=>void = ()=>{
                           leading BPO service provider and customer service outsourcing provider.
                 
                         </p>
-                        <p>
+                        <p className="font-light text-sm pb-3">
                         We pride ourselves on offering flexible business solutions and unique offerings
                          that allow our clients to easily expand their business operations in the long run. 
                          Our team of experts is dedicated to providing high-quality services that exceed our clients' 
                          expectations,
                          ensuring that they receive the best possible value from our partnership.
                         </p>
-                        <img src="chooseus.webp" />
+                        <img className="p-4" src="chooseus.webp" />
                     </div>
                 </div>
+            </div>
+            <div className="mt-8">
+                <LetsTalk />
+            </div>
+            <div className="mt-6">
+                <BottomFooter />
             </div>
         </>
     )
