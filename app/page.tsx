@@ -1,135 +1,145 @@
 import BottomFooter from "@/components/bottomFooter";
 import LetsTalk from "@/components/letsTalk";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import {FaArrowRight} from 'react-icons/fa'
+import { FaArrowRight } from 'react-icons/fa'
 export default function Home() {
   return (
     <>
 
       <div>
-        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[70vh] justify-center items-center  ">
+        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[90vh] justify-center items-center  ">
           <div className="relative top-0 w-full">
-            <img className="relative top-0 w-full h-[52vh] object-cover  lg:h-[70vh]" src="banner.webp" />
+            <img className="relative top-0 w-full h-[52vh]   lg:h-[90vh]" src="banner.webp" />
           </div>
-          <div className="flex flex-col w-full h-[52vh] justify-center items-center p-6 absolute top-0 
-          lg:h-[70vh]">
-            <h1 className="text-[23px] font-bold text-center  text-white lg:text-[43px]">OFFSHORE Development & 
-            <span className="text-[26px] font-bold pl-[2px] lg:text-[50px] " > IT<br/> Consultancy  </span> Services</h1>
-            <p className=" text-[12px] text-gray-300 text-center mt-2 lg:text-[18px] lg:ml-72 lg:mr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity 
-            and efficiency by 
+          <div className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
+          lg:h-[90vh]">
+            <h1 className="text-[23px] font-bold text-center  text-white lg:text-[43px]">OFFSHORE Development &
+              <span className="text-[26px] font-bold pl-[2px] lg:text-[50px] " > IT<br /> Consultancy  </span> Services</h1>
+            <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px] lg:pl-72 lg:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
+              and efficiency by
               offering a range of services. We have a team of skilled resources who specialize in talent and can
-               undertake projects of varying magnitudes, from small to large-scale.</p>
-               <button className="flex text-center mt-8 text-sm  text-white items-center
+              undertake projects of varying magnitudes, from small to large-scale.</p>
+            <button className="flex text-center mt-8 text-sm  text-white items-center
                 bg-o w-fit h-fit px-6 py-2 rounded-3xl lg:mt-10 lg:px-28 lg:py-6 lg:bg-transparent  
-                lg:border-2 lg:border-o">ENQUIRY NOW<a className="pl-2"><FaArrowRight/></a> </button>
+                lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl">ENQUIRY NOW<a className="pl-2 lg:pl-6"><FaArrowRight /></a> </button>
           </div>
         </div>
         <div>
-          <div className="flex  ml-3 mt-6">
+          <div className="flex  ml-3 mt-6 lg:mt-10">
           </div>
           <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
-            <label className="text-2xl text-pH font-bold text-center">
+            <label className="text-2xl text-pH font-bold text-center lg:text-5xl">
               Optimizing your IT infrastructure
             </label>
-            <embed src="home3.webp" className="w-full p-4 mt-4  object-fill" />
-            <p className="text-sH p-4 font-light text-center ">
-              Fininfolib is a renowned offshore development services provided
-              commited to helping organizations accomplish their objectives by
-              granting them access to skilled and cost-effective resources that
-              can improve their efficiency.
-            </p>
-            <p className="text-sH pl-4 pr-4 font-light pb-4 text-center">
-              We Recognize the difficulties that businesses encounter when
-              searching for free
-            </p>
-            <p className="text-sH pl-4 pr-4 font-light text-center">
-              appropriate talent, which is why we provide an all-inclusive
-              solution that incorporates a pool of proficient developers ,UI &
-              UX designers,customer support and technical staff,along with a
-              streamlined proccess management approach.
-            </p>
+            <div className=" flex flex-col  lg:grid lg:grid-cols-2 lg:p-8 lg:pt-14
+             ">
+              <div className="">
+                <embed src="home3.webp" className="w-full p-4 mt-4  object-fill " />
+
+              </div>
+              <div className="lg:pt-10">
+                <p className="text-sH p-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left ">
+                  Fininfolib is a renowned offshore development services provided
+                  commited to helping organizations accomplish their objectives by
+                  granting them access to skilled and cost-effective resources that
+                  can improve their efficiency.
+                </p>
+                <p className="text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-md lg:text-left">
+                  We Recognize the difficulties that businesses encounter when
+                  searching for free
+                </p>
+                <p className="text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left">
+                  appropriate talent, which is why we provide an all-inclusive
+                  solution that incorporates a pool of proficient developers ,UI &
+                  UX designers,customer support and technical staff,along with a
+                  streamlined proccess management approach.
+                </p>
+
+              </div>
+            </div>
+
           </div>
         </div>
         <div className="flex flex-col justify-center items-center m-4 mt-14 mb-20 ">
           <div className="flex justify-center items-center ">
-            <label className="text-3xl  text-lightBlue font-bold text-center">
+            <label className="text-3xl  text-lightBlue font-bold text-center lg:text-5xl lg:mb-10">
               Our key differentiators
             </label>
           </div>
-          <div className="flex flex-col space-y-14">
+          <div className="flex flex-col space-y-14 lg:grid lg:grid-cols-3 lg:grid-rows-2">
             <div className="flex  m-4 ">
-              <img src="01.png"  className="w-14 h-12 mt-6 "/>
+              <img src="01.png" className="w-14 h-12 mt-6 " />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">End-to-End Solution</h1>
-                <p className="font-light ml-2 mt-4 text-darkBlue ">We offer complete package of it solutions and security services from end point of 
+                <p className="font-light ml-2 mt-4 text-darkBlue ">We offer complete package of it solutions and security services from end point of
                   Data center.
                 </p>
               </div>
             </div>
             <div className="flex  m-4 ">
-              <img src="02.png"  className="w-14 h-12 mt-6"/>
+              <img src="02.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Cost Effective</h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">By reducing the deployment cost and effective
-                network design we off low price solutions.
+                  network design we off low price solutions.
                 </p>
               </div>
             </div>
             <div className="flex  m-4">
-              <img src="03.png"  className="w-14 h-12 mt-6"/>
+              <img src="03.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Proactive</h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">We manage your network 24x7 to identify issues and address
-                them before it affect your routine tasks.
+                  them before it affect your routine tasks.
                 </p>
               </div>
             </div>
             <div className="flex  m-4 ">
-              <img src="04.png"  className="w-14 h-12 mt-6"/>
+              <img src="04.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Customer friendly</h1>
-                <p className="font-light ml-2 mt-4 text-darkBlue ">Customer services is the experience we deliver 
-                to the customers and we facilitate them.
+                <p className="font-light ml-2 mt-4 text-darkBlue ">Customer services is the experience we deliver
+                  to the customers and we facilitate them.
                 </p>
               </div>
             </div>
             <div className="flex  m-4 ">
-              <img src="05.png"  className="w-14 h-12 mt-6"/>
+              <img src="05.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Quick response </h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">We alot dedicated line with our engineers so that issue
-                can be addressed without delay.
+                  can be addressed without delay.
                 </p>
               </div>
             </div>
             <div className="flex  m-4 ">
-              <img src="06.png"  className="w-14 h-12 mt-6"/>
+              <img src="06.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4 ml-2">
                 <h1 className="text-xl text-darkBlue font-bold">Vibrant team</h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">We have vibrant team of engineers with multi-domin
-                expertise who meet your needs.
+                  expertise who meet your needs.
                 </p>
               </div>
             </div>
             <div className="flex  m-4 ">
-              <img src="08.png"  className="w-14 h-12 mt-6"/>
-          <div className="flex flex-col mt-4">
+              <img src="08.png" className="w-14 h-12 mt-6" />
+              <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Highly secure</h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">We remotly secure your facility on space internet,data transfers
-                and end points protection with NGFW.
+                  and end points protection with NGFW.
                 </p>
               </div>
             </div>
             <div className="flex  m-4">
-              <img src="09.png"  className="w-14 h-12 mt-6"/>
+              <img src="09.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Highly scalable</h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">Our cloud services, container services,
-                DB services and storage services are highly scalable.
+                  DB services and storage services are highly scalable.
                 </p>
               </div>
             </div>
-            
+
 
           </div>
         </div>
