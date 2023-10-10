@@ -22,26 +22,25 @@ export default function Home() {
                 bg-o w-fit h-fit px-6 py-2 rounded-3xl  ">ENQUIRY NOW<a className="pl-2"><FaArrowRight/></a> </button>
           </div>
         </div>
-
         <div>
           <div className="flex  ml-3 mt-6">
           </div>
           <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
-            <label className="text-lg text-pH font-bold text-center">
-              Optimizing your IT infrastructure for maximum performance
+            <label className="text-2xl text-pH font-bold text-center">
+              Optimizing your IT infrastructure
             </label>
             <embed src="home3.webp" className="w-full p-4 mt-4  object-fill" />
-            <p className="text-sm p-4 font-light text-center ">
+            <p className="text-sH p-4 font-light text-center ">
               Fininfolib is a renowned offshore development services provided
               commited to helping organizations accomplish their objectives by
               granting them access to skilled and cost-effective resources that
               can improve their efficiency.
             </p>
-            <p className="text-sm pl-4 pr-4 font-light pb-4 text-center">
+            <p className="text-sH pl-4 pr-4 font-light pb-4 text-center">
               We Recognize the difficulties that businesses encounter when
               searching for free
             </p>
-            <p className="text-sm pl-4 pr-4 font-light text-center">
+            <p className="text-sH pl-4 pr-4 font-light text-center">
               appropriate talent, which is why we provide an all-inclusive
               solution that incorporates a pool of proficient developers ,UI &
               UX designers,customer support and technical staff,along with a
@@ -134,7 +133,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col bg-lG mt-6 justify-center items-center ">
           <div className="mt-6">
-            <label className="text-2xl font-bold text-primaryGreen">
+            <label className="text-2xl font-bold text-pH">
               Our Service </label>
           </div>
           <div className="flex flex-col justify-center items-center space-y-14 m-10 w-full">
@@ -296,8 +295,8 @@ export default function Home() {
 
         <div className="flex flex-col mt-6">
           <div className="flex flex-col m-4 ">
-            <h4 className="text-orange-500 text-xl font-bold ">INDUSTRIES & COMPANIES</h4>
-            <h2 className="text-xl ml-2 mr-2 mt-2 text-primaryGreen">Bridging tech gaps for companies of all scales</h2>
+            <h4 className="text-pH text-xl font-bold ">INDUSTRIES & COMPANIES</h4>
+            <h2 className="text-xl ml-2 mr-2 mt-2 text-red">Bridging tech gaps for companies of all scales</h2>
           </div>
           <div className="flex flex-col space-y-4">
             <div className="flex m-4">
@@ -364,7 +363,7 @@ export default function Home() {
               <div className="flex flex-col text-white 
               ">
                 <div className="flex justify-start items-start">
-                  <h3 className="text-lg mt-5 font-bold pl-16 text-orange-500 ">About Us </h3>
+                  <h3 className="text-2xl mt-5 font-bold pl-16 text-orange-500 ">About Us </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center m-4">
                   <label className=" text-4xl">We help cliennts invent their future.</label>

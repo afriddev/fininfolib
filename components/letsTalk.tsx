@@ -3,7 +3,7 @@ export default function LetsTalk(){
     <>
     <div className=" flex flex-col ">
           <div className="flex flex-col m-4 space-y-4">
-            <h2 className="text-xl text-primaryGreen font-bold  ">We have handpicked developers ready to work for your projects</h2>
+            <h2 className="text-xl  text-pH font-bold  ">We have handpicked developers ready to work for your projects</h2>
             <p className="flex font-light">We know that hiring remote developers can be a daunting process.
               We’ve made it as easy as possible for you to find the perfect candidate</p>
           </div>

@@ -17,8 +17,8 @@ module.exports = {
         'white':'#ffffff',
         'o':"#ff5400",
         'pH':"#007bff",
-        'sH':"010521",
-        
+        'sH':"#010521",
+
         'primary':"#0d1e67",
         'lightBlue':'#007bff',
         'darkBlue':'#010521',
