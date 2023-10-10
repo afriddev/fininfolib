@@ -9,6 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'sm': '300px',
+
+      'md': '900px',
+
+      'lg': '1100px',
+    },
     extend: {
       colors:{
         'y':'#ffd60a',

@@ -7,19 +7,21 @@ export default function Home() {
     <>
 
       <div>
-        <div className=" relative flex flex-col w-full h-[52vh] justify-center items-center  ">
-          <div className="realative top-0 ">
-            <img className="w-full h-[52vh] object-cover" src="banner.webp" />
+        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[70vh] justify-center items-center  ">
+          <div className="relative top-0 w-full">
+            <img className="relative top-0 w-full h-[52vh] object-cover  lg:h-[70vh]" src="banner.webp" />
           </div>
-          <div className="flex flex-col w-full h-[52vh] justify-center items-center p-6 absolute top-0 ">
-            <h1 className="text-[23px] font-bold text-center  text-white">OFFSHORE Development & IT<br/>
-            <span className="text-[26px] font-bold pl-[2px] " > Consultancy</span> Services</h1>
-            <p className=" text-[12px] text-gray-300 text-center mt-2 ">Our aim is to assist our clients in enhancing their productivity 
+          <div className="flex flex-col w-full h-[52vh] justify-center items-center p-6 absolute top-0 
+          lg:h-[70vh]">
+            <h1 className="text-[23px] font-bold text-center  text-white lg:text-[43px]">OFFSHORE Development & 
+            <span className="text-[26px] font-bold pl-[2px] lg:text-[50px] " > IT<br/> Consultancy  </span> Services</h1>
+            <p className=" text-[12px] text-gray-300 text-center mt-2 lg:text-[18px] lg:ml-72 lg:mr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity 
             and efficiency by 
               offering a range of services. We have a team of skilled resources who specialize in talent and can
                undertake projects of varying magnitudes, from small to large-scale.</p>
                <button className="flex text-center mt-8 text-sm  text-white items-center
-                bg-o w-fit h-fit px-6 py-2 rounded-3xl  ">ENQUIRY NOW<a className="pl-2"><FaArrowRight/></a> </button>
+                bg-o w-fit h-fit px-6 py-2 rounded-3xl lg:mt-10 lg:px-28 lg:py-6 lg:bg-transparent  
+                lg:border-2 lg:border-o">ENQUIRY NOW<a className="pl-2"><FaArrowRight/></a> </button>
           </div>
         </div>
         <div>
