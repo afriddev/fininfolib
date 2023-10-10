@@ -24,7 +24,8 @@ module.exports = {
         'o1':'#FE5500',
         'red':'#ff0000',
         'o2':"#dc3545",
-        'sec':"#674df3"
+        'sec':"#674df3",
+        'bg2':"#c6ffeb"
 
       },
       fontFamily: {

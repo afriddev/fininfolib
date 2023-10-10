@@ -11,8 +11,8 @@ export default function BottomFooter() {
                     '>
                         <li><a>About Us</a></li>
                         <li><a>Services</a></li>
-                        <li><a>Tearms & Conditions</a></li>
-                        <li><a>Blog</a></li>
+                        <li><a>Terms & Conditions</a></li>
+                        
                     </ul>
                 </div>
                 <div className='w-full '>
@@ -20,7 +20,7 @@ export default function BottomFooter() {
                         <li><a>Privacy Policy </a></li>
                     <li><a>Disclaimer</a></li>
                     <li><a>Accessibility</a></li>
-                    <li><a>Sitemap</a></li>
+                    
                     </ul>
                 </div>
                 <div className="w-2/5">
