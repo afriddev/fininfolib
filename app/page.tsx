@@ -7,12 +7,12 @@ export default function Home() {
     <>
 
       <div>
-        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[90vh] justify-center items-center  ">
+        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[75vh] justify-center items-center  ">
           <div className="relative top-0 w-full">
-            <img className="relative top-0 w-full h-[52vh]   lg:h-[90vh]" src="banner.webp" />
+            <img className="relative top-0 w-full h-[52vh]   lg:h-[75vh]" src="banner.webp" />
           </div>
           <div className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
-          lg:h-[90vh]">
+          lg:h-[75vh]">
             <h1 className="text-[23px] font-bold text-center  text-white lg:text-[43px]">OFFSHORE Development &
               <span className="text-[26px] font-bold pl-[2px] lg:text-[50px] " > IT<br /> Consultancy  </span> Services</h1>
             <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px] lg:pl-72 lg:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
@@ -25,14 +25,16 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="flex  ml-3 mt-6 lg:mt-10">
+          <div className="  ml-3 mt-6 lg:block lg:mt-10 relative">
+            <img src="ark1.png" className=" absolute w-26 h-32 lg:w-22 lg:h-52  right-0 top-0" />
+
           </div>
           <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
             <label className="text-2xl text-pH font-bold text-center lg:text-5xl">
               Optimizing your IT infrastructure
             </label>
             <div className=" flex flex-col  lg:grid lg:grid-cols-2 lg:p-8 lg:pt-14
-             ">
+              relative ">
               <div className="">
                 <embed src="home3.webp" className="w-full p-4 mt-4  object-fill " />
 
@@ -62,12 +64,12 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center m-4 mt-14 mb-20 ">
           <div className="flex justify-center items-center ">
-            <label className="text-3xl  text-lightBlue font-bold text-center lg:text-5xl lg:mb-10">
+            <label className="text-3xl  text-lightBlue font-bold text-center lg:text-5xl lg:mb-10 mb-10">
               Our key differentiators
             </label>
           </div>
-          <div className="flex flex-col space-y-14 lg:grid lg:grid-cols-3 lg:grid-rows-2">
-            <div className="flex  m-4 ">
+          <div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-3 lg:grid-rows-3">
+            <div className="flex   m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 ">
               <img src="01.png" className="w-14 h-12 mt-6 " />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">End-to-End Solution</h1>
@@ -76,16 +78,16 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex  m-4 ">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4">
               <img src="02.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
-                <h1 className="text-xl text-darkBlue font-bold">Cost Effective</h1>
+                <h1 className="text-xl text-darkBlue font-bold ">Cost Effective</h1>
                 <p className="font-light ml-2 mt-4 text-darkBlue ">By reducing the deployment cost and effective
                   network design we off low price solutions.
                 </p>
               </div>
             </div>
-            <div className="flex  m-4">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4">
               <img src="03.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Proactive</h1>
@@ -94,7 +96,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex  m-4 ">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 ">
               <img src="04.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Customer friendly</h1>
@@ -103,7 +105,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex  m-4 ">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 ">
               <img src="05.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Quick response </h1>
@@ -112,7 +114,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex  m-4 ">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 ">
               <img src="06.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4 ml-2">
                 <h1 className="text-xl text-darkBlue font-bold">Vibrant team</h1>
@@ -121,7 +123,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex  m-4 ">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4">
               <img src="08.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Highly secure</h1>
@@ -130,7 +132,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex  m-4">
+            <div className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4">
               <img src="09.png" className="w-14 h-12 mt-6" />
               <div className="flex flex-col mt-4">
                 <h1 className="text-xl text-darkBlue font-bold">Highly scalable</h1>
@@ -143,12 +145,15 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="flex flex-col bg-lG mt-6 justify-center items-center ">
-          <div className="mt-6">
-            <label className="text-2xl font-bold text-pH">
+        <div className="flex flex-col bg-lG mt-6 justify-center items-center relative">
+          <div>
+            <img src="ark3.png" className="absolute w-20 h-32 lg:w-32 lg:h-52 top-4 left-0" />
+          </div>
+          <div className="mt-6 lg:mb-14">
+            <label className="text-2xl font-bold text-pH lg:text-5xl ">
               Our Service </label>
           </div>
-          <div className="flex flex-col justify-center items-center space-y-14 m-10 w-full">
+          <div className="flex flex-col justify-center items-center gap-y-14 m-10 w-full lg:grid lg:grid-cols-3 lg:grid-row-1 lg:pb-14">
             <div className="flex flex-col justify-center items-center w-full">
               <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
@@ -159,6 +164,7 @@ export default function Home() {
 
               <div className="w-[2px] h-12 bg-gray-800">
               </div>
+
               <div className="flex flex-col w-4/5 justify-center items-center relative ">
                 <div className="flex justify-center items-center  bg-gradient-to-r from-o1 to-o2 
                     absolute top-4 w-full shadow-xl ">
@@ -174,30 +180,29 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-center items-center  
                  bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
-                 rounded-tl-xl rounded-tr-xl ">
+                 rounded-tl-xl rounded-tr-xl  ">
                   <div className="flex flex-col justify-center items-center ">
-                    <p className="text-sm text-gray-300 ml-5 mr-5 pt-20 ">
+                    <p className="text-sm text-gray-300 lg:mt-4 ml-5 mr-5 pt-20 ">
                       Our team of experts is dedicated to providing top-tier IT
                       services to help your business and succeed in the digital
                       world.
+
                     </p>
                     <a
-                      className="flex justify-center mt-4 items-center mb-4
+                      className="flex justify-center mt-4  items-center mb-4
           w-fit h-fit px-8  bg-lt rounded-xl text-white "
                     >
                       More{" "}
-                      <span className="pl-2">
+                      <span className="pl-2 ">
                         <AiOutlineArrowRight />
                       </span>
                     </a>
-
                   </div>
                 </div>
               </div>
 
             </div>
             {
-
             }
             <div className="flex flex-col justify-center items-center w-full">
               <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
@@ -206,7 +211,6 @@ export default function Home() {
                   <img src="outsourcing.png" className="h-10 w-10" />
                 </div>
               </div>
-
               <div className="w-[2px] h-12 bg-gray-800">
               </div>
               <div className="flex flex-col w-4/5 justify-center items-center relative ">
@@ -305,67 +309,70 @@ export default function Home() {
            */
         }
 
-        <div className="flex flex-col mt-6">
-          <div className="flex flex-col m-4 ">
-            <h4 className="text-pH text-xl font-bold ">INDUSTRIES & COMPANIES</h4>
-            <h2 className="text-xl ml-2 mr-2 mt-2 text-red">Bridging tech gaps for companies of all scales</h2>
+        <div className="flex flex-col mt-6 relative">
+          <div className="">
+            <div className="flex flex-col m-4  ">
+              <h4 className="text-pH text-xl font-bold lg:text-5xl lg:pt-10 lg:pl-14">INDUSTRIES & COMPANIES</h4>
+              <h2 className="text-xl ml-2 mr-2 mt-2 text-red lg:text-4xl lg:pl-14 lg:pt-6">Bridging tech gaps for companies of all scales</h2>
+            </div>
+            <div className="flex flex-col gap-y-4 lg:grid lg:grid-cols-2 lg:grid-rows-3">
+              <div className="flex m-4  lg:shadow-xl hover:shadow-2xl hover:rounded-lg p-4 lg:p-4 lg:rounded-xl">
+                <img src="startup.png" className="w-20 h-14" />
+                <div className="flex flex-col  ml-4">
+                  <label className="text-lg font-bold text-primaryGreen">Startup company</label>
+                  <p className="text-sm font-light pt-2">we can help you get of the ground by providing the necessary support
+                    and resources to help you grow and succees . Our team of experts can assist
+                    you with everything from product drvelopment to marketing and sales.
+                  </p>
+                </div>
+              </div>
+              <div className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
+                <img src="manufacturing.png" className="w-20 h-14" />
+                <div className="flex flex-col  ml-4 ">
+                  <label className="text-2xl text-primaryGreen font-bold">Manufacturing company</label>
+                  <p className="text-sm font-light pt-2 ">we can help you optimize your production processes and improve
+                    your product quality to meet the demands of your customers.Our team of experts can assist you with
+                    everything from proccess optimization to supply chain management to ensure that your operation run
+                    smoothly and efficiently
+                  </p>
+                </div>
+              </div>
+              <div className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
+                <img src="productbased.png" className="w-20 h-14" />
+                <div className="flex flex-col  ml-4">
+                  <label className="text-2xl text-primaryGreen font-bold">Product-based company</label>
+                  <p className="text-sm font-light pt-2">we can help you streamline your optimization and optimize your supply chain
+                    to increase efficiency and reduce costs. We can also assist you with product design, prototypin, and testing
+                    to ensure that your products. meet the highest standards of quality and functionality.
+                  </p>
+                </div>
+              </div>
+              <div className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
+                <img src="saascompany.png" className="w-20 h-14" />
+                <div className="flex flex-col  ml-4">
+                  <label className="text-2xl text-primaryGreen font-bold">A SAAS company</label>
+                  <p className="text-sm font-light pt-2 ">We can help you develop and implement innovative solutions
+                    to help you stand out in a crowded market. We can assist you with everything from software
+                    development to customer support to help you grow and scale your business.
+                  </p>
+                </div>
+              </div>
+              <div className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
+                <img src="serviesbased.png" className="w-20 h-14" />
+                <div className="flex flex-col  ml-4">
+                  <label className="text-2xl text-primaryGreen font-bold">Services-based company</label>
+                  <p className="text-sm font-light pt-2">We can help you develop and implement innovative solutions to
+                    help you stand out in a competitive market. We can assist you with everything from marketing and sales to
+                    customer support to help you grow and scale your business.
+
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
           </div>
-          <div className="flex flex-col space-y-4">
-            <div className="flex m-4">
-              <img src="startup.png" className="w-20 h-14" />
-              <div className="flex flex-col  ml-4">
-                <label className="text-lg font-bold text-primaryGreen">Startup company</label>
-                <p className="text-sm font-light pt-2">we can help you get of the ground by providing the necessary support
-                  and resources to help you grow and succees . Our team of experts can assist
-                  you with everything from product drvelopment to marketing and sales.
-                </p>
-              </div>
-            </div>
-            <div className="flex m-4">
-              <img src="manufacturing.png" className="w-20 h-14" />
-              <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-primaryGreen font-bold">Manufacturing company</label>
-                <p className="text-sm font-light pt-2 ">we can help you optimize your production processes and improve
-                  your product quality to meet the demands of your customers.Our team of experts can assist you with
-                  everything from proccess optimization to supply chain management to ensure that your operation run
-                  smoothly and efficiently
-                </p>
-              </div>
-            </div>
-            <div className="flex m-4">
-              <img src="productbased.png" className="w-20 h-14" />
-              <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-primaryGreen font-bold">Product-based company</label>
-                <p className="text-sm font-light pt-2">we can help you streamline your optimization and optimize your supply chain
-                  to increase efficiency and reduce costs. We can also assist you with product design, prototypin, and testing
-                  to ensure that your products. meet the highest standards of quality and functionality.
-                </p>
-              </div>
-            </div>
-            <div className="flex m-4">
-              <img src="saascompany.png" className="w-20 h-14" />
-              <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-primaryGreen font-bold">A SAAS company</label>
-                <p className="text-sm font-light pt-2 ">We can help you develop and implement innovative solutions
-                  to help you stand out in a crowded market. We can assist you with everything from software
-                  development to customer support to help you grow and scale your business.
-                </p>
-              </div>
-            </div>
-            <div className="flex m-4">
-              <img src="serviesbased.png" className="w-20 h-14" />
-              <div className="flex flex-col  ml-4">
-                <label className="text-2xl text-primaryGreen font-bold">Services-based company</label>
-                <p className="text-sm font-light pt-2">We can help you develop and implement innovative solutions to
-                  help you stand out in a competitive market. We can assist you with everything from marketing and sales to
-                  customer support to help you grow and scale your business.
-
-                </p>
-              </div>
-            </div>
-
-
-          </div>
+          
         </div>
         <div className="relative mt-6 w-full h-full bg-gradient-to-r from-lightGreen to-lightOrange ">
           <div className="absolute right-0 w-4/6 bg-darkBlue h-full rounded-bl-[200px]">
