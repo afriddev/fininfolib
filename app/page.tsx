@@ -7,12 +7,12 @@ export default function Home() {
     <>
 
       <div>
-        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[75vh] justify-center items-center  ">
+        <div className=" relative flex flex-col w-full h-[52vh] lg:h-[85vh] justify-center items-center  ">
           <div className="relative top-0 w-full">
-            <img className="relative top-0 w-full h-[52vh]   lg:h-[75vh]" src="banner.webp" />
+            <img className="relative top-0 w-full h-[52vh]   lg:h-[85vh]" src="banner.webp" />
           </div>
           <div className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
-          lg:h-[75vh]">
+          lg:h-[85vh]">
             <h1 className="text-[23px] font-bold text-center  text-white lg:text-[43px]">OFFSHORE Development &
               <span className="text-[26px] font-bold pl-[2px] lg:text-[50px] " > IT<br /> Consultancy  </span> Services</h1>
             <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px] lg:pl-72 lg:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div>
           <div className="  ml-3 mt-6 lg:block lg:mt-10 relative">
-            <img src="ark1.png" className=" absolute w-26 h-32 lg:w-22 lg:h-52  right-0 top-0" />
+            <img src="ark1.png" className=" absolute w-26 h-32 lg:w-16 lg:h-52  right-0 top-0" />
 
           </div>
           <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
@@ -149,11 +149,12 @@ export default function Home() {
           <div>
             <img src="ark3.png" className="absolute w-20 h-32 lg:w-32 lg:h-52 top-4 left-0" />
           </div>
-          <div className="mt-6 lg:mb-14">
+          <div className="mt-6 lg:mb-14 lg:pt-14">
             <label className="text-2xl font-bold text-pH lg:text-5xl ">
               Our Service </label>
           </div>
-          <div className="flex flex-col justify-center items-center gap-y-14 m-10 w-full lg:grid lg:grid-cols-3 lg:grid-row-1 lg:pb-14">
+          <div className="flex flex-col justify-center items-center gap-y-14 m-10 w-full lg:grid lg:grid-cols-3 lg:grid-row-1 lg:pb-14 
+           lg:px-20">
             <div className="flex flex-col justify-center items-center w-full">
               <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
@@ -311,11 +312,11 @@ export default function Home() {
 
         <div className="flex flex-col mt-6 relative">
           <div className="">
-            <div className="flex flex-col m-4  ">
+            <div className="flex flex-col m-4  lg:justify-center lg:items-center lg:mb-10">
               <h4 className="text-pH text-xl font-bold lg:text-5xl lg:pt-10 lg:pl-14">INDUSTRIES & COMPANIES</h4>
               <h2 className="text-xl ml-2 mr-2 mt-2 text-red lg:text-4xl lg:pl-14 lg:pt-6">Bridging tech gaps for companies of all scales</h2>
             </div>
-            <div className="flex flex-col gap-y-4 lg:grid lg:grid-cols-2 lg:grid-rows-3">
+            <div className="flex flex-col gap-y-4 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:px-10">
               <div className="flex m-4  lg:shadow-xl hover:shadow-2xl hover:rounded-lg p-4 lg:p-4 lg:rounded-xl">
                 <img src="startup.png" className="w-20 h-14" />
                 <div className="flex flex-col  ml-4">
@@ -377,14 +378,11 @@ export default function Home() {
         <div className="relative mt-6 w-full h-full bg-gradient-to-r from-lightGreen to-lightOrange ">
           <div className="hidden lg:block absolute right-0 w-4/6 bg-darkBlue h-[100vh] rounded-bl-[70%] ">
           <img src="about-background.jpg" className="absolute  w-full h-[100vh] rounded-bl-[70%]"/>
-          
           </div>
           <div className="absolute justify-center  right-0 w-4/6 bg-darkBlue h-[100vh] rounded-bl-full lg:rounded-bl-[70%] lg:opacity-90">
-          <img src="about-rightimage.png" className="hidden lg:block absolute top-[20%] right-[-20vh] opacity-85"/>
-          <img src="about-rightcircle.png" className="hidden lg:block absolute top-[78%] right-[26vh] opacity-85"/>
-
+          <img src="about-rightimage.png" className="hidden lg:block absolute right-0 top-[20%]  opacity-85"/>
+          <img src="about-rightcircle.png" className="hidden lg:block absolute top-[85%] right-[15vh] opacity-85"/>
           </div>
-
           <div className="relative h-[100vh] w-full pb-14 mb-4 ">
             <div className="relative h-full w-full " >
               <div className="flex flex-col text-white  lg:absolute lg:right-0 lg:w-4/6 lg:h-full lg:justify-center lg:items-center
@@ -393,8 +391,8 @@ export default function Home() {
                   <h3 className="text-2xl mt-5 font-bold pl-16 text-orange-500 lg:mr-40 ">About Us </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center m-4 ">
-                  <label className=" text-4xl lg:pl-40 lg:pr-40">We help cliennts invent their future.</label>
-                  <div className=" flex flex-col space-y-8 ml-10 lg:ml-40 lg:mr-40 mr-4 mt-8 text-gray-300">
+                  <label className=" text-4xl lg:pl-48 lg:pr-40">We help clients invent their future.</label>
+                  <div className=" flex flex-col space-y-8 ml-10 lg:ml-48 lg:mr-44 mr-4 mt-8 text-gray-300">
                     <p className="text-md ">
                       At Fin infolib , we are committed to delivering exceptional customer service
                       and producing high-quality work. Our team is dedicated to providing tailored
@@ -404,31 +402,39 @@ export default function Home() {
                       completed within
                       their specified timeframe, budget, and to the highest standards.
                     </p>
-
                     <div className="w-full flex justify-center items-center">
                       <button className=" flex 
                   bg-o1 h-fit w-fit mt-6 px-10 py-3 text-xl items-center rounded-3xl
                   shadow-xl ">Read More
                         <span className="pl-2 text-2xl"><AiOutlineArrowRight /></span></button>
-
                     </div>
-
                   </div>
                 </div>
               </div>
-
               <div className="flex ">
                 <img className=" absolute bottom-0 left-[-100px] opacity-50 lg:top-20 lg:left-4 lg:opacity-95" src="about-dot.png" />
-                <img className=" absolute top-[10%] left-[10%] opacity-50 hidden lg:block  lg:opacity-95 w-2/6 
+                <img className=" absolute top-[20%] left-[10%] opacity-50 hidden lg:block  lg:opacity-95 w-2/6 
                  rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  " 
                 src="about-image1.jpg" />
-                <img className=" absolute bottom-[20%] left-[20%] hidden lg:block opacity-50 lg:opacity-95 
-                rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  w-1/6"
+                <img className=" absolute bottom-0 left-[5%] hidden lg:block opacity-50 lg:opacity-95 
+                rounded-tl-[20%]  rounded-bl-[20%]  rounded-br-[20%]  w-1/5"
                  src="about-image2.jpg" />
+                 <img className=" absolute bottom-[70%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32"
+                 src="about-imagecircle.png" />
+                 <div className=" absolute bottom-[73%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32">
+                   <div className="flex flex-col p-4 justify-center items-center">
+                     <h2 className="text-white text-xl font-bold">15 +</h2>
+                     <p className="text-center text-white font-bold text-sm">Years Of Experience</p>
 
-                <img className=" absolute bottom-0 left-[-100px] opacity-50 hidden lg:block lg:top-[45%] lg:left-[4%] lg:opacity-95" src="about-leftcircle.png" />
-                <img className=" absolute bottom-0 left-[-100px] opacity-50 hidden lg:block 
-                 lg:top-[50%] lg:left-[-25%] lg:opacity-95" src="about-layer.png" />
+                   </div>
+
+                 </div>
+                 
+
+                <img className=" absolute opacity-50 hidden lg:block lg:top-[55%] lg:left-[2%] lg:opacity-95"
+                 src="about-leftcircle.png" />
+                <img className=" absolute  opacity-50 hidden lg:block 
+                 lg:top-[70%] lg:left-[-25%] lg:opacity-95" src="about-layer.png" />
 
               </div>
 
