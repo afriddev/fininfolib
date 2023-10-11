@@ -177,22 +177,22 @@ const IteServices: () => void = () => {
                     </div>
                     <div className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
                         <label className="text-2xl font-bold text-pH">Digital Marketing</label>
-                        <p className="font-light text-sm mt-4">To succeed in the digital world, your business needs a strong online presence. Our digital
+                        <p className="font-light text-sm mt-4 ">To succeed in the digital world, your business needs a strong online presence. Our digital
                             marketing services are designed to help you increase your
                             online visibility and attract more customers to your business. We provide a wide range of digital
                             marketing services, including search engine optimization (SEO), social media marketing, email marketing,
                             and content marketing.</p>
                     </div>
-                    <div className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
+                    <div className="rounded-md shadow-xl p-4 hover:shadow-2xl  ">
                         <label className="text-2xl font-bold text-pH">Software Development</label>
-                        <p className="font-light text-sm mt-4">Our software development services are designed to help you develop custom software solutions
+                        <p className="font-light text-sm mt-4 ">Our software development services are designed to help you develop custom software solutions
                             that streamline your business operations and improve your efficiency. We have a team of experienced
                             developers
                             who specialize in developing software solutions that are tailored to your business needs.</p>
                     </div>
                     <div className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
                         <label className="text-2xl font-bold text-pH">Cloud Services</label>
-                        <p className="font-light text-sm mt-4">Our cloud services are designed to help you move your business to the cloud, giving you access
+                        <p className="font-light text-sm mt-4 ">Our cloud services are designed to help you move your business to the cloud, giving you access
                             to a wide range of benefits, including increased flexibility, scalability, and security.
                             Our team of experts will help you migrate your business
                             to the cloud and provide ongoing support to ensure that your business runs smoothly.</p>
