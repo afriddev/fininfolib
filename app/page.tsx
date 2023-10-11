@@ -375,18 +375,26 @@ export default function Home() {
           
         </div>
         <div className="relative mt-6 w-full h-full bg-gradient-to-r from-lightGreen to-lightOrange ">
-          <div className="absolute right-0 w-4/6 bg-darkBlue h-full rounded-bl-[200px]">
+          <div className="hidden lg:block absolute right-0 w-4/6 bg-darkBlue h-[100vh] rounded-bl-[70%] ">
+          <img src="about-background.jpg" className="absolute  w-full h-[100vh] rounded-bl-[70%]"/>
+          
           </div>
-          <div className="relative h-full w-full pb-14 mb-4">
+          <div className="absolute justify-center  right-0 w-4/6 bg-darkBlue h-[100vh] rounded-bl-full lg:rounded-bl-[70%] lg:opacity-90">
+          <img src="about-rightimage.png" className="hidden lg:block absolute top-[20%] right-[-20vh] opacity-85"/>
+          <img src="about-rightcircle.png" className="hidden lg:block absolute top-[78%] right-[26vh] opacity-85"/>
+
+          </div>
+
+          <div className="relative h-[100vh] w-full pb-14 mb-4 ">
             <div className="relative h-full w-full " >
-              <div className="flex flex-col text-white 
+              <div className="flex flex-col text-white  lg:absolute lg:right-0 lg:w-4/6 lg:h-full lg:justify-center lg:items-center
               ">
-                <div className="flex justify-start items-start">
-                  <h3 className="text-2xl mt-5 font-bold pl-16 text-orange-500 ">About Us </h3>
+                <div className="flex justify-start items-start lg:justify-center lg:items-center">
+                  <h3 className="text-2xl mt-5 font-bold pl-16 text-orange-500 lg:mr-40 ">About Us </h3>
                 </div>
-                <div className="flex flex-col justify-center items-center m-4">
-                  <label className=" text-4xl">We help cliennts invent their future.</label>
-                  <div className=" flex flex-col space-y-8 ml-10 mr-4 mt-8 text-gray-300">
+                <div className="flex flex-col justify-center items-center m-4 ">
+                  <label className=" text-4xl lg:pl-40 lg:pr-40">We help cliennts invent their future.</label>
+                  <div className=" flex flex-col space-y-8 ml-10 lg:ml-40 lg:mr-40 mr-4 mt-8 text-gray-300">
                     <p className="text-md ">
                       At Fin infolib , we are committed to delivering exceptional customer service
                       and producing high-quality work. Our team is dedicated to providing tailored
@@ -410,7 +418,17 @@ export default function Home() {
               </div>
 
               <div className="flex ">
-                <img className=" absolute bottom-0 left-[-100px] opacity-50" src="about-dot.png" />
+                <img className=" absolute bottom-0 left-[-100px] opacity-50 lg:top-20 lg:left-4 lg:opacity-95" src="about-dot.png" />
+                <img className=" absolute top-[10%] left-[10%] opacity-50 hidden lg:block  lg:opacity-95 w-2/6 
+                 rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  " 
+                src="about-image1.jpg" />
+                <img className=" absolute bottom-[20%] left-[20%] hidden lg:block opacity-50 lg:opacity-95 
+                rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  w-1/6"
+                 src="about-image2.jpg" />
+
+                <img className=" absolute bottom-0 left-[-100px] opacity-50 hidden lg:block lg:top-[45%] lg:left-[4%] lg:opacity-95" src="about-leftcircle.png" />
+                <img className=" absolute bottom-0 left-[-100px] opacity-50 hidden lg:block 
+                 lg:top-[50%] lg:left-[-25%] lg:opacity-95" src="about-layer.png" />
 
               </div>
 
