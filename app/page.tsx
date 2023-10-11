@@ -14,7 +14,7 @@ export default function Home() {
           <div className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
           lg:h-[85vh]">
             <h1 className="text-[23px] font-bold text-center  text-white lg:text-[34px] xl:text-[43px]">OFFSHORE Development &
-              <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] " > IT<br /> Consultancy  </span> Services</h1>
+              <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] animate-hero " > IT<br /> Consultancy  </span> Services</h1>
             <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px]
              lg:pl-36 lg:pr-36 xl:pl-72 xl:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
               and efficiency by
@@ -22,7 +22,7 @@ export default function Home() {
               undertake projects of varying magnitudes, from small to large-scale.</p>
             <button className="flex text-center mt-8 text-sm  text-white items-center
                 bg-o w-fit h-fit px-6 py-2 rounded-3xl lg:mt-10 lg:px-28 lg:py-6 lg:bg-transparent  
-                lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl">ENQUIRY NOW<a className="pl-2 lg:pl-6"><FaArrowRight /></a> </button>
+                lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl transform ease-in duration-500">ENQUIRY NOW<a className="pl-2 lg:pl-6"><FaArrowRight /></a> </button>
           </div>
         </div>
         <div>
@@ -36,8 +36,8 @@ export default function Home() {
             </label>
             <div className=" flex flex-col  lg:grid lg:grid-cols-2 lg:p-8 lg:pt-14
               relative ">
-              <div className="">
-                <embed src="home3.webp" className="w-full p-4 mt-4  object-fill " />
+              <div className=" transition ease-in delay-300">
+                <embed src="home3.webp" className=" w-full p-4 mt-4  object-fill " />
 
               </div>
               <div className="lg:pt-10">
