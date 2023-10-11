@@ -9,13 +9,14 @@ export default function Home() {
       <div>
         <div className=" relative flex flex-col w-full h-[52vh] lg:h-[85vh] justify-center items-center  ">
           <div className="relative top-0 w-full">
-            <img className="relative top-0 w-full h-[52vh]   lg:h-[85vh]" src="banner.webp" />
+            <img className="relative top-0 w-full h-[52vh]   lg:h-[85vh] " src="banner.webp" />
           </div>
           <div className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
           lg:h-[85vh]">
-            <h1 className="text-[23px] font-bold text-center  text-white lg:text-[43px]">OFFSHORE Development &
-              <span className="text-[26px] font-bold pl-[2px] lg:text-[50px] " > IT<br /> Consultancy  </span> Services</h1>
-            <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px] lg:pl-72 lg:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
+            <h1 className="text-[23px] font-bold text-center  text-white lg:text-[34px] xl:text-[43px]">OFFSHORE Development &
+              <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] " > IT<br /> Consultancy  </span> Services</h1>
+            <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px]
+             lg:pl-36 lg:pr-36 xl:pl-72 xl:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
               and efficiency by
               offering a range of services. We have a team of skilled resources who specialize in talent and can
               undertake projects of varying magnitudes, from small to large-scale.</p>
@@ -154,7 +155,7 @@ export default function Home() {
               Our Service </label>
           </div>
           <div className="flex flex-col justify-center items-center gap-y-14 m-10 w-full lg:grid lg:grid-cols-3 lg:grid-row-1 lg:pb-14 
-           lg:px-20">
+            xl:px-14">
             <div className="flex flex-col justify-center items-center w-full">
               <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
@@ -416,8 +417,8 @@ export default function Home() {
                 <img className=" absolute top-[20%] left-[10%] opacity-50 hidden lg:block  lg:opacity-95 w-2/6 
                  rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  " 
                 src="about-image1.jpg" />
-                <img className=" absolute bottom-0 left-[5%] hidden lg:block opacity-50 lg:opacity-95 
-                rounded-tl-[20%]  rounded-bl-[20%]  rounded-br-[20%]  w-1/5"
+                <img className=" absolute bottom-[10vh] left-[25%] hidden lg:block opacity-50 lg:opacity-95 
+                rounded-tl-[20%]  rounded-bl-[20%]  rounded-br-[20%]  w-1/5 xl:bottom-0"
                  src="about-image2.jpg" />
                  <img className=" absolute bottom-[70%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32"
                  src="about-imagecircle.png" />

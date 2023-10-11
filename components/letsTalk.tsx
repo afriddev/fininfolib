@@ -5,14 +5,14 @@ export default function LetsTalk() {
         <div>
           <img src="ark2.png" className="absolute hidden lg:block w-20 h-40 top-0 left-0 " />
         </div>
-        <div className="flex flex-col m-4 space-y-4 lg:justify-center lg:items-center lg:px-40 lg:text-center">
-          <h2 className="text-xl  text-pH font-bold lg:text-5xl">We have handpicked developers ready to work for your projects</h2>
+        <div className="flex flex-col m-4 space-y-4 lg:justify-center lg:items-center lg:px-20  xl:px-40 lg:text-center">
+          <h2 className="text-xl  text-pH font-bold lg:text-4xl xl:text-5xl">We have handpicked developers ready to work for your projects</h2>
           <p className="flex font-light lg:text-center lg:text-2xl">We know that hiring remote developers can be a daunting process.
             We’ve made it as easy as possible for you to find the perfect candidate</p>
         </div>
 
       </div>
-      <div className="flex flex-col m-4 mt-6 lg:grid lg:grid-cols-2 lg:px-16">
+      <div className="flex flex-col m-4 mt-6 lg:grid lg:grid-cols-2 lg:px-8 xl:px-16">
         <div className="m-4 ">
           <img src="form_img.webp" className="mb-6" />
 
