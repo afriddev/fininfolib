@@ -6,7 +6,7 @@ const Disclaimer:()=>void = ()=>{
             <div className="text-gray-700">
                 <div className="flex h-fit bg-gradient-to-b from-o1 to-o2 ">
                     <label className="text-2xl pl-6 text-white font-bold
-                    py-4 lg:text-4xl">Disclaimer</label>
+                    py-4 lg:text-4xl lg:py-8 lg:pl-20">Disclaimer</label>
                 </div>
                 <div className="flex relative flex-col space-y-4 m-2 pl-4 mt-2 bg-bg2  lg:justify-center lg:items-center lg:mt-20 lg:mb-20 lg:ml-32 lg:mr-32
                 lg:pl-[5%] lg:pr-[5%] lg:pb-10">
