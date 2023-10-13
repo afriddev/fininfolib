@@ -3,39 +3,65 @@ import BottomFooter from "@/components/bottomFooter";
 import LetsTalk from "@/components/letsTalk";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaArrowRight } from 'react-icons/fa'
-import{motion} from 'framer-motion'
-import op from '../utils/op'
-import sfl from "@/utils/sfl";
+import { motion, useInView } from 'framer-motion'
+import op from '@/utils/op'
+import sfl from "@/utils/sfl"
+import sft from '@/utils/sft'
+import { useRef } from "react";
 
 
 export default function Home() {
+  const ref = useRef(null)
+  const isInView = useInView(ref,true)
   return (
     <>
 
-      <motion.div  initial="initial"
-      animate="animate" variants={op}>
+      <motion.div initial="initial"
+        animate="animate" variants={op}>
         <motion.div variants={op}
-        className=" relative flex flex-col w-full h-[52vh] lg:h-[85vh] justify-center items-center  ">
+          className=" relative flex flex-col w-full h-[52vh] lg:h-[95vh] justify-center items-center  ">
           <div className="relative top-0 w-full">
-            <img className="relative top-0 w-full h-[52vh]   lg:h-[85vh] " src="banner.webp" />
+            <img className="relative top-0 w-full h-[52vh]   lg:h-[95vh] " src="banner.webp" />
           </div>
-          <motion.div
-          variants={sfl}
+          <div ref={ref}
+           
+            style={{
+              transform:isInView?"none":"translateX(100vw)",
+              transition:"all 1s cubic-bezier(0.6,0.01,0.95,0.95) 0.5s"
+            }}
           className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
-          lg:h-[85vh]">
-            <h1 className="text-[23px] font-bold text-center  text-white lg:text-[34px] xl:text-[43px]">OFFSHORE Development &
-              <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] animate-hero " > IT<br /> Consultancy  </span> Services</h1>
-            <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px]
+          lg:h-[95vh]">
+            <h1 className="text-[28px] font-bold text-center  text-white lg:text-[34px] xl:text-[43px]">OFFSHORE Development &
+              <span className="text-[32px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] animate-hero " > IT<br /> Consultancy  </span> Services</h1>
+            <p
+            style={{
+              transform:isInView?"none":"translateX(100vw)",
+              transition:"all 1.3s cubic-bezier(0.6,0.01,0.95,0.95) 0.5s"
+            }}
+            className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px]
              lg:pl-36 lg:pr-36 xl:pl-72 xl:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
               and efficiency by
               offering a range of services. We have a team of skilled resources who specialize in talent and can
               undertake projects of varying magnitudes, from small to large-scale.</p>
-            <button className="flex text-center mt-8 text-sm  text-white items-center
+            <button 
+            style={{
+              transform:isInView?"none":"translateX(100vw)",
+              transition:"all 1.6s cubic-bezier(0.6,0.01,0.95,0.95) 0.5s"
+            }}
+            className="flex text-center mt-8 text-sm  text-white items-center
                 bg-o w-fit h-fit px-6 py-2 rounded-3xl lg:mt-10 lg:px-28 lg:py-6 lg:bg-transparent  
-                lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl transform ease-in duration-500">ENQUIRY NOW<a className="pl-2 lg:pl-6"><FaArrowRight /></a> </button>
-          </motion.div>
+                lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl transform ease-in duration-500">ENQUIRY NOW<a className="pl-2 lg:pl-6">
+                  <FaArrowRight /></a> </button>
+          </div>
         </motion.div>
-        <div>
+        <motion.div 
+        variants={sft}
+        transition={{
+          duration: 3,
+          delay: 0.2,
+          ease: [0.6, 0.01, 0.05, 0.95]
+        }}
+        >
           <div className="  ml-3 mt-6 lg:block lg:mt-10 relative">
             <img src="ark1.png" className=" absolute w-26 h-32 lg:w-16 lg:h-52  right-0 top-0" />
 
@@ -72,7 +98,7 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
+        </motion.div>
         <div className="flex flex-col justify-center items-center m-4 mt-14 mb-20 ">
           <div className="flex justify-center items-center ">
             <label className="text-3xl  text-lightBlue font-bold text-center lg:text-5xl lg:mb-10 mb-10">
@@ -384,15 +410,15 @@ export default function Home() {
 
             </div>
           </div>
-          
+
         </div>
         <div className="relative mt-6 w-full h-full bg-gradient-to-r from-lightGreen to-lightOrange ">
           <div className="hidden lg:block absolute right-0 w-4/6 bg-darkBlue h-[100vh] rounded-bl-[70%] ">
-          <img src="about-background.jpg" className="absolute  w-full h-[100vh] rounded-bl-[70%]"/>
+            <img src="about-background.jpg" className="absolute  w-full h-[100vh] rounded-bl-[70%]" />
           </div>
           <div className="absolute justify-center  right-0 w-4/6 bg-darkBlue h-[100vh] rounded-bl-full lg:rounded-bl-[70%] lg:opacity-90">
-          <img src="about-rightimage.png" className="hidden lg:block absolute right-0 top-[20%]  opacity-85"/>
-          <img src="about-rightcircle.png" className="hidden lg:block absolute top-[85%] right-[15vh] opacity-85"/>
+            <img src="about-rightimage.png" className="hidden lg:block absolute right-0 top-[20%]  opacity-85" />
+            <img src="about-rightcircle.png" className="hidden lg:block absolute top-[85%] right-[15vh] opacity-85" />
           </div>
           <div className="relative h-[100vh] w-full pb-14 mb-4 ">
             <div className="relative h-full w-full " >
@@ -425,25 +451,25 @@ export default function Home() {
               <div className="flex ">
                 <img className=" absolute bottom-0 left-[-100px] opacity-50 lg:top-20 lg:left-4 lg:opacity-95" src="about-dot.png" />
                 <img className=" absolute top-[20%] left-[10%] opacity-50 hidden lg:block  lg:opacity-95 w-2/6 
-                 rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  " 
-                src="about-image1.jpg" />
+                 rounded-tr-[20%]  rounded-bl-[20%]  rounded-br-[20%]  "
+                  src="about-image1.jpg" />
                 <img className=" absolute bottom-[10vh] left-[25%] hidden lg:block opacity-50 lg:opacity-95 
                 rounded-tl-[20%]  rounded-bl-[20%]  rounded-br-[20%]  w-1/5 xl:bottom-0"
-                 src="about-image2.jpg" />
-                 <img className=" absolute bottom-[70%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32"
-                 src="about-imagecircle.png" />
-                 <div className=" absolute bottom-[73%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32">
-                   <div className="flex flex-col p-4 justify-center items-center">
-                     <h2 className="text-white text-xl font-bold">15 +</h2>
-                     <p className="text-center text-white font-bold text-sm">Years Of Experience</p>
+                  src="about-image2.jpg" />
+                <img className=" absolute bottom-[70%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32"
+                  src="about-imagecircle.png" />
+                <div className=" absolute bottom-[73%] left-[38%] hidden lg:block opacity-50 lg:opacity-95  w-32">
+                  <div className="flex flex-col p-4 justify-center items-center">
+                    <h2 className="text-white text-xl font-bold">15 +</h2>
+                    <p className="text-center text-white font-bold text-sm">Years Of Experience</p>
 
-                   </div>
+                  </div>
 
-                 </div>
-                 
+                </div>
+
 
                 <img className=" absolute opacity-50 hidden lg:block lg:top-[55%] lg:left-[2%] lg:opacity-95"
-                 src="about-leftcircle.png" />
+                  src="about-leftcircle.png" />
                 <img className=" absolute  opacity-50 hidden lg:block 
                  lg:top-[70%] lg:left-[-25%] lg:opacity-95" src="about-layer.png" />
 

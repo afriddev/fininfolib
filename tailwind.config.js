@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       animation:{
-        hero:'hero 20s infinite',
+        hero:'hero 100s infinite',
         sfl:'sfl 1s infinite'
       },
       keyframes:{
