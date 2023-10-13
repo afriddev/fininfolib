@@ -65,10 +65,11 @@ const isInView = useInView(ref)
                 lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl transform ease-in duration-500">ENQUIRY NOW<a className="pl-2 lg:pl-6"><FaArrowRight /></a> </button>
           </div>
         </div>
-        <div>
-          <div className="  ml-3 mt-6 lg:block lg:mt-10 relative">
+        <div
+        
+        >
+          <div ref={ref} className="  ml-3 mt-6 lg:block lg:mt-10 relative">
             <img 
-            ref={ref}
             style={{
               transform:isInView?"none":"scale(0.7)",
               transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
@@ -76,30 +77,32 @@ const isInView = useInView(ref)
             src="ark1.png" className=" absolute w-26 h-32 lg:w-16 lg:h-52  right-0 top-0" />
 
           </div>
-          <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
+          <div  className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
             <label className="text-2xl text-pH font-bold text-center lg:text-5xl">
               Optimizing your IT infrastructure
             </label>
-            <div className=" flex flex-col  lg:grid lg:grid-cols-2 lg:p-8 lg:pt-14
+            <div className=" flex flex-col md:grid md:grid-cols-2  lg:grid lg:grid-cols-2 lg:p-8 lg:pt-14
               relative ">
-              <div className=" transition ease-in delay-300">
+              <div ref={ref} className=" transition ease-in delay-300">
                 <embed
-                ref={ref}
+                
                 style={{
                   transform:isInView?"none":"scale(0.7)",
-                  transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
                   transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
                 }}
                 src="home3.webp" className=" w-full p-4 mt-4  object-fill " />
 
               </div>
-              <div className="lg:pt-10">
+              <div 
+                
+              className="lg:pt-10">
                 <p 
+            
                 style={{
-                  transform:"scale(0.5)",
-                  transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                  transform:isInView?"none":"translateX(-100vw)",
+                  transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
                 }}
-                className="text-sH p-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left ">
+                className="md:text-xs text-sH  p-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left ">
                   Fininfolib is a renowned offshore development services provided
                   commited to helping organizations accomplish their objectives by
                   granting them access to skilled and cost-effective resources that
@@ -107,20 +110,22 @@ const isInView = useInView(ref)
                 </p>
                 <p 
                 style={{
-                  transform:"translateX(-100vw)",
-                  transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                  transform:isInView?"none":"translateX(-100vw)",
+                  transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
                 }}
-                className="text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-md lg:text-left">
+               
+                className="md:text-xs text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-md lg:text-left">
                   We Recognize the difficulties that businesses encounter when
                   searching for free
                 </p>
                 
                 <p 
                 style={{
-                  transform:"translateX(-100vw)",
-                  transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                  transform:isInView?"none":"translateX(-100vw)",
+                  transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
                 }}
-                className="text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left">
+                
+                className="md:text-xs text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left">
                   appropriate talent, which is why we provide an all-inclusive
                   solution that incorporates a pool of proficient developers ,UI &
                   UX designers,customer support and technical staff,along with a
