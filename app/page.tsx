@@ -3,16 +3,28 @@ import BottomFooter from "@/components/bottomFooter";
 import LetsTalk from "@/components/letsTalk";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaArrowRight } from 'react-icons/fa'
-import{motion} from 'framer-motion'
+import{motion, useInView} from 'framer-motion'
 import op from '../utils/op'
 import sfl from "@/utils/sfl";
+import { useRef } from "react";
 
 
 export default function Home() {
+const ref = useRef(null)
+const isInView = useInView(ref)
+
+
   return (
     <>
 
-      <div 
+      <motion.div
+      initial="initial"
+      animate="animate"
+       variants={op}
+       transition={{
+         duration:1,
+         delay:0.1
+       }}
       > 
         <div 
         className=" relative flex flex-col w-full h-[52vh] lg:h-[85vh] justify-center items-center  ">
@@ -20,23 +32,48 @@ export default function Home() {
             <img className="relative top-0 w-full h-[52vh]   lg:h-[85vh] " src="banner.webp" />
           </div>
           <div
+          ref={ref}
+          style={{
+            transform:isInView?"none":"translateX(-100vw)",
+            transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 0.7s"
+          }}
+
           className="flex flex-col w-full h-[52vh]  justify-center items-center p-6 absolute top-0 
           lg:h-[85vh]">
             <h1 className="text-[23px] font-bold text-center  text-white lg:text-[34px] xl:text-[43px]">OFFSHORE Development &
               <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] animate-hero " > IT<br /> Consultancy  </span> Services</h1>
-            <p className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px]
+            <p 
+            ref={ref}
+            style={{
+              transform:isInView?"none":"translateX(-100vw)",
+              transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+            }}
+            
+            className=" text-[12px] text-gray-300 lg:text-gray-400 text-center mt-2 lg:text-[18px]
              lg:pl-36 lg:pr-36 xl:pl-72 xl:pr-72 lg:mt-10">Our aim is to assist our clients in enhancing their productivity
               and efficiency by
               offering a range of services. We have a team of skilled resources who specialize in talent and can
               undertake projects of varying magnitudes, from small to large-scale.</p>
-            <button className="flex text-center mt-8 text-sm  text-white items-center
+            <button
+            ref={ref}
+            style={{
+              transform:isInView?"none":"translateX(-100vw)",
+              transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1.5s"
+            }}
+             className="flex text-center mt-8 text-sm  text-white items-center
                 bg-o w-fit h-fit px-6 py-2 rounded-3xl lg:mt-10 lg:px-28 lg:py-6 lg:bg-transparent  
                 lg:border-2 lg:border-o lg:hover:bg-o lg:text-xl transform ease-in duration-500">ENQUIRY NOW<a className="pl-2 lg:pl-6"><FaArrowRight /></a> </button>
           </div>
         </div>
         <div>
           <div className="  ml-3 mt-6 lg:block lg:mt-10 relative">
-            <img src="ark1.png" className=" absolute w-26 h-32 lg:w-16 lg:h-52  right-0 top-0" />
+            <img 
+            ref={ref}
+            style={{
+              transform:isInView?"none":"scale(0.7)",
+              transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+            }}
+            src="ark1.png" className=" absolute w-26 h-32 lg:w-16 lg:h-52  right-0 top-0" />
 
           </div>
           <div className="flex flex-col justify-center items-center pl-2 pt-2 pr-2 pb-2 w-full">
@@ -46,21 +83,44 @@ export default function Home() {
             <div className=" flex flex-col  lg:grid lg:grid-cols-2 lg:p-8 lg:pt-14
               relative ">
               <div className=" transition ease-in delay-300">
-                <embed src="home3.webp" className=" w-full p-4 mt-4  object-fill " />
+                <embed
+                ref={ref}
+                style={{
+                  transform:isInView?"none":"scale(0.7)",
+                  transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                  transition:"all 1.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                }}
+                src="home3.webp" className=" w-full p-4 mt-4  object-fill " />
 
               </div>
               <div className="lg:pt-10">
-                <p className="text-sH p-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left ">
+                <p 
+                style={{
+                  transform:"scale(0.5)",
+                  transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                }}
+                className="text-sH p-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left ">
                   Fininfolib is a renowned offshore development services provided
                   commited to helping organizations accomplish their objectives by
                   granting them access to skilled and cost-effective resources that
                   can improve their efficiency.
                 </p>
-                <p className="text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-md lg:text-left">
+                <p 
+                style={{
+                  transform:"translateX(-100vw)",
+                  transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                }}
+                className="text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-md lg:text-left">
                   We Recognize the difficulties that businesses encounter when
                   searching for free
                 </p>
-                <p className="text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left">
+                
+                <p 
+                style={{
+                  transform:"translateX(-100vw)",
+                  transition:"all 0.7s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
+                }}
+                className="text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left">
                   appropriate talent, which is why we provide an all-inclusive
                   solution that incorporates a pool of proficient developers ,UI &
                   UX designers,customer support and technical staff,along with a
@@ -459,7 +519,7 @@ export default function Home() {
         <div className="mt-6">
           <BottomFooter />
         </div>
-      </div>
+      </motion.div>
 
     </>
   );
