@@ -69,7 +69,7 @@ function MobileNav({ setopen }) {
             
           </li>
           <label className="text-[15px] font-light text-gray-600 text-center ">Employee ?
-           <span className="text-[17px] text-pH font-normal"> Login</span></label>
+           <span className="text-[17px] text-pH font-normal"> <Link onClick={setopen} href={'/login'}>Login</Link></span></label>
         </div>
 
 
