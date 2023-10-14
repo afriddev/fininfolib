@@ -37,7 +37,7 @@ function Key1() {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex   m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
@@ -65,7 +65,7 @@ const Key2 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
@@ -90,7 +90,7 @@ const Key3 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
@@ -115,7 +115,7 @@ const Key4 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
@@ -140,7 +140,7 @@ const Key5 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
@@ -165,7 +165,7 @@ const Key6 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
@@ -190,7 +190,7 @@ const Key7 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
@@ -215,7 +215,7 @@ const Key8 = () => {
       <div
         ref={ref}
         style={{
-          transform: isInView ? "none" : "translateY(10vh)",
+          transform: isInView ? "none" : "translateX(-10vh)",
           transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
         }}
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"

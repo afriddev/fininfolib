@@ -8,7 +8,7 @@ const Optimizing = () => {
     <>
       <section>
         <div >
-          <div ref={ref} className="ml-3 mt-6 lg:block lg:mt-10 relative">
+          <div  className="ml-3 mt-6 lg:block lg:mt-10 relative">
             <img
             style={{
                 transform:isInView?"none":"scale(0.5)",
@@ -33,6 +33,7 @@ const Optimizing = () => {
             >
               <div className="transition ease-in delay-300">
                 <embed
+                ref={ref}
                 style={{
                     transform:isInView?"none":"scale(0.5)",
                     transition:"all 0.3s cubic-bezier(0.6,0.01,0.05,0.95) 1.5s"
@@ -67,7 +68,7 @@ function Text1() {
         transform:isInView?"none":"scale(0.8)",
         transition:"all 0.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
       }}
-    className="md:text-xs text-sH  p-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left ">
+    className="md:text-xs text-sH  p-4 font-light text-center lg:text-gray-800 lg:text-xl lg:text-left ">
       Fininfolib is a renowned offshore development services provided commited
       to helping organizations accomplish their objectives by granting them
       access to skilled and cost-effective resources that can improve their
@@ -84,7 +85,7 @@ function Text2() {
     style={{
         transform:isInView?"none":"scale(0.8)",
         transition:"all 0.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-      }} className="md:text-xs text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-md lg:text-left">
+      }} className="md:text-xs text-sH pl-4 pr-4 font-light pb-4 text-center lg:text-gray-800 lg:text-xl lg:text-left">
       We Recognize the difficulties that businesses encounter when searching for
       free
     </p>
@@ -101,7 +102,7 @@ function Text3() {
         transform:isInView?"none":"scale(0.8)",
         transition:"all 0.3s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
       }}
-    className="md:text-xs text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-md lg:text-left">
+    className="md:text-xs text-sH pl-4 pr-4 font-light text-center lg:text-gray-800 lg:text-xl lg:text-left">
       appropriate talent, which is why we provide an all-inclusive solution that
       incorporates a pool of proficient developers ,UI & UX designers,customer
       support and technical staff,along with a streamlined proccess management

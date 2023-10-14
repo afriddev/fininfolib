@@ -20,10 +20,20 @@ module.exports = {
     extend: {
       animation:{
         hero:'hero 100s infinite',
-        sfl:'sfl 2s '
+        sfl:'sfl 2s ',
+        hang:'hang  ease-in-out 1s infinite alternate'
        
       },
       keyframes:{
+        hang:{
+          '0%':{
+            'transform':'rotate(10deg)'
+
+          },
+          '100%':{
+            'transform':'rotate(-10deg)'
+          }
+        },
         sfl:{
           '0%':{
             'transform':'translateX(-100vw)'},
