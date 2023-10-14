@@ -2,7 +2,7 @@ import { Variants } from "framer-motion";
 
 const sfl:Variants= {
     initial:{
-        x:'100vw',
+        x:'-100vw',
         opacity:0
     },
     animate:{

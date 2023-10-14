@@ -20,10 +20,17 @@ module.exports = {
     extend: {
       animation:{
         hero:'hero 100s infinite',
+        sfl:'sfl 2s '
        
       },
       keyframes:{
-        
+        sfl:{
+          '0%':{
+            'transform':'translateX(-100vw)'},
+          '100%':{
+            'transform':'translateX(0px)'
+          }
+        },
         hero:{
           '0%':{
             'color':"#f72585"
