@@ -1,6 +1,6 @@
 "use client";
 import BottomFooter from "@/components/bottomFooter";
-import LetsTalk from "@/components/letsTalk";
+import LetsTalk from "@/components/re/letsTalk";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";
 import { motion, useAnimation, useInView } from "framer-motion";

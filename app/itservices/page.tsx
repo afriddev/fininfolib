@@ -1,5 +1,5 @@
 import BottomFooter from "@/components/bottomFooter"
-import LetsTalk from "@/components/letsTalk"
+import LetsTalk from "@/components/re/letsTalk"
 
 const IteServices: () => void = () => {
     return (
