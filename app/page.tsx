@@ -19,7 +19,7 @@ export default function Home() {
  
   return (
     <>
-      <motion.div
+      <motion.main
         initial="initial"
         animate="animate"
         variants={op}
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="mt-6">
           <BottomFooter />
         </div>
-      </motion.div>
+      </motion.main>
     </>
   );
 }

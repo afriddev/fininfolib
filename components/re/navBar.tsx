@@ -41,8 +41,8 @@ function LapView({ setopen }) {
   return (
     <>
       <div className="">
-        <div className="flex w-full  gap-x-[15vh] pr-[10vh] justify-center items-center ">
-          <li className="flex gap-x-[6vh]  text-lg justify-center items-center">
+        <div className="flex w-full xl:gap-x-[15vh] xl:pr-[10vh]  gap-x-[7vh] pr-[7vh] justify-center items-center ">
+          <li className="flex gap-x-[4vh] xl:gap-x-[6vh] text-lg justify-center items-center">
             <Link className=" flex border px-6 rounded-md py-2  hover:bg-pH hover:text-white "
              onClick={setopen}
               href={'/'}>Home</Link>
@@ -71,7 +71,7 @@ function LapView({ setopen }) {
             ease:[0.6,0.01,0.05,0.95]
           }}
           >
-           <Link className="text-lg rounded-lg px-6 bg-pH py-2 text-white
+           <Link className="text-lg rounded-lg px-8 bg-pH py-3 text-white
            " onClick={setopen} href={'/login'}>Login</Link></motion.li>
         </div>
 
