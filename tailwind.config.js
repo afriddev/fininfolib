@@ -91,7 +91,7 @@ module.exports = {
         'sH':"#010521",
 
         'primary':"#0d1e67",
-        'lightBlue':'#007bff',
+        'lightBlue':'#fafcff',
         'darkBlue':'#010521',
         'lightGreen':'#048071',
         "lightOrange":'#ef8b33',
