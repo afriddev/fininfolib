@@ -8,7 +8,7 @@ export default function BottomFooter() {
             items-center p-4 text-xs">
                 <h2 className='text-3xl text-pH font-bold '>FIN INFOLIB</h2>
                 <div className=' w-full p-4 flex justify-center items-center pt-6 pb-6 md:flex-col'>
-                    <div className='flex text-[14px] text-gray-300 flex-col  w-full gap-y-3 list-none md:flex md:flex-row
+                    <div className='flex text-[14px] text-gray-400 flex-col  w-full gap-y-3 list-none md:flex md:flex-row
                     md:gap-x-10 md:pl-14 md:pr-10 justify-center items-center
                    
                    '>
@@ -17,7 +17,7 @@ export default function BottomFooter() {
                         <li><Link href={'/outsourcing'}>Out Sourcing</Link></li>
                         <li><Link href={'/customer-support'}>Customer Support </Link></li>
                     </div>
-                    <div className='flex text-[14px] text-gray-300 flex-col  w-full gap-y-3 list-none justify-center items-center
+                    <div className='flex text-[14px] text-gray-400 flex-col  w-full gap-y-3 list-none justify-center items-center
                     md:flex md:flex-row
                     md:gap-x-10 md:pl-10 md:pr-10 md:pt-6'>
                         <li><Link href={'/accessibility'}>Accessibility</Link></li>
@@ -29,7 +29,7 @@ export default function BottomFooter() {
                 </div>
 
 
-                <div className="w-2/5 pb-4">
+                <div className="w-2/5 pb-4 lg:w-1/6">
                     <ul className='flex justify-between'>
 
                         <a className='text-white bg-gray-800 rounded-md w-fit h-fit px-1 py-1 text-3xl font-bold'><CiFacebook /></a>
