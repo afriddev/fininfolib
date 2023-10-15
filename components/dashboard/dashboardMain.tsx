@@ -1,7 +1,8 @@
 "use client";
 import { GrNotification } from "react-icons/gr";
 import { AiOutlineFall, AiOutlineRise } from "react-icons/ai";
-import { VictoryBar, VictoryChart } from "victory";
+import { VictoryBar, VictoryChart, VictoryPie, VictoryTooltip } from "victory";
+import { useState } from "react";
 
 const DashboardMain = () => {
   const data = [
@@ -11,6 +12,13 @@ const DashboardMain = () => {
     { x: "july 03", y: 96 },
     { x: "aug 03", y: 104 },
   ];
+  const [label, setLabel] = useState(false);
+  const data1 = [
+    { x: " ", y: 120 },
+    { x: " ", y: 120 },
+    { x: " ", y: 120 },
+  ];
+
   return (
     <>
       <main className="w-full h-[90vh] bg-lightBlue overflow-auto ">
@@ -120,42 +128,89 @@ const DashboardMain = () => {
               </div>
             </div>
 
-            <div className="p-6">
-              <div className="flex flex-col  w-3/5 h-fit rounded-xl shadow-xl bg-white ">
+            <div className="p-6 flex justify-evenly">
+              <div className="flex flex-col  w-fit h-[40vh] rounded-xl shadow-xl bg-white ">
                 <div>
                   <label className=" flex text-zinc-900 text-2xl pt-10 pl-10  ">
                     Job Statistics
                   </label>
                 </div>
-                <div className="pl-10 pr-10">
-                  <VictoryChart
-                    minDomain={0}
-                    domainPadding={{ x: 20 }}
-                    width={600}
-                    height={240}
-                  >
-                    <VictoryBar
-                      style={{ data: { fill: "#2de80c" } }}
-                      cornerRadius={{
-                        bottom: () => 5,
-                        top: () => 5,
-                      }}
-                      y0={(d) => d.y - (d.y - 3)}
-                      data={data}
-                      animate={{
-                        onEnter: {
-                          duration: 1500,
-                        },
-                      }}
-                    />
-                  </VictoryChart>
+                <div className="pl-10 pr-10 flex gap-x-6">
+                  <div className="flex  rotate-180 justify-center items-center">
+                    <label
+                      style={{ writingMode: "vertical-rl" }}
+                      className="flex  rotate-180 "
+                    >
+                      # No of candidates
+                    </label>
+                  </div>
+                  <div>
+                    <VictoryChart
+                      minDomain={0}
+                      domainPadding={{ x: 20 }}
+                      width={600}
+                      height={240}
+                    >
+                      <VictoryBar
+                        style={{ data: { fill: "#2de80c" } }}
+                        cornerRadius={{
+                          bottom: () => 5,
+                          top: () => 5,
+                        }}
+                        y0={(d) => d.y - (d.y - 3)}
+                        data={data}
+                        animate={{
+                          onEnter: {
+                            duration: 1500,
+                          },
+                        }}
+                      />
+                    </VictoryChart>
+                  </div>
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center p-6">
                   <div className="flex justify-center items-center gap-x-4">
                     <a className="w-4 h-4 rounded-full bg-green"></a>
                     <label className="text-xl text-center">Job Interview</label>
                   </div>
-
+                </div>
+              </div>
+              <div className="flex flex-col  rounded-xl shadow-xl w-fit pl-6 pr-20 h-[40vh]  bg-white">
+                <div className=" pr-6 pt-6">
+                  <label className="text-xl  text-zinc-800">Working Format</label>
+                </div>
+                <div className="pl-20">
+                  <VictoryPie
+                    padAngle={({ datum }) => 6}
+                    animate={{
+                      duration: 2000,
+                    }}
+                    innerRadius={(val) => {
+                      return 120;
+                    }}
+                    width={280}
+                    height={280}
+                    colorScale={["#8142f5", "#2de80c", "#f5e945"]}
+                    data={data1}
+                  />
+                </div>
+                <div className="flex justify-between pt-4">
+                  <div className="flex gap-x-2 text-gray-700">
+                    <div className="w-4 rounded-full h-4 bg-g">
+                    </div>
+                    <label>Hybrid</label>
+                  </div>
+                  <div className="flex gap-x-2 text-gray-700">
+                    <div className="w-4 rounded-full h-4 bg-p">
+                    </div>
+                    <label>Hybrid</label>
+                  </div>
+                  <div className="flex gap-x-2 text-gray-700">
+                    <div className="w-4 rounded-full h-4 bg-y">
+                    </div>
+                    <label>Hybrid</label>
+                  </div>
+                  
                 </div>
               </div>
             </div>
