@@ -19,17 +19,17 @@ const CustomerSupport: () => void = () => {
                     </p>
                 </div>
                 <div className="p-6 mt-4 relative  lg:mt-10">
-                    <div className="hidden lg:block absolute top-0 right-0 w-20 h-40">
+                    <div className="hidden lg:block absolute top-0 right-0 lg:w-14 xl:w-20 xl:h-40">
                         <img src="ark1.png" />
 
                     </div>
-                    <div className="flex flex-col lg:grid  lg:grid-cols-2">
-                        <div className="lg:p-20 ">
+                    <div className="flex flex-col lg:grid  lg:grid-cols-2 justify-center items-center md:grid md:grid-cols-2">
+                        <div className="lg:p-10 xl:p-10">
                             <img src="partnership.webp" />
 
                         </div>
-                        <div className="lg:p-20">
-                            <p className="pt-4 tetx-md text-gray-700 lg:text-lg" >
+                        <div className="lg:p-10 xl:p-20 md:p-10">
+                            <p className="pt-4 text-md text-gray-700 md:text-xs lg:text-md xl:text-lg " >
                                 Fininfolib has established partnerships with clients to facilitate
                                 the smooth transition of critical business processes to our state-of-the-art BPO
                                 service delivery center. Our track record speaks for itself, as we have
@@ -48,16 +48,16 @@ const CustomerSupport: () => void = () => {
                         </div>
 
                     </div>
-                    <div className="lg:grid lg:grid-cols-2">
-                        <div className=" lg:p-20 ">
-                            <p className="pt-4 tetx-md text-gray-800">
+                    <div className="lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
+                        <div className=" lg:p-10 xl:p-20">
+                            <p className="pt-4 text-md text-gray-800 md:text-xs lg:text-md ">
                                 At Fininfolib, we offer an extensive range of business process services
                                 to industry leaders in multiple countries, including India, UK, USA, Australia, Middle East,
                                 and Southeast Asia. Our primary objective is to provide end-user customer satisfaction while
                                 ensuring optimal ROI for our
                                 clients in both front and back-office outsourcing requirements.
                             </p>
-                            <p className="pt-4 tetx-md text-gray-800">
+                            <p className="pt-4 tetx-md text-gray-800 md:text-xs lg:text-md ">
                                 At Fininfolib, we provide customized BPO services that cater to every business requirement.
                                 Our track record speaks for itself, as we have consistently delivered exceptional BPO services to
                                 various industries. Our main focus is to provide a delightful customer experience while ensuring optimal
@@ -73,8 +73,9 @@ const CustomerSupport: () => void = () => {
                     </div>
 
                 </div>
-                <div className="flex relative flex-col p-4 mt-6 gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-10 lg:p-28  ">
-                    <div className="hidden lg:block absolute top-0 left-0 w-20">
+                <div className="flex relative flex-col p-4 mt-6 gap-y-6 lg:grid md:grid md:grid-cols-2 md:gap-x-6
+                 lg:grid-cols-2 xl:grid xl:grid-cols-3 lg:gap-x-10 lg:p-28  ">
+                    <div className="hidden lg:block absolute top-0 left-0 lg:w-16 xl:w-20  ">
                         <img src="ark2.png" />
 
                     </div>
@@ -169,10 +170,11 @@ const CustomerSupport: () => void = () => {
 
                 </div>
                 <div className="p-4 ">
-                    <div className="bg-white flex flex-col p-4 rounded-2xl shadow-2xl lg:grid lg:grid-cols-2 lg:justify-center lg:items-center">
+                    <div className="bg-white flex flex-col p-4 rounded-2xl shadow-2xl lg:grid lg:grid-cols-2
+                    md:grid md:grid-cols-2 md:justify-center md:items-center lg:justify-center lg:items-center">
                         <div className="lg:p-14 lg:justify-center lg:items-center">
                             <label className="text-2xl font-bold pt-4 text-pH pb-4 lg:text-3xl lg:mb-20" >Why Choose Us</label>
-                            <p className="font-light text-sm pb-3 lg:text-lg lg:pt-14">
+                            <p className="font-light text-sm pb-3 lg:text-md xl:text-lg lg:pt-14 md:text-xs">
                                 We understand that every business is unique, and we work closely with our
                                 clients to deeply analyze their business and fulfill all their requirements.
                                 Whether you are looking for cost-effective solutions, technical improvements,
@@ -180,7 +182,7 @@ const CustomerSupport: () => void = () => {
                                 leading BPO service provider and customer service outsourcing provider.
 
                             </p>
-                            <p className="font-light text-sm pb-3 lg:text-lg">
+                            <p className="font-light text-sm pb-3 lg:text-md xl:text-lg md:text-xs">
                                 We pride ourselves on offering flexible business solutions and unique offerings
                                 that allow our clients to easily expand their business operations in the long run.
                                 Our team of experts is dedicated to providing high-quality services that exceed our clients'
