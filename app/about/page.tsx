@@ -2,7 +2,7 @@
 import Letter from "@/components/about/letter";
 import Partners from "@/components/about/partners";
 import Technologies from "@/components/about/technologies";
-import BottomFooter from "@/components/bottomFooter";
+import BottomFooter from "@/components/re/bottomFooter";
 import LetsTalk from "@/components/re/letsTalk";
 import op from "@/utils/op";
 import { motion } from "framer-motion";

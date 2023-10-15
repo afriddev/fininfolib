@@ -1,4 +1,4 @@
-import BottomFooter from "@/components/bottomFooter"
+import BottomFooter from "@/components/re/bottomFooter"
 import LetsTalk from "@/components/re/letsTalk"
 
 const CustomerSupport: () => void = () => {

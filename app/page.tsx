@@ -1,5 +1,5 @@
 "use client";
-import BottomFooter from "@/components/bottomFooter";
+import BottomFooter from "@/components/re/bottomFooter";
 import LetsTalk from "@/components/re/letsTalk";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";

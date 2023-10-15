@@ -1,4 +1,4 @@
-import BottomFooter from "@/components/bottomFooter"
+import BottomFooter from "@/components/re/bottomFooter"
 import ItConsulting from "@/components/itservices/itConsulting"
 import OurExpertise from "@/components/itservices/ourExpertise"
 import WebDesign from "@/components/itservices/webDesign"
