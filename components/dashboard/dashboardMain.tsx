@@ -1,6 +1,16 @@
+"use client";
 import { GrNotification } from "react-icons/gr";
 import { AiOutlineFall, AiOutlineRise } from "react-icons/ai";
+import { VictoryBar, VictoryChart } from "victory";
+
 const DashboardMain = () => {
+     const data = [
+        { x: "windows", y: 300 },
+        { x: "mac 0s", y: 250 },
+        { x: "android", y: 800 },
+        { x: "ios", y: 120 },
+        { x: "others", y: 100 }
+      ]
   return (
     <>
       <main className="w-full h-[90vh] bg-lightBlue ">
@@ -77,7 +87,7 @@ const DashboardMain = () => {
                   <div className="flex flex-col p-6 w-1/5 h-[15vh] rounded-xl shadow-lg justify-center bg-white">
                     <div>
                       <label className="text-bold text-[22px] font-mono text-black">
-                        Total Employees
+                        Job Applied
                       </label>
                     </div>
                     <div className="flex justify-between pt-4 ">
@@ -106,13 +116,34 @@ const DashboardMain = () => {
                       </div>
                     </div>
                   </div>
-                  
                 </div>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <div className="flex  w-4/6 h-[20vh] rounded-xl shadow-xl bg-white ">
+                <VictoryChart minDomain={0} domainPadding={{ x: 20 }} width={1000}>
+                  <VictoryBar
+                    style={{ data: { fill: "#c43a31" } }}
+                    cornerRadius={{
+                      bottom: () => 5,
+                      top: () => 5,
+                    }}
+                    y0={(d) => d.y - (d.y - 30)}
+                    data={data}
+                    animate={{
+                      onEnter: {
+                        duration: 1500,
+                      },
+                    }}
+                  />
+                </VictoryChart>
               </div>
             </div>
           </div>
         </section>
       </main>
+
     </>
   );
 };
