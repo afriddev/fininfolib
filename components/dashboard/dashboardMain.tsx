@@ -128,7 +128,7 @@ const DashboardMain = () => {
               </div>
             </div>
 
-            <div className="p-6 flex justify-evenly">
+            <div className="p-6 flex justify-evenly gap-x-6">
               <div className="flex flex-col  w-fit h-[40vh] rounded-xl shadow-xl bg-white ">
                 <div>
                   <label className=" flex text-zinc-900 text-2xl pt-10 pl-10  ">
