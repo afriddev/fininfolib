@@ -89,7 +89,7 @@ module.exports = {
         'o':"#ff5400",
         'pH':"#007bff",
         'sH':"#010521",
-
+        'green':"#2de80c",
         'primary':"#0d1e67",
         'lightBlue':'#fafcff',
         'darkBlue':'#010521',

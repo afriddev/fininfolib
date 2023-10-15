@@ -4,16 +4,16 @@ import { AiOutlineFall, AiOutlineRise } from "react-icons/ai";
 import { VictoryBar, VictoryChart } from "victory";
 
 const DashboardMain = () => {
-     const data = [
-        { x: "windows", y: 300 },
-        { x: "mac 0s", y: 250 },
-        { x: "android", y: 800 },
-        { x: "ios", y: 120 },
-        { x: "others", y: 100 }
-      ]
+  const data = [
+    { x: "apr 03", y: 43 },
+    { x: "may 03", y: 72 },
+    { x: "jun 03", y: 22 },
+    { x: "july 03", y: 96 },
+    { x: "aug 03", y: 104 },
+  ];
   return (
     <>
-      <main className="w-full h-[90vh] bg-lightBlue ">
+      <main className="w-full h-[90vh] bg-lightBlue overflow-auto ">
         <section>
           <div>
             <div className="p-6 flex w-full justify-between items-center ">
@@ -121,29 +121,47 @@ const DashboardMain = () => {
             </div>
 
             <div className="p-6">
-              <div className="flex  w-4/6 h-[20vh] rounded-xl shadow-xl bg-white ">
-                <VictoryChart minDomain={0} domainPadding={{ x: 20 }} width={1000}>
-                  <VictoryBar
-                    style={{ data: { fill: "#c43a31" } }}
-                    cornerRadius={{
-                      bottom: () => 5,
-                      top: () => 5,
-                    }}
-                    y0={(d) => d.y - (d.y - 30)}
-                    data={data}
-                    animate={{
-                      onEnter: {
-                        duration: 1500,
-                      },
-                    }}
-                  />
-                </VictoryChart>
+              <div className="flex flex-col  w-3/5 h-fit rounded-xl shadow-xl bg-white ">
+                <div>
+                  <label className=" flex text-zinc-900 text-2xl pt-10 pl-10  ">
+                    Job Statistics
+                  </label>
+                </div>
+                <div className="pl-10 pr-10">
+                  <VictoryChart
+                    minDomain={0}
+                    domainPadding={{ x: 20 }}
+                    width={600}
+                    height={240}
+                  >
+                    <VictoryBar
+                      style={{ data: { fill: "#2de80c" } }}
+                      cornerRadius={{
+                        bottom: () => 5,
+                        top: () => 5,
+                      }}
+                      y0={(d) => d.y - (d.y - 3)}
+                      data={data}
+                      animate={{
+                        onEnter: {
+                          duration: 1500,
+                        },
+                      }}
+                    />
+                  </VictoryChart>
+                </div>
+                <div className="flex justify-center items-center">
+                  <div className="flex justify-center items-center gap-x-4">
+                    <a className="w-4 h-4 rounded-full bg-green"></a>
+                    <label className="text-xl text-center">Job Interview</label>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
-
     </>
   );
 };

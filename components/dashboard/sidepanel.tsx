@@ -7,7 +7,7 @@ import { IoSettingsOutline } from "react-icons/io5"
 const Sidepanel = ()=>{
     return(
         <>
-            <section className="">
+            <section className=" w-fit pr-16 overflow-hidden">
                 <div className=" w-fit  h-[90vh] bg-white px-10 py-4 border-r border-zinc-400 shadow-lg">
                     <div className="flex flex-col gap-y-20 pt-10 ">
                         <div className="flex  justify-center w-fit items-center  text-purple-600 bg-purple-100  h-fit
