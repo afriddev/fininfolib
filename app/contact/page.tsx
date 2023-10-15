@@ -25,7 +25,7 @@ const Contact: () => void = () => {
 
                 </div>
                 <div className="mt-10">
-                    {/* <LetsTalk /> */}
+                    <LetsTalk />
                 </div>
                 <div className="mt-20">
                     <BottomFooter />
