@@ -3,6 +3,7 @@ import { GrNotification } from "react-icons/gr";
 import { AiOutlineFall, AiOutlineRise } from "react-icons/ai";
 import { VictoryBar, VictoryChart, VictoryPie, VictoryTooltip } from "victory";
 import { useState } from "react";
+import { BsChevronDown } from "react-icons/bs";
 
 const DashboardMain = () => {
   const data = [
@@ -177,7 +178,9 @@ const DashboardMain = () => {
               </div>
               <div className="flex flex-col  rounded-xl shadow-xl w-fit pl-6 pr-20 h-[40vh]  bg-white">
                 <div className=" pr-6 pt-6">
-                  <label className="text-xl  text-zinc-800">Working Format</label>
+                  <label className="text-2xl  text-zinc-800">
+                    Working Format
+                  </label>
                 </div>
                 <div className="pl-20">
                   <VictoryPie
@@ -196,21 +199,79 @@ const DashboardMain = () => {
                 </div>
                 <div className="flex justify-between pt-4">
                   <div className="flex gap-x-2 text-gray-700">
-                    <div className="w-4 rounded-full h-4 bg-g">
-                    </div>
+                    <div className="w-4 rounded-full h-4 bg-g"></div>
                     <label>Hybrid</label>
                   </div>
                   <div className="flex gap-x-2 text-gray-700">
-                    <div className="w-4 rounded-full h-4 bg-p">
-                    </div>
-                    <label>Hybrid</label>
+                    <div className="w-4 rounded-full h-4 bg-p"></div>
+                    <label>Remote</label>
                   </div>
                   <div className="flex gap-x-2 text-gray-700">
-                    <div className="w-4 rounded-full h-4 bg-y">
-                    </div>
+                    <div className="w-4 rounded-full h-4 bg-y"></div>
                     <label>Hybrid</label>
                   </div>
-                  
+                </div>
+              </div>
+            </div>
+            <div className=" w-full  p-6 ">
+              <div className=" flex flex-col  w-full h-fit p-6 bg-white rounded-lg shadow-xl  ">
+                <div>
+                  <label className=" text-2xl pt-6 pl-10 text-zinc-800 ">
+                    Employee Status
+                  </label>
+                </div>
+                <div className="flex w-full p-6 justify-evenly">
+                  <div className="flex flex-col  w-1/4 ">
+                    <div className="flex pl-20 justify-center gap-x-2  items-center h-fit w-fit ">
+                      <label className="text-xl font-bold text-sH">Name </label>
+                      <a className="text-2xl text-sH">
+                        <BsChevronDown />
+                      </a>
+                    </div>
+                    <div className="flex items-center  gap-x-4 p-2 pt-6 ">
+                      <div className=" w-14 h-14 rounded-full bg-p">
+                      </div>
+                      <div>
+                        <label className=" text-zinc-700 text-lg">Shaik Afrid</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-1/5 flex flex-col justify-center items-center">
+                    <div className="flex justify-center gap-x-2  items-center h-fit w-fit ">
+                      <label className="text-xl font-bold text-sH">
+                        Email{" "}
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
+                      <div>
+                        <label className=" text-zinc-700 text-lg">afridayan01@gmail.com</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-1/5 flex flex-col justify-center items-center ">
+                    <div className="flex justify-center gap-x-2  items-center h-fit w-fit ">
+                      <label className="text-xl font-bold text-sH">
+                        Job Title{" "}
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
+                      <div>
+                        <label className=" text-zinc-700 text-lg">Web Developer</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-1/6 flex flex-col justify-center items-center">
+                    <div className="flex justify-center gap-x-2  items-center h-fit w-fit ">
+                      <label className="text-xl font-bold text-sH">
+                        Status{" "}
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
+                      <div>
+                        <label className=" text-p bg-purple-100 h-fit w-fit px-6 py-2 text-lg rounded-lg ">Working</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
