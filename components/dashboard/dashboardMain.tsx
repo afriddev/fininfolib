@@ -7,11 +7,11 @@ import { BsChevronDown } from "react-icons/bs";
 
 const DashboardMain = () => {
   const data = [
-    { x: "apr 03", y: 43 },
-    { x: "may 03", y: 72 },
-    { x: "jun 03", y: 22 },
-    { x: "july 03", y: 96 },
-    { x: "aug 03", y: 104 },
+    { x: "apr 03", y: 23 },
+    { x: "may 03", y: 29 },
+    { x: "jun 03", y: 32 },
+    { x: "july 03", y: 41 },
+    { x: "aug 03", y: 18 },
   ];
   const [label, setLabel] = useState(false);
   const data1 = [
@@ -171,7 +171,7 @@ const DashboardMain = () => {
                 </div>
                 <div className="flex justify-center items-center p-6">
                   <div className="flex justify-center items-center gap-x-4">
-                    <a className="w-4 h-4 rounded-full bg-green"></a>
+                    <a className="w-4 h-4 rounded-full bg-pureGreen"></a>
                     <label className="text-xl text-center">Job Interview</label>
                   </div>
                 </div>
@@ -229,7 +229,8 @@ const DashboardMain = () => {
                       </a>
                     </div>
                     <div className="flex items-center  gap-x-4 p-2 pt-6 ">
-                      <div className=" w-14 h-14 rounded-full bg-p">
+                      <div className=" w-14 h-14 rounded-full">
+                        <img src="my.jpeg" className="rounded-full ojject-fill "/>
                       </div>
                       <div>
                         <label className=" text-zinc-700 text-lg">Shaik Afrid</label>
