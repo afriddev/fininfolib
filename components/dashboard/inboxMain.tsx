@@ -1,4 +1,5 @@
-import { CiCalendarDate } from "react-icons/ci";
+import { AiOutlineDelete } from "react-icons/ai";
+import { CiCalendarDate, CiCircleRemove } from "react-icons/ci";
 
 const InboxMain = () => {
   return (
@@ -59,7 +60,7 @@ const InboxMain = () => {
                         </div>
                         <div className="flex flex-col pl-10 ">
                           <h2 className="text-lg text-black">Shaik afrid</h2>
-                          <div className="flex justify-center items-center">
+                          <div className="flex justify-center items-center gap-x-2">
                             <label className="text-xs">Topic: </label>
                             <p className="text-xs text-gray-700">
                               About delivery time...
@@ -82,10 +83,14 @@ const InboxMain = () => {
                         Enhance customer experience with a user-friendly interface, secure online ordering,
                          and efficient order management via our app or website....</p>
                     </div>
-                    <div className="flex pl-20 pt-2">
+                    <div className="flex pl-20 pt-2 w-full justify-between">
                         <div className="flex gap-x-2">
                             <a className="text-2xl text-gray-800"><CiCalendarDate/></a>
                             <label className="text-lg text-gray-700">Monday</label>
+                        </div>
+                        <div className="flex gap-x-2 bg-orange-50 justify-center items-center h-fit w-fit px-4 py-2 rounded-xl">
+                            <label className="text-red text-lg">Delete</label>
+                            <a className="text-xl font-bold text-red"><AiOutlineDelete/></a>
                         </div>
 
                     </div>
