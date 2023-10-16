@@ -1,4 +1,5 @@
 import DashboardMain from "@/components/dashboard/dashboardMain"
+import EmployeeMain from "@/components/dashboard/employeeMain."
 import InboxMain from "@/components/dashboard/inboxMain"
 import Sidepanel from "@/components/dashboard/sidepanel"
 
@@ -9,8 +10,8 @@ const Dashboard = () => {
                 <section>
                     <div className="flex">
                         <Sidepanel />
-                        <InboxMain/>
-                        
+                        {/* <InboxMain/> */}
+                        <EmployeeMain/>
                         {/* <DashboardMain /> */}
                     </div>
                 </section>
