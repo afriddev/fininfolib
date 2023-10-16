@@ -1,11 +1,18 @@
+"use client"
 import BottomFooter from "@/components/re/bottomFooter"
 import ItConsulting from "@/components/itservices/itConsulting"
 import OurExpertise from "@/components/itservices/ourExpertise"
 import WebDesign from "@/components/itservices/webDesign"
 import WorkingProccess from "@/components/itservices/workingProccess"
 import LetsTalk from "@/components/re/letsTalk"
+import { useRef } from "react"
 
 const IteServices: () => void = () => {
+    const letsTalkRef = useRef(null)
+  const scrollTo = () => {
+    letsTalkRef.current.scrollIntoView({ behavior: 'smooth' })
+  };
+ 
     return (
         <>
             <div>
@@ -20,7 +27,11 @@ const IteServices: () => void = () => {
                             development and digital marketing.
                         </p>
                         <button className="flex justify-center items-center rounded-3xl mt-8 h-fit w-fit py-2 px-8 text-lg 
-                        text-white bg-darkBlue lg:text-xl lg:py-3 lg:px-14">Contact Us </button>
+                        text-white bg-darkBlue lg:text-xl lg:py-3 lg:px-14" onClick={
+                            ()=>{
+                                scrollTo()
+                            }
+                        }>Contact Us </button>
 
                     </div>
                     <div className="hidden lg:block pl-36 pr-36 p-8">
@@ -35,7 +46,7 @@ const IteServices: () => void = () => {
                 <ItConsulting/>
             </div>
             <div className="mt-10">
-                <LetsTalk />
+                <LetsTalk letsTalkRef={letsTalkRef} />
             </div>
             <div className="mt-10">
                 <BottomFooter />
