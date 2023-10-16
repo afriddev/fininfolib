@@ -1,7 +1,19 @@
+"use client";
 import { FaUserTie } from "react-icons/fa";
 import { GrUpgrade } from "react-icons/gr";
+import { VictoryPie } from "victory";
 
 const EmployeeMain = () => {
+  const data1 = [
+    { x: " ", y: 180 },
+    { x: " ", y: 180 },
+  ];
+  const data2 = [
+    { x: " ", y: 180 },
+    { x: " ", y: 130 },
+    { x: " ", y: 50 },
+  ];
+  
   return (
     <>
       <main className="bg-lightBlue w-full p-6">
@@ -108,6 +120,79 @@ const EmployeeMain = () => {
                     <p className="pt-2 text-md pl-6 text-gray-700">
                       vs Previous Day
                     </p>
+                  </div>
+                </div>
+                <div className="flex w-full pt-6 gap-x-6">
+                  <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
+                    <div className=" pl-6 pt-6">
+                      <label className="text-2xl  text-zinc-800">
+                        Gender Diversity
+                      </label>
+                    </div>
+                    <div className="">
+                      <VictoryPie
+                        padAngle={({ datum }) => 6}
+                        animate={{
+                          duration: 2000,
+                        }}
+                        innerRadius={(val) => {
+                          return 30;
+                        }}
+                        width={200}
+                        height={140}
+                        colorScale={["#8142f5", "#2de80c"]}
+                        data={data1}
+                      />
+                    </div>
+                    <div className="flex justify-evenly pb-4">
+                      <div className="flex gap-x-2 text-gray-700">
+                        <div className="w-4 rounded-full h-4 bg-g"></div>
+                        <label>Male</label>
+                      </div>
+                      <div className="flex gap-x-2 text-gray-700">
+                        <div className="w-4 rounded-full h-4 bg-p"></div>
+                        <label>Female</label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
+                    <div className=" pl-6 pt-6">
+                      <label className="text-2xl  text-zinc-800">
+                        Total Projects
+                      </label>
+                    </div>
+                    <div className="">
+                      <VictoryPie
+                        padAngle={({ datum }) => 6}
+                        animate={{
+                          duration: 2000,
+                        }}
+                        innerRadius={(val) => {
+                          return 30;
+                        }}
+                        width={200}
+                        height={140}
+                        colorScale={["#2de80c", "#007bff","#ff0000"]}
+                        data={data2}
+                      />
+                    </div>
+                    <div className="grid grid-cols-2  pb-4 w-full">
+                      <div className="flex gap-x-2 text-gray-700">
+                        <div className="w-4 rounded-full h-4 bg-g"></div>
+                        <label>Completed</label>
+                      </div>
+                      <div className="flex gap-x-2 text-gray-700">
+                        <div className="w-4 rounded-full h-4 bg-pH"></div>
+                        <label>Working</label>
+                      </div>
+                      <div className="flex gap-x-2 text-gray-700">
+                        <div className="w-4 rounded-full h-4 bg-red"></div>
+                        <label>Pending</label>
+                      </div>
+                      
+                      
+                    </div>
                   </div>
                 </div>
               </div>

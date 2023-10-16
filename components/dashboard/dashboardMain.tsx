@@ -230,10 +230,15 @@ const DashboardMain = () => {
                     </div>
                     <div className="flex items-center  gap-x-4 p-2 pt-6 ">
                       <div className=" w-14 h-14 rounded-full">
-                        <img src="my.jpeg" className="rounded-full ojject-fill "/>
+                        <img
+                          src="my.jpeg"
+                          className="rounded-full ojject-fill "
+                        />
                       </div>
                       <div>
-                        <label className=" text-zinc-700 text-lg">Shaik Afrid</label>
+                        <label className=" text-zinc-700 text-lg">
+                          Shaik Afrid
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -245,7 +250,9 @@ const DashboardMain = () => {
                     </div>
                     <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
                       <div>
-                        <label className=" text-zinc-700 text-lg">afridayan01@gmail.com</label>
+                        <label className=" text-zinc-700 text-lg">
+                          afridayan01@gmail.com
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -257,7 +264,9 @@ const DashboardMain = () => {
                     </div>
                     <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
                       <div>
-                        <label className=" text-zinc-700 text-lg">Web Developer</label>
+                        <label className=" text-zinc-700 text-lg">
+                          Web Developer
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -269,7 +278,9 @@ const DashboardMain = () => {
                     </div>
                     <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
                       <div>
-                        <label className=" text-p bg-purple-100 h-fit w-fit px-6 py-2 text-lg rounded-lg ">Working</label>
+                        <label className=" text-p bg-purple-100 h-fit w-fit px-6 py-2 text-lg rounded-lg ">
+                          Working
+                        </label>
                       </div>
                     </div>
                   </div>
