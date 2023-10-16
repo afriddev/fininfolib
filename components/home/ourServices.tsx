@@ -1,4 +1,5 @@
 import { useInView } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -50,7 +51,7 @@ const Service2 = () => {
             className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
                 flex justify-center items-center"
           >
-            <img src="itServices.png" className="h-10 w-10" />
+            <img src="outsourcing.png" className="h-10 w-10" />
           </div>
         </div>
 
@@ -62,7 +63,7 @@ const Service2 = () => {
                     absolute top-4 w-full shadow-xl "
           >
             <label className=" py-2 text-white text-md font-bold">
-              DIGITAL IT SERVICES
+            Outsourcing Services
             </label>
           </div>
           <div className="absolute top-14 flex justify-between w-full">
@@ -78,20 +79,20 @@ const Service2 = () => {
                  bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
                  rounded-tl-xl rounded-tr-xl  "
           >
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center list-none ">
               <p className="text-sm text-gray-300 lg:mt-4 ml-5 mr-5 pt-20 ">
-                Our team of experts is dedicated to providing top-tier IT
-                services to help your business and succeed in the digital world.
+              We provide dedicated tech employees to work on your projects, ensuring that you have access 
+              to the right talent to complete your projects.
               </p>
-              <a
+              <li
                 className="flex justify-center mt-4  items-center mb-4
           w-fit h-fit px-8  bg-lt rounded-xl text-white "
               >
-                More{" "}
+                <Link href={'/outsourcing'}>More</Link>
                 <span className="pl-2 ">
                   <AiOutlineArrowRight />
                 </span>
-              </a>
+              </li>
             </div>
           </div>
         </div>
@@ -142,20 +143,20 @@ const Service1 = () => {
                  bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
                  rounded-tl-xl rounded-tr-xl  "
           >
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center list-none ">
               <p className="text-sm text-gray-300 lg:mt-4 ml-5 mr-5 pt-20 ">
                 Our team of experts is dedicated to providing top-tier IT
                 services to help your business and succeed in the digital world.
               </p>
-              <a
+              <li
                 className="flex justify-center mt-4  items-center mb-4
           w-fit h-fit px-8  bg-lt rounded-xl text-white "
               >
-                More{" "}
+                <Link href={'/itservices'}>More</Link>
                 <span className="pl-2 ">
                   <AiOutlineArrowRight />
                 </span>
-              </a>
+              </li>
             </div>
           </div>
         </div>
@@ -205,21 +206,21 @@ const Service3 = () => {
                  bg-gradient-to-tr from-darkBlue to-darkBlue ml-6 mr-6
                  rounded-tl-xl rounded-tr-xl "
           >
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center list-none">
               <p className="text-sm text-gray-300 ml-5 mr-5 pt-20 ">
                 Fin infolib has established partnership with clients to
                 facilitate the smooth transition of critical business processes
                 to our state-of-the-art.
               </p>
-              <a
+              <li
                 className="flex justify-center mt-4 items-center mb-4
           w-fit h-fit px-8  bg-lt rounded-xl text-white"
               >
-                More{" "}
+                <Link href={'/customer-support'}>More</Link>
                 <span className="pl-2">
                   <AiOutlineArrowRight />
                 </span>
-              </a>
+              </li>
             </div>
           </div>
         </div>

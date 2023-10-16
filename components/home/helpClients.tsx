@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const HelpClients = () => {
@@ -28,7 +29,7 @@ const HelpClients = () => {
               "
               >
                 <div className="flex justify-start items-start lg:justify-center lg:items-center">
-                  <h3 className="text-2xl mt-5 font-bold pl-16 text-orange-500 lg:mr-40 ">
+                  <h3 className="text-2xl mt-5 font-bold pl-16 text-orange-500 pt-6 ">
                     About Us{" "}
                   </h3>
                 </div>
@@ -37,14 +38,14 @@ const HelpClients = () => {
                     We help clients invent their future.
                   </label>
                   <div className=" flex flex-col space-y-8 ml-10 lg:ml-48 md:ml-28 md:mr-28 lg:mr-44 mr-4 mt-8 text-gray-300">
-                    <p className="text-md md:text-xl ">
+                    <p className="text-md md:text-xl lg:text-xs  xl:text-lg">
                       At Fin infolib , we are committed to delivering
                       exceptional customer service and producing high-quality
                       work. Our team is dedicated to providing tailored
                       solutions that meet your specific requirements and
                       preferences.
                     </p>
-                    <p>
+                    <p className="lg:text-xs xl:text-lg">
                       We work closely with our clients to ensure that their
                       projects are completed within their specified timeframe,
                       budget, and to the highest standards.
@@ -55,7 +56,7 @@ const HelpClients = () => {
                   bg-o1 h-fit w-fit mt-6 px-10 py-3 text-xl items-center rounded-3xl
                   shadow-xl "
                       >
-                        Read More
+                        <Link href={'/itservices'}>Read More</Link>
                         <span className="pl-2 text-2xl">
                           <AiOutlineArrowRight />
                         </span>
