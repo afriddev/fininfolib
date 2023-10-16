@@ -15,7 +15,6 @@ const Sidepanel = ({ setindex, index }) => {
                         } className={index == 0 ? "flex  justify-center w-fit items-center  text-purple-600 bg-purple-100  h-fit px-10 py-2 gap-x-4 rounded-full" :
                             "flex  justify-center w-fit items-center  text-zinc-600  h-fit px-10 py-2 gap-x-4 rounded-full"}>
                             <a className=" text-3xl "><BiSolidDashboard /></a>
-
                             <label className="text-2xl pt-1  font-mono text-center   ">Dashboard</label>
                         </div>
                         <div onClick={

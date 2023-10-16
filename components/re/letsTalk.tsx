@@ -2,13 +2,13 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function LetsTalk() {
+export default function LetsTalk({letsTalkRef}) {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
     <>
-      <section>
-        <div className=" flex flex-col relative lg:mt-12">
+      <section ref={letsTalkRef}>
+        <div id="contact" className=" flex flex-col relative lg:mt-12">
           <div>
             <img src="ark2.png" className="absolute hidden lg:block w-20 h-40 top-0 left-0 " />
           </div>

@@ -16,6 +16,10 @@ import HelpClients from "@/components/home/helpClients";
 export default function Home() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const letsTalkRef = useRef(null)
+  const scrollTo = () => {
+    letsTalkRef.current.scrollIntoView({ behavior: 'smooth' })
+  };
  
   return (
     <>
@@ -28,12 +32,12 @@ export default function Home() {
           delay: 0.1,
         }}
       >
-        <Hero />
+        <Hero scrollTo={scrollTo}  />
         <Optimizing/>
         <KeyDifference />
         <OurServices/>
         <BridgingTech/>
-        <HelpClients/>
+        <HelpClients />
         
         
         
@@ -44,7 +48,7 @@ export default function Home() {
         
         
 
-        <LetsTalk />
+        <LetsTalk letsTalkRef={letsTalkRef} />
         <div className="mt-6">
           <BottomFooter />
         </div>

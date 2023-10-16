@@ -4,7 +4,7 @@ import sfl from "@/utils/sfl";
 import { FaArrowRight } from "react-icons/fa";
 
 
-const Hero= () => {
+const Hero= ({scrollTo}) => {
     const ref = useRef(null);
     const isInView = useInView(ref,{once:true});
   return (
@@ -49,7 +49,9 @@ const Hero= () => {
               skilled resources who specialize in talent and can undertake
               projects of varying magnitudes, from small to large-scale.
             </p>
-            <button
+            <button onClick={()=>{
+              scrollTo()
+            }}
             style={{
                 transform:isInView?"none":"translateX(-100vw)",
                 transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.6s"
