@@ -14,16 +14,13 @@ const InboxMain = () => {
                 </label>
               </div>
               <div className=" h-[77vh] p-4 w-full bg-white rounded-lg overflow-auto no-scrollbar space-y-4 mt-4 ">
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
-                <Employee />
+                <Employee img={'my.jpeg'} name={"Shaik Afrid"} role={"Web Developer"} status={true} messages={0} />
+                <Employee img={'ayesha.jpeg'} name={"Shaik Ayesha"} role={"UI&UX Designer"} status={false} messages={0}/>
+                <Employee img={'employee2.jpg'} name={"John Ripper"} role={"App Developer"} status={false} messages={3}/>
+                <Employee img={'employee3.jpg'} name={"Neha Johnson"} role={"NodeJS Developer"} status={true} messages={1}/>
+                <Employee img={'employee4.jpg'} name={"Pooja Kerthi"} role={"JavaScript Developer"} status={true} messages={5}/>
+                <Employee img={'employee5.jpg'} name={"Robert "} role={"App Developer"} status={false} messages={0}/>
+                <Employee img={'employee6.jpeg'} name={"Cris"} role={"React Developer"} status={true} messages={1}/>
               </div>
             </div>
             <div className="w-full ml-6 mr-6 flex flex-col bg-white rounded-xl">
@@ -105,27 +102,29 @@ const InboxMain = () => {
   );
 };
 
-function Employee() {
+function Employee({img,name,role,status,messages}) {
   return (
     <>
       <div className="flex justify-between items-center w-full rounded-lg shadow-xl bg-white p-2 cursor-pointer">
         <div className="flex">
-          <div className="w-12 ml-4 h-12 rounded-full  ">
-            <img src="my.jpeg" className="rounded-full object-fill" />
+          <div className="w-12 ml-4 h-12 rounded-full object-fill ">
+            <img src={img} className="rounded-full w-12 h-12 object-cover" />
           </div>
           <div className="pl-6 ">
-            <div className="flex  justify-center items-center gap-x-2">
-              <h2 className="text-lg text-sH ">Shaik Afrid</h2>
-              <div className="w-3 h-3 rounded-full bg-pureGreen"></div>
+            <div className="flex  items-center gap-x-2">
+              <h2 className="text-lg text-sH ">{name}</h2>
+              {status?<div className="w-3 h-3 rounded-full bg-pureGreen"></div>:null}
             </div>
-            <a className="text-xs text-zinc-500">Web Developer</a>
+            <a className="text-xs text-zinc-500">{role}</a>
           </div>
         </div>
-        <div className="pr-6">
-          <div className="w-6 h-6 rounded-full border border-red flex justify-center items-center">
-            <label className="text-red p-2">3</label>
+        {
+          messages >= 1?<div className="pr-6">
+          <div className="w-6 h-6 rounded-full bg-purple-100 flex justify-center items-center">
+            <label className="text-p ">{messages}</label>
           </div>
-        </div>
+        </div>:null
+        }
       </div>
     </>
   );
