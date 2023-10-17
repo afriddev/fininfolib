@@ -12,7 +12,31 @@ const hrSchema = new Schema(
             type:String,
             immutable:true,
             min:7
+        },
+        role:{
+            type:Number
+        },
+        roleName:{
+            type:String
+
+        },
+        employeeData:{
+            type:{
+            },
+            default:{
+                employeeCount:7
+            }
+        },
+        jobData:{
+            type:{
+  
+            },
+            default:{
+                jobsCount:3
+            }
+
         }
+
     }
 )
 const hrModel = models.hr || mongoose.model("hr",hrSchema)

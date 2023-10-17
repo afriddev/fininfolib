@@ -6,7 +6,8 @@ import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 
 const DashboardMain = ({userData}) => {
-  console.log(userData)
+  
+  
   const data = [
     { x: "apr 03", y: 23 },
     { x: "may 03", y: 29 },
@@ -49,7 +50,7 @@ const DashboardMain = ({userData}) => {
                 <div>
                   <div className="flex flex-col gap-x-2 justify-start items-end">
                     <h3 className="text-xl font-bold">{userData.name}</h3>
-                    <h3 className="text-md ">Lead HR</h3>
+                    <h3 className="text-md ">{userData.roleName}</h3>
                   </div>
                 </div>
                 <div>
@@ -69,7 +70,7 @@ const DashboardMain = ({userData}) => {
                       </label>
                     </div>
                     <div className="flex justify-between pt-4 ">
-                      <a className="font-bold text-sH text-3xl ">256</a>
+                      <a className="font-bold text-sH text-3xl ">{userData.employeeData.employeeCount}</a>
                       <div className="flex list-none pl-2 pr-2 pt-1 pb-1 rounded-xl bg-green-100 w-fit h-fit ">
                         <li className="text-green-600 text-xl">
                           <AiOutlineRise />

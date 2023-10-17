@@ -1,29 +1,27 @@
-"use client"
+"use client";
 import Main from "@/components/dashboard/main";
-import addField from "@/create/addField";
-import createTest from "@/create/main";
-import connectMongoDb from "@/lib/mongoDB";
-import getUser from "@/routes/mongo/getUser";
-import { useEffect, useState } from "react";
-const Dashboard = async () => {
-  const [data, setData] = useState("");
-  async function test() {
-    const res = await fetch("api/getUser", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          
-        }),
-      });
-      const user = await res.json()
-    console.log(user[0])
+import addField from "@/lib/methods/addField";
+import getUser from "@/lib/methods/getUser";
+import { useEffect, useLayoutEffect, useState } from "react";
+const Dashboard = () => {
+  const [data, setData] = useState();
+  const [userloaded, setUserLoaded] = useState(false);
+  async function getuser() {
+    const user = await getUser("afridayan01@gmail.com")
+    const addfield = await addField("afridayan01@gmail.com","jobData",{jobsCount:3,
+      jobView:200,
+      jobApplied:91})
+    console.log(addfield)
+    setData(user)
+    setUserLoaded(true)
   }
-  useEffect(() => {
-    test();
-  },[]);
+  useLayoutEffect(() => {
+    getuser();
+  }, []);
 
+  if (!userloaded) {
+    return <div>adsas</div>;
+  }
   return (
     <>
       <main className=" w-full h-[90vh] bg-white">
