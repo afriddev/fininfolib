@@ -4,8 +4,9 @@ import hrModel from "@/models/hr"
 
 const getUser = async(email)=>{
     try{
-        connectMongoDb()
-        const user =await hrModel.find({"email":email})
+        await connectMongoDb()
+        const user = await hrModel.find()
+
         if(user.length >=1 ){
             return user
 
@@ -15,6 +16,8 @@ const getUser = async(email)=>{
         }
     }
     catch{
+        console.log("getUserError")
+        return "sa"
 
     }
 
