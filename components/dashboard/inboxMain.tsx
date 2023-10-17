@@ -1,7 +1,7 @@
 import { AiOutlineDelete } from "react-icons/ai";
 import { CiCalendarDate, CiCircleRemove } from "react-icons/ci";
 
-const InboxMain = () => {
+const InboxMain = ({userData}) => {
   return (
     <>
       <main className=" bg-lightBlue w-full h-[90vh] overflow-auto p-6">
@@ -14,13 +14,17 @@ const InboxMain = () => {
                 </label>
               </div>
               <div className=" h-[77vh] p-4 w-full bg-white rounded-lg overflow-auto no-scrollbar space-y-4 mt-4 ">
-                <Employee img={'my.jpeg'} name={"Shaik Afrid"} role={"Web Developer"} status={true} messages={0} />
-                <Employee img={'ayesha.jpeg'} name={"Shaik Ayesha"} role={"UI&UX Designer"} status={false} messages={0}/>
-                <Employee img={'employee2.jpg'} name={"John Ripper"} role={"App Developer"} status={false} messages={3}/>
-                <Employee img={'employee3.jpg'} name={"Neha Johnson"} role={"NodeJS Developer"} status={true} messages={1}/>
-                <Employee img={'employee4.jpg'} name={"Pooja Kerthi"} role={"JavaScript Developer"} status={true} messages={5}/>
-                <Employee img={'employee5.jpg'} name={"Robert "} role={"App Developer"} status={false} messages={0}/>
-                <Employee img={'employee6.jpeg'} name={"Cris"} role={"React Developer"} status={true} messages={1}/>
+                {
+                  userData.employeeData.employees.map((e)=>{
+                    return(
+                      <Employee img={e.image} name={e.name} role={e.role} status={e.online} messages={e.unSeenMessagesCount} />
+
+                    )
+                  })
+                  
+                }
+
+                
               </div>
             </div>
             <div className="w-full ml-6 mr-6 flex flex-col bg-white rounded-xl">

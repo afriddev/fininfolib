@@ -5,7 +5,6 @@ import EmployeeMain from "@/components/dashboard/employeeMain."
 import InboxMain from "@/components/dashboard/inboxMain"
 import JobsMain from "@/components/dashboard/jobsMain"
 import { useState } from "react"
-import connectMongoDb from "@/lib/mongoDB"
 const Main = ({userData}) => {
     const [index, setIndex] = useState(0)
     function setindex(val: number) {
@@ -19,7 +18,7 @@ const Main = ({userData}) => {
                     index == 0
                         ? <DashboardMain userData={userData} />
                         : index == 1
-                            ? <InboxMain />
+                            ? <InboxMain userData={userData} />
                             : index == 2
                                 ? <EmployeeMain />
                                 : index == 3

@@ -5,21 +5,36 @@ import { VictoryBar, VictoryChart, VictoryPie, VictoryTooltip } from "victory";
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 
-const DashboardMain = ({userData}) => {
-  
-  
+const DashboardMain = ({ userData }) => {
+  console.log(userData.jobData.jobStatistics[0].month);
+  // const data = []
   const data = [
-    { x: "apr 03", y: 23 },
-    { x: "may 03", y: 29 },
-    { x: "jun 03", y: 32 },
-    { x: "july 03", y: 41 },
-    { x: "aug 03", y: 18 },
+    {
+      x: userData.jobData.jobStatistics[0].month,
+      y: userData.jobData.jobStatistics[0].data,
+    },
+    {
+      x: userData.jobData.jobStatistics[1].month,
+      y: userData.jobData.jobStatistics[1].data,
+    },
+    {
+      x: userData.jobData.jobStatistics[2].month,
+      y: userData.jobData.jobStatistics[2].data,
+    },
+    {
+      x: userData.jobData.jobStatistics[3].month,
+      y: userData.jobData.jobStatistics[3].data,
+    },
+    {
+      x: userData.jobData.jobStatistics[4].month,
+      y: userData.jobData.jobStatistics[4].data,
+    },
   ];
   const [label, setLabel] = useState(false);
   const data1 = [
-    { x: " ", y: 120 },
-    { x: " ", y: 120 },
-    { x: " ", y: 120 },
+    { x: " ", y: userData.employeeData.workingFormat[0].employeeCount },
+    { x: " ", y: userData.employeeData.workingFormat[1].employeeCount },
+    { x: " ", y: userData.employeeData.workingFormat[2].employeeCount },
   ];
 
   return (
@@ -70,12 +85,14 @@ const DashboardMain = ({userData}) => {
                       </label>
                     </div>
                     <div className="flex justify-between pt-4 ">
-                      <a className="font-bold text-sH text-3xl ">{userData.employeeData.employeeCount}</a>
+                      <a className="font-bold text-sH text-3xl ">
+                        {userData.employeeData.employeeCount}
+                      </a>
                       <div className="flex list-none pl-2 pr-2 pt-1 pb-1 rounded-xl bg-green-100 w-fit h-fit ">
                         <li className="text-green-600 text-xl">
                           <AiOutlineRise />
                         </li>
-                        <a className="text-green-600 text-xl">16%</a>
+                        <a className="text-green-600 text-xl">{userData.employeeData.employeesGrowCount+"%"}</a>
                       </div>
                     </div>
                   </div>
@@ -86,12 +103,14 @@ const DashboardMain = ({userData}) => {
                       </label>
                     </div>
                     <div className="flex justify-between pt-4 ">
-                      <a className="font-bold text-sH text-3xl ">1000</a>
+                      <a className="font-bold text-sH text-3xl ">
+                        {userData.jobData.jobViewCount}
+                      </a>
                       <div className="flex list-none pl-2 pr-2 pt-1 pb-1 rounded-xl bg-green-100 w-fit h-fit ">
                         <li className="text-green-600 text-xl">
                           <AiOutlineRise />
                         </li>
-                        <a className="text-green-600 text-xl">19%</a>
+                        <a className="text-green-600 text-xl">{userData.jobData.jobViewGrowCount+"%"}</a>
                       </div>
                     </div>
                   </div>
@@ -102,12 +121,14 @@ const DashboardMain = ({userData}) => {
                       </label>
                     </div>
                     <div className="flex justify-between pt-4 ">
-                      <a className="font-bold text-sH text-3xl ">623</a>
+                      <a className="font-bold text-sH text-3xl ">
+                        {userData.jobData.jobAppliedCount}
+                      </a>
                       <div className="flex list-none pl-2 pr-2 pt-1 pb-1 rounded-xl bg-green-100 w-fit h-fit ">
                         <li className="text-green-600 text-xl">
                           <AiOutlineRise />
                         </li>
-                        <a className="text-green-600 text-xl">23%</a>
+                        <a className="text-green-600 text-xl">{userData.jobData.jobAppliedGrowCount+"%"}</a>
                       </div>
                     </div>
                   </div>
@@ -118,12 +139,14 @@ const DashboardMain = ({userData}) => {
                       </label>
                     </div>
                     <div className="flex justify-between pt-4 ">
-                      <a className="font-bold text-sH text-3xl ">$200</a>
+                      <a className="font-bold text-sH text-3xl ">
+                        {"$" + userData.employeeData.employeeSalary}
+                      </a>
                       <div className="flex list-none pl-2 pr-2 pt-1 pb-1 rounded-xl bg-orange-100 w-fit h-fit ">
                         <li className="text-red text-xl">
                           <AiOutlineFall />
                         </li>
-                        <a className="text-red text-xl">13%</a>
+                        <a className="text-red text-xl">{userData.employeeData.employeesGrowSalary+"%"}</a>
                       </div>
                     </div>
                   </div>
@@ -202,15 +225,15 @@ const DashboardMain = ({userData}) => {
                 <div className="flex justify-between pt-4">
                   <div className="flex gap-x-2 text-gray-700">
                     <div className="w-4 rounded-full h-4 bg-g"></div>
-                    <label>Hybrid</label>
+                    <label>{userData.employeeData.workingFormat[0].name}</label>
                   </div>
                   <div className="flex gap-x-2 text-gray-700">
                     <div className="w-4 rounded-full h-4 bg-p"></div>
-                    <label>Remote</label>
+                    <label>{userData.employeeData.workingFormat[1].name}</label>
                   </div>
                   <div className="flex gap-x-2 text-gray-700">
                     <div className="w-4 rounded-full h-4 bg-y"></div>
-                    <label>Hybrid</label>
+                    <label>{userData.employeeData.workingFormat[2].name}</label>
                   </div>
                 </div>
               </div>
@@ -222,7 +245,7 @@ const DashboardMain = ({userData}) => {
                     Employee Status
                   </label>
                 </div>
-                <div className="flex w-full p-6 justify-evenly">
+                <div className="flex w-full p-6 justify-evenly items-start">
                   <div className="flex flex-col  w-1/4 ">
                     <div className="flex pl-20 justify-center gap-x-2  items-center h-fit w-fit ">
                       <label className="text-xl font-bold text-sH">Name </label>
@@ -230,19 +253,23 @@ const DashboardMain = ({userData}) => {
                         <BsChevronDown />
                       </a>
                     </div>
-                    <div className="flex items-center  gap-x-4 p-2 pt-6 ">
-                      <div className=" w-14 h-14 rounded-full">
-                        <img
-                          src="my.jpeg"
-                          className="rounded-full ojject-fill "
-                        />
-                      </div>
-                      <div>
-                        <label className=" text-zinc-700 text-lg">
-                          Shaik Afrid
-                        </label>
-                      </div>
-                    </div>
+                    {userData.employeeData.employees.map((e) => {
+                      return (
+                        <div className="flex items-center  gap-x-4 p-2 pt-6 ">
+                          <div className=" w-14 h-14 rounded-full">
+                            <img
+                              src={e.image}
+                              className="rounded-full w-14 h-14 object-cover"
+                            />
+                          </div>
+                          <div>
+                            <label className=" text-zinc-700 text-lg">
+                              {e.name}
+                            </label>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                   <div className="w-1/5 flex flex-col justify-center items-center">
                     <div className="flex justify-center gap-x-2  items-center h-fit w-fit ">
@@ -250,12 +277,18 @@ const DashboardMain = ({userData}) => {
                         Email{" "}
                       </label>
                     </div>
-                    <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
-                      <div>
-                        <label className=" text-zinc-700 text-lg">
-                          afridayan01@gmail.com
-                        </label>
-                      </div>
+                    <div className="flex flex-col pt-4 gap-y-8">
+                      {userData.employeeData.employees.map((e) => {
+                        return (
+                          <div className="flex items-center gap-x-4 p-2 pt-6 w-fit h-14 ">
+                            <div>
+                              <label className=" text-zinc-700 text-lg">
+                                {e.email}
+                              </label>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="w-1/5 flex flex-col justify-center items-center ">
@@ -264,12 +297,18 @@ const DashboardMain = ({userData}) => {
                         Job Title{" "}
                       </label>
                     </div>
-                    <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
-                      <div>
-                        <label className=" text-zinc-700 text-lg">
-                          Web Developer
-                        </label>
-                      </div>
+                    <div className="flex flex-col pt-4 gap-y-8 justify-center items-center">
+                      {userData.employeeData.employees.map((e) => {
+                        return (
+                          <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
+                            <div>
+                              <label className=" text-zinc-700 text-lg">
+                                {e.role}
+                              </label>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="w-1/6 flex flex-col justify-center items-center">
@@ -278,12 +317,23 @@ const DashboardMain = ({userData}) => {
                         Status{" "}
                       </label>
                     </div>
-                    <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
-                      <div>
-                        <label className=" text-p bg-purple-100 h-fit w-fit px-6 py-2 text-lg rounded-lg ">
-                          Working
-                        </label>
-                      </div>
+                    <div className="flex flex-col justify-center items-center pt-4 gap-y-8">
+                      {userData.employeeData.employees.map((e) => {
+                        return (
+                          <div className="flex items-center gap-x-4 p-2 h-14 pt-6 ">
+                            <div>
+                              <label className={
+                                (e.status).toLowerCase()=="working"? 
+                                "text-pureGreen bg-green-50 h-fit w-fit px-6 py-2 text-lg rounded-lg "
+                              :(e.status).toLowerCase() == "no work"?
+                              "text-p bg-purple-100 h-fit w-fit px-6 py-2 text-lg rounded-lg "
+                            :"text-red bg-orange-100 h-fit w-fit px-6 py-2 text-lg rounded-lg "}>
+                                {e.status}
+                              </label>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
