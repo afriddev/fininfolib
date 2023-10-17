@@ -5,7 +5,8 @@ import { VictoryBar, VictoryChart, VictoryPie, VictoryTooltip } from "victory";
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 
-const DashboardMain = () => {
+const DashboardMain = ({userData}) => {
+  console.log(userData)
   const data = [
     { x: "apr 03", y: 23 },
     { x: "may 03", y: 29 },
@@ -47,7 +48,7 @@ const DashboardMain = () => {
                 </div>
                 <div>
                   <div className="flex flex-col gap-x-2 justify-start items-end">
-                    <h3 className="text-xl font-bold">Shaik Afrid</h3>
+                    <h3 className="text-xl font-bold">{userData.name}</h3>
                     <h3 className="text-md ">Lead HR</h3>
                   </div>
                 </div>

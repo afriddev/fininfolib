@@ -6,7 +6,7 @@ import InboxMain from "@/components/dashboard/inboxMain"
 import JobsMain from "@/components/dashboard/jobsMain"
 import { useState } from "react"
 import connectMongoDb from "@/lib/mongoDB"
-const Main = () => {
+const Main = ({userData}) => {
     const [index, setIndex] = useState(0)
     function setindex(val: number) {
         setIndex(val)
@@ -17,7 +17,7 @@ const Main = () => {
                 <Sidepanel index={index} setindex={setindex} />
                 {
                     index == 0
-                        ? <DashboardMain />
+                        ? <DashboardMain userData={userData} />
                         : index == 1
                             ? <InboxMain />
                             : index == 2

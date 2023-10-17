@@ -5,7 +5,7 @@ async function createTest(hrInfo){
     await connectMongoDb()
     try{
         const hr = await hrModel.create(hrInfo)
-        console.log(hr)
+        return hr
     }
     catch(e){
         console.log(e)
