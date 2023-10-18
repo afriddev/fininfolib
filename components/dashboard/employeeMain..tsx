@@ -51,12 +51,12 @@ const EmployeeMain = ({ userData }) => {
         <section>
           <div>
             <div className="pl-10">
-              <label className="text-2xl text-sH">Emplyee Management</label>
+              <label className="text-2xl text-sH"></label>
             </div>
             <div className="flex w-full pt-6 gap-x-6">
               <div className=" flex flex-col  w-1/2 h-[80vh]  bg-white rounded-xl p-6">
                 <div className="flex pl-10 gap-x-4">
-                  <label className="text-2xl  text-sH">
+                  <label className="text-2xl  text-sH lg:text-xl">
                     {" "}
                     Employees Attendence
                   </label>
@@ -71,7 +71,7 @@ const EmployeeMain = ({ userData }) => {
                       {userData.employeeData.employees.map((e) => {
                         return (
                           <div className="pt-6">
-                            <h1 className="text-lg text-zinc-700 ">{e.name}</h1>
+                            <h1 className="text-lg text-zinc-700 lg:text-xs ">{e.name}</h1>
                           </div>
                         );
                       })}
@@ -83,7 +83,7 @@ const EmployeeMain = ({ userData }) => {
                       {userData.employeeData.employees.map((e) => {
                         return (
                           <div className="pt-6">
-                            <h1 className="text-lg text-zinc-700 ">{e.role}</h1>
+                            <h1 className="text-lg text-zinc-700 lg:text-xs ">{e.role}</h1>
                           </div>
                         );
                       })}
@@ -94,14 +94,14 @@ const EmployeeMain = ({ userData }) => {
                     <div className="flex flex-col justify-center items-center">
                       {userData.employeeData.employees.map((e) => {
                         return (
-                          <div className="pt-6">
+                          <div className="pt-6 flex justify-center items-center">
                             <h1
                               className={
                                 e.attendance.toLowerCase() === "late"
-                                  ? "text-lg text-p bg-purple-100 h-fit w-fit px-6 py-1  rounded-lg "
+                                  ? "text-lg text-p bg-purple-100 h-fit w-fit px-6 p-1  rounded-lg lg:text-xs flex justify-center items-center "
                                   : e.attendance.toLowerCase() === "present"
-                                  ? "text-lg text-pureGreen bg-green-100 h-fit w-fit px-6 py-1  rounded-lg "
-                                  : "text-lg text-red bg-orange-100 h-fit w-fit px-6 py-1  rounded-lg "
+                                  ? "text-lg text-pureGreen bg-green-100 h-fit w-fit px-6 p-1  rounded-lg  lg:text-xs flex justify-center items-center"
+                                  : "text-lg text-red bg-orange-100 h-fit w-fit px-6 p-1  rounded-lg lg:text-xs flex justify-center items-center"
                               }
                             >
                               {e.attendance}
@@ -119,11 +119,11 @@ const EmployeeMain = ({ userData }) => {
                     className="flex flex-col  
                       w-1/2 bg-white rounded-xl shadow-xl p-4"
                   >
-                    <h2 className="text-xl text-sH pl-4">Total Attendence</h2>
-                    <p className=" pt-4 font-bold text-3xl pl-6 ">
+                    <h2 className="text-xl text-sH pl-4 lg:text-md">Total Attendence</h2>
+                    <p className=" pt-4 font-bold text-3xl pl-6 lg:text-xl">
                       {attendance}
                     </p>
-                    <p className="pt-2 text-md pl-6 text-gray-700">
+                    <p className="pt-2 text-md pl-6 text-gray-700 lg:text-xs">
                       Employees In building
                     </p>
                   </div>
@@ -131,27 +131,27 @@ const EmployeeMain = ({ userData }) => {
                     className="flex flex-col  
                       w-1/2 bg-white rounded-xl shadow-xl p-4"
                   >
-                    <h2 className="text-xl text-sH pl-4">
+                    <h2 className="text-xl text-sH pl-4 lg:text-md">
                       Today's Performance
                     </h2>
                     <div className="flex w-full justify-between pr-6 items-center pt-2">
-                      <p className=" pt-4 font-bold text-3xl pl-6 ">32%</p>
+                      <p className=" pt-4 font-bold text-3xl pl-6 lg:text-lg">32%</p>
                       <p className="text-pureGreen gap-x-2 text-xl flex pt-4">
-                        <span className="text-pureGreen text-2xl">
+                        <span className="text-pureGreen text-2xl lg:text-lg">
                           <GrUpgrade />
                         </span>
                         18%
                       </p>
                     </div>
-                    <p className="pt-2 text-md pl-6 text-gray-700">
+                    <p className="pt-2 text-md pl-6 text-gray-700 lg:text-xs">
                       vs Previous Day
                     </p>
                   </div>
                 </div>
                 <div className="flex w-full pt-6 gap-x-6">
                   <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
-                    <div className=" pl-6 pt-6">
-                      <label className="text-2xl  text-zinc-800">
+                    <div className=" pl-6 pt-6 lg:pl-0">
+                      <label className="text-2xl  text-zinc-800 lg:text-md">
                         Gender Diversity
                       </label>
                     </div>
@@ -170,20 +170,20 @@ const EmployeeMain = ({ userData }) => {
                         data={data1}
                       />
                     </div>
-                    <div className="flex justify-evenly pb-4">
+                    <div className="flex gap-x-3 justify-evenly pb-4 lg:justify-center">
                       <div className="flex gap-x-2 text-gray-700">
-                        <div className="w-4 rounded-full h-4 bg-g"></div>
-                        <label>Male</label>
+                        <div className="w-4 rounded-full h-4 bg-g "></div>
+                        <label className="lg:text-xs">Male</label>
                       </div>
                       <div className="flex gap-x-2 text-gray-700">
                         <div className="w-4 rounded-full h-4 bg-p"></div>
-                        <label>Female</label>
+                        <label className="lg:text-xs">Female</label>
                       </div>
                     </div>
                   </div>
                   <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
                     <div className=" pl-6 pt-6">
-                      <label className="text-2xl  text-zinc-800">
+                      <label className="text-2xl  text-zinc-800 lg:text-xl">
                         Total Projects
                       </label>
                     </div>
@@ -202,18 +202,18 @@ const EmployeeMain = ({ userData }) => {
                         data={data2}
                       />
                     </div>
-                    <div className="grid grid-cols-2  pb-4 w-full">
+                    <div className="grid grid-cols-2  pb-4 lg:grid-cols-1 xl:grid-cols-2 gap-y-1 lg:pb-0">
                       <div className="flex gap-x-2 text-gray-700">
                         <div className="w-4 rounded-full h-4 bg-g"></div>
-                        <label>Completed</label>
+                        <label className="lg:text-xs">Completed</label>
                       </div>
                       <div className="flex gap-x-2 text-gray-700">
                         <div className="w-4 rounded-full h-4 bg-pH"></div>
-                        <label>Working</label>
+                        <label className="lg:text-xs">Working</label>
                       </div>
                       <div className="flex gap-x-2 text-gray-700">
                         <div className="w-4 rounded-full h-4 bg-red"></div>
-                        <label>Pending</label>
+                        <label className="lg:text-xs">Pending</label>
                       </div>
                     </div>
                   </div>
@@ -221,18 +221,18 @@ const EmployeeMain = ({ userData }) => {
                 <div className="flex flex-col p-4  w-full mt-4 bg-white h-[30vh] rounded-xl shadow-xl">
                   <div className="w-full ">
                     <div className="pl-6">
-                      <label className="text-sH text-2xl">
+                      <label className="text-sH text-2xl lg:text-xl">
                         Employees On Leave
                       </label>
                     </div>
                     <div className="flex justify-between gap-x-4 pt-2 h-[27vh]w-full overflow-auto no-scrollbar">
                       <div className="w-1/3 flex flex-col justify-center items-center ">
-                        <h1 className="text-xl text-black">Name</h1>
+                        <h1 className="text-xl text-black lg:text-xs">Name</h1>
                         <div className="pt-2 gap-y-2 flex flex-col justify-center items-center">
                           {userData.employeeData.employees.map((e) => {
                             if (e.attendance.toLowerCase() == "absent") {
                               return (
-                                <label className="text-md text-gray-700">
+                                <label className="text-md text-gray-700 lg:text-xs">
                                   {e.name}
                                 </label>
                               );
@@ -241,12 +241,12 @@ const EmployeeMain = ({ userData }) => {
                         </div>
                       </div>
                       <div className="w-1/3 flex flex-col justify-center items-center">
-                        <h1 className="text-xl text-black">Role</h1>
+                        <h1 className="text-xl text-black lg:text-xs">Role</h1>
                         <div className="pt-2 gap-y-2 flex flex-col justify-center items-center">
                           {userData.employeeData.employees.map((e) => {
                             if (e.attendance.toLowerCase() == "absent") {
                               return (
-                                <label className="text-md text-gray-700">
+                                <label className="text-md text-gray-700 lg:text-xs">
                                   {e.role}
                                 </label>
                               );
@@ -255,12 +255,12 @@ const EmployeeMain = ({ userData }) => {
                         </div>
                       </div>
                       <div className="w-1/3 flex flex-col justify-center items-center">
-                        <h1 className="text-xl text-black">Days</h1>
+                        <h1 className="text-xl text-black lg:text-xs">Days</h1>
                         <div className="pt-2 gap-y-2 flex flex-col justify-center items-center">
                         {userData.employeeData.employees.map((e) => {
                             if (e.attendance.toLowerCase() == "absent") {
                               return (
-                                <label className="text-md text-gray-700">
+                                <label className="text-md text-gray-700 lg:text-xs">
                                 {e.currentLeaveDays + " Days"}
                               </label>
                               );

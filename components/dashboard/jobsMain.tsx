@@ -19,19 +19,19 @@ const JobsMain = ({ userData }) => {
   }, []);
   return (
     <>
-      <main className=" overflow-auto w-full bg-lightBlue p-6">
+      <main className=" overflow-auto w-full h-[100vh] bg-lightBlue p-6 pl-16">
         <section>
           <div className="flex flex-col relative w-full gap-x-6 gap-y-6  ">
             <div
               onClick={() => {
                 setJobs(false);
               }}
-              className="absolute top-0 shadow-lg right-10 bg-p rounded-xl w-fit h-fit py-2 px-10"
+              className="absolute top-0 shadow-lg right-10 bg-p rounded-xl w-fit h-fit py-2 px-10 lg:px-4 "
             >
-              <label className="text-xl  text-white">Post A Job </label>
+              <label className="text-xl  text-white lg:text-md">Post A Job </label>
             </div>
             <div></div>
-            <div className="grid grid-cols-2 w-4/6 gap-x-6 gap-y-6 ">
+            <div className="grid grid-cols-2 w-4/5 gap-x-6 gap-y-6 ">
               {jobs ? (
                 <RenderJobs userData={jobsData} />
               ) : (
@@ -53,8 +53,8 @@ function CreateJob({ setjob, addJob }) {
     <>
       <section className="w-full bg-white rounded-xl shadow-lg h-fit">
         <div className="flex flex-col gap-y-4 p-6">
-          <div className="flex flex-col p-4 space-y-6">
-            <label className="text-3xl text-black pl-4">Job Role</label>
+          <div className="flex flex-col p-4 space-y-6 lg:space-y-1">
+            <label className="text-3xl text-black pl-4 lg:text-xs">Job Role</label>
             <div className="pl-6 pr-4">
               <input
                 onChange={(e) => {
@@ -62,12 +62,12 @@ function CreateJob({ setjob, addJob }) {
                 }}
                 type="text"
                 placeholder="javaSpring Developer "
-                className=" text-xl border-none outline-none pl-6 w-full p-4 h-fit rounded-xl shadow-xl"
+                className=" text-xl border-none outline-none pl-6 w-full p-4 h-fit rounded-xl shadow-xl lg:text-xs"
               />
             </div>
           </div>
-          <div className="flex flex-col p-4 space-y-6">
-            <label className="text-3xl text-black pl-4">status</label>
+          <div className="flex flex-col p-4 space-y-6 lg:space-y-1">
+            <label className="text-3xl text-black pl-4 lg:text-xs">status</label>
             <div className="pl-6 pr-4">
               <input
                 onChange={(e) => {
@@ -75,33 +75,33 @@ function CreateJob({ setjob, addJob }) {
                 }}
                 type="text"
                 placeholder="Urgent "
-                className=" text-xl border-none outline-none pl-6 w-full p-4 h-fit rounded-xl shadow-xl"
+                className=" text-xl border-none outline-none pl-6 w-full p-4 h-fit rounded-xl shadow-xl lg:text-xs"
               />
             </div>
           </div>
-          <div className="flex flex-col p-4 space-y-6">
-            <label className="text-3xl text-black pl-4">count</label>
+          <div className="flex flex-col p-4 space-y-6 lg:space-y-1">
+            <label className="text-3xl text-black pl-4 lg:text-xs">count</label>
             <div className="pl-6 pr-4">
               <input
                 onChange={(e) => {
                   setCount(e.target.value);
                 }}
                 type="text"
-                placeholder="Urgent "
-                className=" text-xl border-none outline-none pl-6 w-full p-4 h-fit rounded-xl shadow-xl"
+                placeholder="1 "
+                className=" text-xl border-none outline-none pl-6 w-full p-4 h-fit rounded-xl shadow-xl lg:text-xs "
               />
             </div>
           </div>
 
-          <div className="flex flex-col p-4 space-y-6">
-            <label className="text-3xl text-black pl-4">Message</label>
+          <div className="flex flex-col p-4 space-y-6 lg:space-y-1">
+            <label className="text-3xl text-black pl-4 lg:text-xs">Message</label>
             <div className="pl-6 pr-4">
               <textarea
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
                 placeholder="Need Staff for Java Spring developer who have minimum 3 years experience "
-                className=" text-xl border-none outline-none pl-6 w-full p-4 h-32 pt-4 rounded-xl shadow-xl"
+                className=" text-xl border-none outline-none pl-6 w-full p-4 h-32 pt-4 rounded-xl shadow-xl lg:text-xs"
               />
             </div>
           </div>
@@ -113,10 +113,10 @@ function CreateJob({ setjob, addJob }) {
                 )
               ) {
                 if (
-                  role === undefined ||
-                  messagee === undefined ||
-                  status === undefined ||
-                  count === undefined
+                  role === "" ||
+                  messagee === "" ||
+                  status === "" ||
+                  count === ""
                 ) {
                   window.alert("all fields need to be fill");
                 } else {
@@ -134,7 +134,7 @@ function CreateJob({ setjob, addJob }) {
                 setjob(true);
               }
             }}
-            className="w-2/5 ml-10 text-xl font-bold rounded-xl p-4 flex justify-center items-center text-p bg-purple-50"
+            className="w-2/5 ml-10 lg:text-xs text-xl font-bold rounded-xl p-4 flex justify-center items-center text-p bg-purple-50"
           >
             <label>Add</label>
           </div>
@@ -150,22 +150,22 @@ function RenderJobs({ userData }) {
       {userData.map((e) => {
         return (
           <div className="flex flex-col bg-white rounded-xl shadow-xl p-4 w-full h-[24vh]">
-            <h1 className="text-xl text-p border-b border-p w-fit h-fit ml-6 pt-2 ">
+            <h1 className="text-xl text-p border-b border-p lg:text-md w-fit h-fit ml-6 pt-2 ">
               {e.role}
             </h1>
-            <p className="p-6 text-md text-gray-700">{e.content}</p>
+            <p className="p-6 text-md text-gray-700 lg:text-xs">{e.content}</p>
             <div className="w-full flex justify-between pl-10 pr-10">
               <div className="flex gap-x-2">
-                <h2 className="text-black text-md">Count :</h2>
-                <label className="text-md text-gray-700">{e.count}</label>
+                <h2 className="text-black text-md lg:text-xs">Count :</h2>
+                <label className="text-md text-gray-700 lg:text-xs">{e.count}</label>
               </div>
               <div className="flex gap-x-2">
-                <h2 className="text-black text-md">Status :</h2>
+                <h2 className="text-black text-md lg:text-xs">Status :</h2>
                 <label
                   className={
                     e.status.toLowerCase() === "urgent"
-                      ? "text-md text-red"
-                      : "text-md text-pureGreen"
+                      ? "text-md text-red lg:text-xs"
+                      : "text-md text-pureGreen lg:text-xs"
                   }
                 >
                   {e.status}

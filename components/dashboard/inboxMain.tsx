@@ -17,7 +17,7 @@ const InboxMain = ({userData}) => {
 
   return (
     <>
-      <main className=" bg-lightBlue w-full h-[90vh] overflow-auto p-6">
+      <main className=" bg-lightBlue w-full h-[90vh] overflow-auto p-6 m-6">
         <section>
           <div className="flex">
             {/* <div className="w-2/6  h-fit flex flex-col justify-center items-center   ">
@@ -90,7 +90,7 @@ const InboxMain = ({userData}) => {
                       </div>
                     </div>
                     <div className="pt-2 pb-2 w-full pl-20 pr-10 justify-center items-center ">
-                        <p className="text-black">{e.message}</p>
+                        <p className="text-black lg:text-sm">{e.message}</p>
                     </div>
                     <div className="flex pl-20 pt-2 w-full justify-between">
                         <div className="flex gap-x-2">

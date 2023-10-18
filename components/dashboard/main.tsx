@@ -12,7 +12,7 @@ const Main = ({userData}) => {
     }
     return (
         <>
-            <div className="flex">
+            <div className="flex bg-lightBlue">
                 <Sidepanel index={index} setindex={setindex} />
                 {
                     index == 0
