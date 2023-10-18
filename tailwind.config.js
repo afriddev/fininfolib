@@ -19,8 +19,6 @@ module.exports = {
     },
     extend: {
       animation:{
-        hero:'hero 100s infinite',
-        sfl:'sfl 2s ',
         hang:'hang  ease-in-out 1s infinite alternate'
        
       },
@@ -34,52 +32,6 @@ module.exports = {
             'transform':'rotate(-10deg)'
           }
         },
-        sfl:{
-          '0%':{
-            'transform':'translateX(-100vw)'},
-          '100%':{
-            'transform':'translateX(0px)'
-          }
-        },
-        hero:{
-          '0%':{
-            'color':"#f72585"
-          },
-          '10%':{
-            'color':'#ffb703'
-          },
-          '20%':{
-            'color':'#7209b7'
-          },
-          '30%':{
-            'color':'#ff6700'
-          },
-          '40%':{
-            'color':'#9fffcb'
-          },
-          '50%':{
-            'color':'#072ac8'
-          },
-          '60%':{
-            'color':'#ff499e'
-          },
-          '70%':{
-            'color':'#ff002b'
-          },
-          '80%':{
-            'color':'#ff66b3'
-          },
-          '90%':{
-            'color':'#b5ffe1'
-          },
-          '100%':{
-            'color':'#ffb703'
-          },
-          
-          
-
-        }
-
       },
       colors:{
         'y':'#ffd60a',

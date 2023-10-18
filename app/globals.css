@@ -83,3 +83,54 @@
       box-shadow: .2em -.2em 0 0 currentcolor;
     }
   }
+
+
+
+
+
+
+
+
+
+
+  .hero{
+    color: #ffd60a;
+    
+  }
+  .hero:before{
+    content: '';
+    animation: 5s print linear alternate infinite;
+  }
+  .hero:after{
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translatey(-45%);
+    width: 2px;
+    height: 1.3em;
+    background: currentColor;
+    opacity: 0.8;
+    animation: 1s blink steps(2) infinite;
+  }
+  
+  @keyframes blink {
+    0%  { visibility: hidden;}
+    100%  { visibility: visible;}
+  }
+  @keyframes print {
+    0% { content: 'I'}
+    8% { content: 'IT'}
+    16% { content: 'IT C'}
+    22% { content: 'IT CO'}
+    30% { content: 'IT CON'}
+    38% { content: 'IT CONS'}
+    48% { content: 'IT CONSU'}
+    58% { content: 'IT CONSUL'}
+    68% { content: 'IT CONSULT'}
+    78% { content: 'IT CONSULTA'}
+    88% { content: 'IT CONSULTAN'}
+    
+    94%{content:"IT CONSULTANC"}
+    100% { content: 'IT CONSULTANCY'}
+  }

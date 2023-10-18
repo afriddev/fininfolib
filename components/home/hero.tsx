@@ -30,9 +30,9 @@ const Hero= ({scrollTo}) => {
               }}
             className="text-[21px] font-bold text-center  text-white lg:text-[34px] xl:text-[43px]">
               OFFSHORE Development &
-              <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] animate-hero ">
+              <span className="text-[26px] font-bold pl-[2px] lg:text-[42px] xl:text-[50px] hero ">
                 {" "}
-                <br />IT Consultancy{" "}
+                <br />
               </span>{" "}
               Services
             </h1>
