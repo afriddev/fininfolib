@@ -1,18 +1,49 @@
 "use client";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { FaUserTie } from "react-icons/fa";
 import { GrUpgrade } from "react-icons/gr";
 import { VictoryPie } from "victory";
 
-const EmployeeMain = () => {
+const EmployeeMain = ({ userData }) => {
+  let [maleCount, setMaleCount] = useState(0);
+  let [feMaleCount, setFeMaleCount] = useState(0);
+  let [attendance, setAttendance] = useState(0);
   const data1 = [
-    { x: " ", y: 120 },
-    { x: " ", y: 180 },
+    { x: " ", y: maleCount },
+    { x: " ", y: feMaleCount },
   ];
   const data2 = [
-    { x: " ", y: 180 },
-    { x: " ", y: 130 },
-    { x: " ", y: 50 },
+    { x: " ", y: userData.projectData.completedProjects },
+    { x: " ", y: userData.projectData.onGoingProjects},
+    { x: " ", y: userData.projectData.pendingProjects },
   ];
+
+  function getGenderCount() {
+    userData.employeeData.employees.map((e) => {
+      if (e.gender === "male") {
+        setMaleCount((e) => e + 1);
+
+        if (
+          e.attendance.toLowerCase() === "present" ||
+          e.attendance.toLowerCase() === "late"
+        ) {
+          console.log(e.name);
+          setAttendance((e) => e + 1);
+        }
+      } else {
+        setFeMaleCount((e) => e + 1);
+        if (
+          e.attendance.toLowerCase() === "present" ||
+          e.attendance.toLowerCase() === "late"
+        ) {
+          setAttendance((e) => e + 1);
+        }
+      }
+    });
+  }
+  useLayoutEffect(() => {
+    getGenderCount();
+  }, []);
 
   return (
     <>
@@ -25,66 +56,59 @@ const EmployeeMain = () => {
             <div className="flex w-full pt-6 gap-x-6">
               <div className=" flex flex-col  w-1/2 h-[80vh]  bg-white rounded-xl p-6">
                 <div className="flex pl-10 gap-x-4">
-                  <label className="text-2xl  text-sH">Total Employees</label>
+                  <label className="text-2xl  text-sH">
+                    {" "}
+                    Employees Attendence
+                  </label>
                   <a className="text-2xl ">
                     <FaUserTie />
                   </a>
                 </div>
-                <div className="w-full m-4 p-4 flex justify-between gap-x-4">
+                <div className="w-full m-4 p-4 flex justify-between items-start gap-x-4">
                   <div className="flex w-1/3 justify-center items-center flex-col">
                     <label className="text-xl text-black">Name</label>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="pt-6">
-                        <h1 className="text-lg text-zinc-700 ">Shaik Afrid</h1>
-                      </div>
-                      <div className="pt-6">
-                        <h1 className="text-lg text-zinc-700 ">John Ripper</h1>
-                      </div>
-                      <div className="pt-6">
-                        <h1 className="text-lg text-zinc-700 ">
-                          Richard Daniel
-                        </h1>
-                      </div>
+                    <div className="flex flex-col justify-start gap-y-2 items-center">
+                      {userData.employeeData.employees.map((e) => {
+                        return (
+                          <div className="pt-6">
+                            <h1 className="text-lg text-zinc-700 ">{e.name}</h1>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="flex w-1/3 justify-center items-center flex-col ">
                     <label className="text-xl text-black">Role</label>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="pt-6">
-                        <h1 className="text-lg text-zinc-700 ">
-                          Web Developer
-                        </h1>
-                      </div>
-                      <div className="pt-6">
-                        <h1 className="text-lg text-zinc-700 ">
-                          App Developer
-                        </h1>
-                      </div>
-                      <div className="pt-6">
-                        <h1 className="text-lg text-zinc-700 ">
-                          BackEnd Developer
-                        </h1>
-                      </div>
+                    <div className="flex flex-col gap-y-2 justify-center items-center">
+                      {userData.employeeData.employees.map((e) => {
+                        return (
+                          <div className="pt-6">
+                            <h1 className="text-lg text-zinc-700 ">{e.role}</h1>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="flex w-1/3 justify-center items-center flex-col ">
                     <label className="text-xl text-black">Status</label>
                     <div className="flex flex-col justify-center items-center">
-                      <div className="pt-6">
-                        <h1 className="text-lg text-p bg-purple-100 h-fit w-fit px-6 py-1  rounded-lg ">
-                          Late
-                        </h1>
-                      </div>
-                      <div className="pt-6">
-                        <h1 className="text-lg text-pureGreen bg-green-100 h-fit w-fit px-6 py-1  rounded-lg ">
-                          Logined
-                        </h1>
-                      </div>
-                      <div className="pt-6">
-                        <h1 className="text-lg text-red bg-orange-100 h-fit w-fit px-6 py-1  rounded-lg ">
-                          Absent
-                        </h1>
-                      </div>
+                      {userData.employeeData.employees.map((e) => {
+                        return (
+                          <div className="pt-6">
+                            <h1
+                              className={
+                                e.attendance.toLowerCase() === "late"
+                                  ? "text-lg text-p bg-purple-100 h-fit w-fit px-6 py-1  rounded-lg "
+                                  : e.attendance.toLowerCase() === "present"
+                                  ? "text-lg text-pureGreen bg-green-100 h-fit w-fit px-6 py-1  rounded-lg "
+                                  : "text-lg text-red bg-orange-100 h-fit w-fit px-6 py-1  rounded-lg "
+                              }
+                            >
+                              {e.attendance}
+                            </h1>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -96,7 +120,9 @@ const EmployeeMain = () => {
                       w-1/2 bg-white rounded-xl shadow-xl p-4"
                   >
                     <h2 className="text-xl text-sH pl-4">Total Attendence</h2>
-                    <p className=" pt-4 font-bold text-3xl pl-6 ">32</p>
+                    <p className=" pt-4 font-bold text-3xl pl-6 ">
+                      {attendance}
+                    </p>
                     <p className="pt-2 text-md pl-6 text-gray-700">
                       Employees In building
                     </p>
@@ -153,7 +179,6 @@ const EmployeeMain = () => {
                         <div className="w-4 rounded-full h-4 bg-p"></div>
                         <label>Female</label>
                       </div>
-
                     </div>
                   </div>
                   <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
@@ -196,41 +221,57 @@ const EmployeeMain = () => {
                 <div className="flex flex-col p-4  w-full mt-4 bg-white h-[30vh] rounded-xl shadow-xl">
                   <div className="w-full ">
                     <div className="pl-6">
-                      <label className="text-sH text-2xl">Employees On  Leave</label>
+                      <label className="text-sH text-2xl">
+                        Employees On Leave
+                      </label>
                     </div>
                     <div className="flex justify-between gap-x-4 pt-2 h-[27vh]w-full overflow-auto no-scrollbar">
                       <div className="w-1/3 flex flex-col justify-center items-center ">
                         <h1 className="text-xl text-black">Name</h1>
                         <div className="pt-2 gap-y-2 flex flex-col justify-center items-center">
-                          <label className="text-md text-gray-700">Shaik Afrid</label>
-                          <label className="text-md text-gray-700">John Ripper</label>
-                          <label className="text-md text-gray-700">Richard Daniel</label>
-                          <label className="text-md text-gray-700">Shaik Ayesha</label>
+                          {userData.employeeData.employees.map((e) => {
+                            if (e.attendance.toLowerCase() == "absent") {
+                              return (
+                                <label className="text-md text-gray-700">
+                                  {e.name}
+                                </label>
+                              );
+                            }
+                          })}
                         </div>
                       </div>
                       <div className="w-1/3 flex flex-col justify-center items-center">
                         <h1 className="text-xl text-black">Role</h1>
                         <div className="pt-2 gap-y-2 flex flex-col justify-center items-center">
-                          <label className="text-md text-gray-700">Web Developer</label>
-                          <label className="text-md text-gray-700">App Developer</label>
-                          <label className="text-md text-gray-700">BackEnd Developer</label>
-                          <label className="text-md text-gray-700">UI & UX Designer</label>
+                          {userData.employeeData.employees.map((e) => {
+                            if (e.attendance.toLowerCase() == "absent") {
+                              return (
+                                <label className="text-md text-gray-700">
+                                  {e.role}
+                                </label>
+                              );
+                            }
+                          })}
                         </div>
                       </div>
                       <div className="w-1/3 flex flex-col justify-center items-center">
                         <h1 className="text-xl text-black">Days</h1>
                         <div className="pt-2 gap-y-2 flex flex-col justify-center items-center">
-                          <label className="text-md text-gray-700">2 Days</label>
-                          <label className="text-md text-gray-700">1 Days</label>
-                        <label className="text-md text-gray-700">4 Days</label>
-                          <label className="text-md text-gray-700">5 Days</label>
+                        {userData.employeeData.employees.map((e) => {
+                            if (e.attendance.toLowerCase() == "absent") {
+                              return (
+                                <label className="text-md text-gray-700">
+                                {e.currentLeaveDays + " Days"}
+                              </label>
+                              );
+                            }
+                          })}
+                          
+                          
                         </div>
                       </div>
-
                     </div>
-
                   </div>
-
                 </div>
               </div>
             </div>

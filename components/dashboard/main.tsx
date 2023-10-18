@@ -20,9 +20,9 @@ const Main = ({userData}) => {
                         : index == 1
                             ? <InboxMain userData={userData} />
                             : index == 2
-                                ? <EmployeeMain />
+                                ? <EmployeeMain userData={userData} />
                                 : index == 3
-                                    ? <JobsMain />
+                                    ? <JobsMain userData={userData} />
                                     : null
                 }
             </div>

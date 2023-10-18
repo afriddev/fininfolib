@@ -35,6 +35,15 @@ const hrSchema = new Schema({
           image: String,
           role: String,
           status: String,
+          online: Boolean,
+          attendance: String,
+          unSeenMessagesCount: Number,
+          gender: String,
+          currentLeaveDays: Number,
+          totalLeaveDays: {
+            type: Number,
+            default: 0,
+          },
         },
       ],
     },
@@ -48,6 +57,13 @@ const hrSchema = new Schema({
       jobViewGrowCount: Number,
       jobAppliedGrowCount: Number,
       jobStatistics: [{ month: String, data: Number }],
+    },
+  },
+  projectData: {
+    type: {
+      completedProjects: Number,
+      pendingProjects: Number,
+      onGoingProjects: Number,
     },
   },
 });
