@@ -1,7 +1,20 @@
+"use client"
+import { useLayoutEffect, useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
 import { CiCalendarDate, CiCircleRemove } from "react-icons/ci";
 
 const InboxMain = ({userData}) => {
+  let [messages,setMessages] = useState([])
+
+  function getMessages(){
+    setMessages(userData.inbox.messages)
+  }
+  useLayoutEffect(()=>{
+    getMessages()
+  })
+
+
+
   return (
     <>
       <main className=" bg-lightBlue w-full h-[90vh] overflow-auto p-6">
@@ -50,7 +63,8 @@ const InboxMain = ({userData}) => {
                 </div> */}
                 <div className="flex flex-col w-full p-6 border border-zinc-100 rounded-xl h-full m-4 gap-y-14 no-scrollbar overflow-auto">
                   {
-                    userData.inbox.messages.map((e)=>{
+                   messages.map((e,index)=>{
+                      
                       return(
                         <div className="w-full rounded-xl shadow-xl bg-gray-50 h-fit p-6 ">
                     <div className="flex ">
@@ -83,7 +97,9 @@ const InboxMain = ({userData}) => {
                             <a className="text-2xl text-gray-800"><CiCalendarDate/></a>
                             <label className="text-lg text-gray-700">{e.day}</label>
                         </div>
-                        <div className="flex gap-x-2 bg-orange-50 shadow-xl justify-center items-center h-fit w-fit px-4 py-2 rounded-xl">
+                        <div onClick={()=>{
+                          if(window.confirm("This Is A Test Project Not in Production For Some reasons You Can't Delete This Item In Database But You Can Delete Locally ,Really Want To Delete? "))
+                          setMessages(messages.splice(index,1))}} className="flex gap-x-2 bg-orange-50 shadow-xl justify-center items-center h-fit w-fit px-4 py-2 rounded-xl">
                             <label className="text-red text-lg">Delete</label>
                             <a className="text-xl font-bold text-red"><AiOutlineDelete/></a>
                         </div>

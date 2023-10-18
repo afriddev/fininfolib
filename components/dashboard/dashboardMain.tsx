@@ -5,7 +5,7 @@ import { VictoryBar, VictoryChart, VictoryPie, VictoryTooltip } from "victory";
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 
-const DashboardMain = ({ userData }) => {
+const DashboardMain = ({ userData,setindex }) => {
   console.log(userData.jobData.jobStatistics[0].month);
   // const data = []
   const data = [
@@ -50,8 +50,8 @@ const DashboardMain = ({ userData }) => {
               </div>
               <div className="flex items-center justify-center gap-x-8">
                 <div>
-                  <div className="relative ">
-                    <div
+                  <div onClick={()=>{setindex(1)}} className="relative cursor-pointer ">
+                    <div 
                       className="flex absolute top-[-7px] right-[-3px] justify-center items-center bg-red
                                          w-4 h-4 rounded-full "
                     >

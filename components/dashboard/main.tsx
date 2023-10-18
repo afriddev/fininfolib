@@ -16,7 +16,7 @@ const Main = ({userData}) => {
                 <Sidepanel index={index} setindex={setindex} />
                 {
                     index == 0
-                        ? <DashboardMain userData={userData} />
+                        ? <DashboardMain userData={userData} setindex={setIndex} />
                         : index == 1
                             ? <InboxMain userData={userData} />
                             : index == 2
