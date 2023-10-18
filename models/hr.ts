@@ -24,9 +24,7 @@ const hrSchema = new Schema({
       employeeSalary: Number,
       employeesGrowCount: Number,
       employeesGrowSalary: Number,
-      online: Boolean,
       attendence: String,
-      unSeenMessagesCount: Number,
       workingFormat: [{ employeeCount: Number, name: String }],
       employees: [
         {

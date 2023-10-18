@@ -24,30 +24,57 @@ const Dashboard = () => {
     //   pendingProjects:14,
     //   onGoingProjects:6
     // })
-    const addfield = await addField("afridayan01@gmail.com","jobData",{
-      jobs:[
+    const addfield = addField("afridayan01@gmail.com", "inbox", {
+      messages: [
         {
-          role:"Android Developer",
-          count:2,
-          status:"Urgent",
-          content:"Need Android Developer Staff Based on Java, Flutter with minimum 2 years Experience"
-        },
-        {
-          role:"NodeJS Developer",
-          count:1,
-          status:"Urgent",
-          content:"Need Node JS Developer Staff Based on JavaScript TypeScript with minimum 2 years Experience ,TypeScript Developers Have More Priority"
-        },
-        {
-          role:"Software Developer",
-          count:1,
-          status:"Less then 1 Month",
-          content:"Need Software Developer Staff Based on Java,python,JavaScript with minimum 2 years Experience"
+          name: "m vishnu Reddy",
+          email: "vishnureddy7512@gmail.com",
+          day:"friday",
+
+          message:
+            "Develop a dedicated app and website for our restaurant's food delivery service. Enhance customer experience with a user-friendly interface, secure online ordering, and efficient order management via our app or website....",
         },
         
+        {
+          name: "T Narendra",
+          email: "narendra2132@gmail.com",
+          day:"tuesday",
+          message:
+            "I need A software for my super market...",
+        },
+        {
+          name: "hema Beauty",
+          email: "hema342@gmail.com",
+          day:"monday",
+          message:
+            "Lets talk about my online website to improve more features",
+        },
 
-      ]
-    })
+      ],
+    });
+    // const addfield = await addField("afridayan01@gmail.com","jobData",{
+    //   jobs:[
+    //     {
+    //       role:"Android Developer",
+    //       count:2,
+    //       status:"Urgent",
+    //       content:"Need Android Developer Staff Based on Java, Flutter with minimum 2 years Experience"
+    //     },
+    //     {
+    //       role:"NodeJS Developer",
+    //       count:1,
+    //       status:"Urgent",
+    //       content:"Need Node JS Developer Staff Based on JavaScript TypeScript with minimum 2 years Experience ,TypeScript Developers Have More Priority"
+    //     },
+    //     {
+    //       role:"Software Developer",
+    //       count:1,
+    //       status:"Less then 1 Month",
+    //       content:"Need Software Developer Staff Based on Java,python,JavaScript with minimum 2 years Experience"
+    //     },
+
+    //   ]
+    // })
     // const addfield = await addField("afridayan01@gmail.com", "employeeData", {
     //   employeeCount: 7,
     //   employeeSalary: 130,
@@ -62,9 +89,7 @@ const Dashboard = () => {
     //     {
     //       name: "Shaik Afrid",
     //       email:"afridayan01@gmail.com",
-    //       online:true,
     //       attendance:"Late",
-    //       unSeenMessagesCount:1,
     //       gender:"male",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/my.jpeg",
@@ -72,14 +97,13 @@ const Dashboard = () => {
     //       status: "Working",
     //       currentLeaveDays:0,
     //       totalLeaveDays:3
-          
+
     //     },
     //     {
     //       name: "Shaik Ayesha",
     //       email:"ayesha438@gmail.com",
-    //       online:false,
+
     //       attendance:"Absent",
-    //       unSeenMessagesCount:0,
     //       gender:"female",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/ayesha.jpeg",
@@ -92,9 +116,8 @@ const Dashboard = () => {
     //     {
     //       name: "John Ripper ",
     //       email:"johnkali11@gmail.com",
-    //       online:false,
+
     //       attendance:"Present",
-    //       unSeenMessagesCount:0,
     //       gender:"male",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/employee2.jpg",
@@ -107,9 +130,7 @@ const Dashboard = () => {
     //     {
     //       name: "Neha Johnson",
     //       email:"nehalovely5@gmail.com",
-    //       online:true,
     //       attendance:"Present",
-    //       unSeenMessagesCount:0,
     //       gender:"female",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/employee3.jpg",
@@ -122,9 +143,7 @@ const Dashboard = () => {
     //     {
     //       name: "Pooja Kerthi",
     //       email:"poojakerthi143@gmail.com",
-    //       online:true,
     //       attendance:"Present",
-    //       unSeenMessagesCount:0,
     //       gender:"female",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/employee4.jpg",
@@ -137,9 +156,8 @@ const Dashboard = () => {
     //     {
     //       name: "Robert",
     //       email:"robertjrfake@gmail.com",
-    //       online:false,
+
     //       attendance:"Present",
-    //       unSeenMessagesCount:2,
     //       gender:"male",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/employee5.jpg",
@@ -152,9 +170,7 @@ const Dashboard = () => {
     //     {
     //       name: "Cris",
     //       email:"cris4301@gmail.com",
-    //       online:true,
     //       attendance:"Present",
-    //       unSeenMessagesCount:0,
     //       gender:"male",
     //       image:
     //         "https://raw.githubusercontent.com/afriddev/fininfolib/main/public/employee6.jpeg",

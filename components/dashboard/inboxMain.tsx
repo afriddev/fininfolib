@@ -7,7 +7,7 @@ const InboxMain = ({userData}) => {
       <main className=" bg-lightBlue w-full h-[90vh] overflow-auto p-6">
         <section>
           <div className="flex">
-            <div className="w-2/6  h-fit flex flex-col justify-center items-center   ">
+            {/* <div className="w-2/6  h-fit flex flex-col justify-center items-center   ">
               <div className="flex  pl-6">
                 <label className="text-3xl text-zinc-800 ">
                   Quick Messages{" "}
@@ -26,13 +26,13 @@ const InboxMain = ({userData}) => {
 
                 
               </div>
-            </div>
+            </div> */}
             <div className="w-full ml-6 mr-6 flex flex-col bg-white rounded-xl">
               <div className="flex   pt-4 pl-20">
                 <label className="text-3xl text-zinc-800 ">Inboxes</label>
               </div>
               <div className="w-full bg-white flex flex-col mt-2 pl-6 pr-6 pt-4 h-[77vh] shadow-xl rounded-lg">
-                <div className="flex pl-10 pr-10  w-full justify-evenly shadow-lg p-2 ml-4 pb-4 rounded-xl  ">
+                {/* <div className="flex pl-10 pr-10  w-full justify-evenly shadow-lg p-2 ml-4 pb-4 rounded-xl  ">
                   <div className="flex gap-x-2 justify-center items-center cursor-pointer">
                     <h2 className="border-b border-p text-p text-2xl">
                       All Messages
@@ -47,55 +47,54 @@ const InboxMain = ({userData}) => {
                     <h3 className=" text-black text-2xl">Chat</h3>
                     <a className="text-black text-2xl">(21)</a>
                   </div>
-                </div>
-                <div className="w-full p-6 border border-zinc-100 rounded-xl h-full m-4">
-                  <div className="w-full rounded-xl shadow-xl bg-gray-50 h-fit p-6 ">
+                </div> */}
+                <div className="flex flex-col w-full p-6 border border-zinc-100 rounded-xl h-full m-4 gap-y-14 no-scrollbar overflow-auto">
+                  {
+                    userData.inbox.messages.map((e)=>{
+                      return(
+                        <div className="w-full rounded-xl shadow-xl bg-gray-50 h-fit p-6 ">
                     <div className="flex ">
                       <div className="flex w-full justify-between ">
                         <div className="flex">
                         <div className="w-12 h-12 rounded-full">
                           <img
-                            src="my.jpeg"
+                            src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
                             className="rounded-full object-fill"
                           />
                         </div>
                         <div className="flex flex-col pl-10 ">
-                          <h2 className="text-lg text-black">Shaik afrid</h2>
+                          <h2 className="text-lg text-black">{e.name}</h2>
                           <div className="flex justify-center items-center gap-x-2">
-                            <label className="text-xs">Topic: </label>
+                            <label className="text-xs">Email : </label>
                             <p className="text-xs text-gray-700">
-                              About delivery time...
+                              {e.email}
                             </p>
                           </div>
                         </div>
                         </div>
-                        <div className="pt-2 pr-6">
-                          <label
-                            className="w-fit bg-purple-100 text-p h-fit text-md px-4 py-2 rounded-lg
-                            "
-                          >
-                            Project
-                          </label>
-                        </div>
+                        
                       </div>
                     </div>
                     <div className="pt-2 pb-2 w-full pl-20 pr-10 justify-center items-center ">
-                        <p className="text-black">Develop a dedicated app and website for our restaurant's food delivery service. 
-                        Enhance customer experience with a user-friendly interface, secure online ordering,
-                         and efficient order management via our app or website....</p>
+                        <p className="text-black">{e.message}</p>
                     </div>
                     <div className="flex pl-20 pt-2 w-full justify-between">
                         <div className="flex gap-x-2">
                             <a className="text-2xl text-gray-800"><CiCalendarDate/></a>
-                            <label className="text-lg text-gray-700">Monday</label>
+                            <label className="text-lg text-gray-700">{e.day}</label>
                         </div>
-                        <div className="flex gap-x-2 bg-orange-50 justify-center items-center h-fit w-fit px-4 py-2 rounded-xl">
+                        <div className="flex gap-x-2 bg-orange-50 shadow-xl justify-center items-center h-fit w-fit px-4 py-2 rounded-xl">
                             <label className="text-red text-lg">Delete</label>
                             <a className="text-xl font-bold text-red"><AiOutlineDelete/></a>
                         </div>
 
                     </div>
                   </div>
+
+                      )
+                    })
+                  }
+                  
                 </div>
               </div>
             </div>
