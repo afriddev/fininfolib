@@ -3,6 +3,8 @@ import Main from "@/components/dashboard/main";
 import addField from "@/lib/methods/addField";
 import getUser from "@/lib/methods/getUser";
 import { useEffect, useLayoutEffect, useState } from "react";
+
+
 const Dashboard = () => {
   const [data, setData] = useState();
   const [userloaded, setUserLoaded] = useState(false);
@@ -19,16 +21,27 @@ const Dashboard = () => {
   if (!userloaded) {
     return <DashBoardPreview />;
   }
+  const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  
   return (
     <>
-      <main className=" w-full h-[90vh] bg-white">
+      {
+        width >= 1023
+        ?<main className=" w-full h-[90vh] bg-white">
         <section>
           <Main userData={data} />
         </section>
       </main>
+      :<main className="w-full h-full flex justify-center items-center">
+        <section className="w-full h-full flex justify-center items-center">
+        <h1 className="pt-10">This Option Is Only For Desktop View</h1>
+        </section>
+      </main>
+      }
     </>
-  );
+      );
 };
+
 function DashBoardPreview() {
   return (
     <>
