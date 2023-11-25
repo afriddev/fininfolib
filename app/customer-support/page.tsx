@@ -1,3 +1,4 @@
+"use client"
 import BottomFooter from "@/components/re/bottomFooter"
 import LetsTalk from "@/components/re/letsTalk"
 import { useRef } from "react"
