@@ -5,8 +5,10 @@ import LetsTalk from "@/components/re/letsTalk";
 
 import op from "@/utils/op"
 import { motion } from "framer-motion"
+import { useRef } from "react";
 
 const Contact: () => void = () => {
+    let letstalk = useRef()
     return (
         <>
             <motion.main initial="initial"
@@ -25,7 +27,7 @@ const Contact: () => void = () => {
 
                 </div>
                 <div className="mt-10">
-                    <LetsTalk />
+                    <LetsTalk letsTalkRef={letstalk} />
                 </div>
                 <div className="mt-20">
                     <BottomFooter />
