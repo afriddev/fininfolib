@@ -1,7 +1,9 @@
 import BottomFooter from "@/components/re/bottomFooter"
 import LetsTalk from "@/components/re/letsTalk"
+import { useRef } from "react"
 
 const CustomerSupport: () => void = () => {
+    let letsTalk = useRef()
 
     return (
         <>
@@ -196,7 +198,7 @@ const CustomerSupport: () => void = () => {
                 </div>
             </div>
             <div className="mt-8">
-                <LetsTalk />
+                <LetsTalk letsTalkRef={letsTalk}/>
             </div>
             <div className="mt-6">
                 <BottomFooter />
