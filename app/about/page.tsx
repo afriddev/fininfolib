@@ -6,8 +6,11 @@ import BottomFooter from "@/components/re/bottomFooter";
 import LetsTalk from "@/components/re/letsTalk";
 import op from "@/utils/op";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const About = () => {
+    let LetsTalklk = useRef()
+
 
     return (
         <>
@@ -34,7 +37,7 @@ const About = () => {
 
                 </div>
                 <div className="mt-8">
-                    <LetsTalk />
+                    <LetsTalk letsTalkRef={LetsTalk} />
                 </div>
                 <div className="mt-12">
                     <BottomFooter />
