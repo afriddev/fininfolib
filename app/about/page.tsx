@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 
 const About = () => {
-    let LetsTalklk = useRef()
+    let letsTalkRef = useRef()
 
 
     return (
@@ -37,7 +37,7 @@ const About = () => {
 
                 </div>
                 <div className="mt-8">
-                    <LetsTalk letsTalkRef={LetsTalk} />
+                    <LetsTalk letsTalkRef={letsTalkRef} />
                 </div>
                 <div className="mt-12">
                     <BottomFooter />
