@@ -2,17 +2,13 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 const OurExpertise = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
     return (
         <>
             <section>
                 <div className=" p-4 lg:grid lg:grid-cols-2 lg:justify-center lg:items-center md:justify-center 
                 md:items-center md:grid md:grid-cols-2">
-                    <div ref={ref} style={{
-                        transform: isInView ? "none" : "translateY(10vh)",
-                        transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-                    }} className=" lg:p-10">
+                    <div  className=" lg:p-10">
                         <h2 className="font-bold text-2xl text-pH lg:text-3xl xl:text-4xl ">
                             Our expertise in Web Application Development</h2>
                         <p className="p-4 font-light text-sm lg:text-md xl:text-lg md:text-xs">
@@ -32,12 +28,8 @@ const OurExpertise = () => {
     )
 }
 function Img() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
-    return <div ref={ref} style={{
-        transform: isInView ? "none" : "scale(0.7)",
-        transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-    }} className="lg:p-10 md:p-6">
+    
+    return <div className="lg:p-10 md:p-6">
         <img src="applications.png" />
     </div>
 

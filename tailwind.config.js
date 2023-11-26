@@ -11,11 +11,15 @@ module.exports = {
   theme: {
     screens: {
       'sm': '300px',
-
       'md': '765px',
-
       'lg': '1023px',
       'xl':'1300px'
+    },
+    fontFamily: {
+      nunito: ['Nunito', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif'],
+      m:['Montserrat','sans-serif']
     },
     extend: {
       animation:{
@@ -60,12 +64,7 @@ module.exports = {
         'bg2':"#c6ffeb",
 
       },
-      fontFamily: {
-        nunito: ['Nunito', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
-        m:['Montserrat','sans-serif']
-      }
+      
     },
   },
   plugins: [],

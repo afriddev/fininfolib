@@ -14,8 +14,7 @@ import BridgingTech from "@/components/home/bridgingTech";
 import HelpClients from "@/components/home/helpClients";
 
 export default function Home() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  
   const letsTalkRef = useRef(null)
   const scrollTo = () => {
     letsTalkRef.current.scrollIntoView({ behavior: 'smooth' })

@@ -3,8 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const LeadingExperts = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
 
 
     return (
@@ -12,10 +11,7 @@ const LeadingExperts = () => {
             <section>
                 <div className="p-4 md:pl-8 md:pr-8 flex flex-col lg:justify-center lg:items-center lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
                     <Text />
-                    <img ref={ref} style={{
-        transform:isInView?"none":"scale(0.7)",
-        transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-      }} src="experts.webp" className="p-6 lg:p-10 md:p-10 " />
+                    <img  src="experts.webp" className="p-6 lg:p-10 md:p-10 " />
 
 
                 </div>
@@ -25,13 +21,9 @@ const LeadingExperts = () => {
 }
 
 function Text() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
     return (
-        <div ref={ref} style={{
-            transform:isInView?"none":"scale(0.7)",
-            transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-          }} className="flex flex-col pt-6 lg:pt-0 md:pt-0 space-y-6 lg:p-10">
+        <div  className="flex flex-col pt-6 lg:pt-0 md:pt-0 space-y-6 lg:p-10">
             <h2 className="font-bold text-3xl md:text-2xl  text-pH lg:text-4xl">
                 We are commited to providing industry leading experts
             </h2>

@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
+
+
+.sfl{
+  transform:translateY(-10vh);
+  transition:all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s;
+}
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
@@ -86,51 +92,39 @@
 
 
 
-
-
-
-
-
-
-
-  .hero{
-    color: #ffd60a;
-    
-  }
-  .hero:before{
-    content: '';
-    animation: 5s print linear alternate infinite;
-  }
-  .hero:after{
-    content: '';
-    position: absolute;
-    right: -4px;
-    top: 50%;
-    transform: translatey(-45%);
-    width: 2px;
-    height: 1.3em;
-    background: currentColor;
-    opacity: 0.8;
-    animation: 1s blink steps(2) infinite;
-  }
+  .hero
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffee32 0%,
+    #00faff 25%,
+    #ff1361 50%,
+    #1aff00 75%,
+    #6f00ff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
   
-  @keyframes blink {
-    0%  { visibility: hidden;}
-    100%  { visibility: visible;}
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
-  @keyframes print {
-    0% { content: 'I'}
-    8% { content: 'IT'}
-    16% { content: 'IT C'}
-    22% { content: 'IT CO'}
-    30% { content: 'IT CON'}
-    38% { content: 'IT CONS'}
-    48% { content: 'IT CONSU'}
-    58% { content: 'IT CONSUL'}
-    68% { content: 'IT CONSULT'}
-    75% { content: 'IT CONSULTA'}
-    82% { content: 'IT CONSULTAN'}
-    
-    90%{content:"IT CONSULTANC"}
-    100% { content: 'IT CONSULTANCY'}
-  }
+}
+
+
+
+
+
+
+
+  

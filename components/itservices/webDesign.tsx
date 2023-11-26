@@ -3,8 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const WebDesign = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+  
 
 
     return (
@@ -13,17 +12,11 @@ const WebDesign = () => {
             <section>
                 <div className="p-4 mt-10 relative lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 md:justify-center
                 md:items-center ">
-                    <div style={{
-                        transform: isInView ? "none" : "scale(0.7)",
-                        transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-                    }} className="absolute hidden lg:block top-0 right-0 md:w-12 lg:w-12 xl:w-20">
+                    <div  className="absolute hidden lg:block top-0 right-0 md:w-12 lg:w-12 xl:w-20">
                         <img src="ark1.png" />
                     </div>
                     <Img/>
-                    <div  ref={ref} className="flex flex-col mt-10 lg:p-10 md:justify-center md:items-center" style={{
-                        transform: isInView ? "none" : "translateY(10vh)",
-                        transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-                    }} >
+                    <div  >
                         <h2 className="font-bold text-2xl text-pH lg:text-4xl md:text-xl md:pl-2">
                             Website Design and Development</h2>
                         <p className="p-4 font-light text-sm lg:text-md xl:text-xl md:text-xs">
@@ -47,12 +40,8 @@ const WebDesign = () => {
 
 
 function Img(){
-    const ref = useRef(null);
-    const isInView = useInView(ref);
-    return <div ref={ref} className="lg:p-10 md:p-10" style={{
-        transform: isInView ? "none" : "scale(0.7)",
-        transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-    }} >
+    
+    return <div >
         <img src="webdesign.webp" />
 
     </div>

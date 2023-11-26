@@ -2,18 +2,17 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const KeyDifference = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
-      <section>
-        <div className="flex flex-col justify-center items-center m-4 mt-14 mb-20 ">
+      <section className="font-poppins">
+        <div className="flex flex-col justify-center items-center m-4 mt-4 mb-20 ">
           <div className="flex justify-center items-center ">
             <label className="text-3xl  text-lightBlue font-bold text-center lg:text-5xl lg:mb-10 mb-10">
               Our key differentiators
             </label>
           </div>
-          <div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-3 lg:grid-rows-3 md:grid md:grid-cols-2">
+          <div className="flex flex-col gap-y-10 lg:pl-4 lg:grid lg:grid-cols-3 lg:grid-rows-3 md:grid md:grid-cols-2">
             <Key1 />
             <Key2 />
             <Key3 />
@@ -30,16 +29,12 @@ const KeyDifference = () => {
 };
 
 function Key1() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex   m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
       >
         <img src="01.png" className="w-14 h-12 mt-6 " />
@@ -58,16 +53,12 @@ function Key1() {
 }
 
 const Key2 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
       >
         <img src="02.png" className="w-14 h-12 mt-6" />
@@ -83,16 +74,12 @@ const Key2 = () => {
   );
 };
 const Key3 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
       >
         <img src="03.png" className="w-14 h-12 mt-6" />
@@ -108,16 +95,12 @@ const Key3 = () => {
   );
 };
 const Key4 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
       >
         <img src="04.png" className="w-14 h-12 mt-6" />
@@ -133,16 +116,12 @@ const Key4 = () => {
   );
 };
 const Key5 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
       >
         <img src="05.png" className="w-14 h-12 mt-6" />
@@ -158,16 +137,12 @@ const Key5 = () => {
   );
 };
 const Key6 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4 "
       >
         <img src="06.png" className="w-14 h-12 mt-6" />
@@ -183,16 +158,12 @@ const Key6 = () => {
   );
 };
 const Key7 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
       >
         <img src="08.png" className="w-14 h-12 mt-6" />
@@ -208,16 +179,12 @@ const Key7 = () => {
   );
 };
 const Key8 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-10vh)",
-          transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s",
-        }}
+        
+        
         className="flex  m-4 lg:shadow-xl  lg:p-4 lg:rounded-lg hover:shadow-2xl hover:rounded-lg hover:p-4"
       >
         <img src="09.png" className="w-14 h-12 mt-6" />

@@ -6,7 +6,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const OurServices = () => {
   return (
     <>
-      <section>
+      <section className=" font-poppins">
         <div 
          className=" flex flex-col bg-lG mt-6 justify-center items-center relative">
           <div>
@@ -35,16 +35,12 @@ const OurServices = () => {
 };
 
 const Service2 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
       <div
-       ref={ref}
-      style={{
-        transform:isInView?"none":"translateY(10vh)",
-        transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-      }}
+       
+      
       className="  flex flex-col justify-center items-center w-full ">
         <div className="flex flex-col justify-center  items-center bg-white w-20 h-20 rounded-full border border-lo">
           <div
@@ -101,15 +97,11 @@ const Service2 = () => {
   );
 };
 const Service1 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
-      <div ref={ref}
-      style={{
-        transform:isInView?"none":"translateY(10vh)",
-        transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-      }} className="flex flex-col justify-center items-center w-full">
+      <div 
+      className="flex flex-col justify-center items-center w-full">
         <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
           <div
             className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g
@@ -165,15 +157,11 @@ const Service1 = () => {
   );
 };
 const Service3 = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  
   return (
     <>
-      <div  ref={ref}
-      style={{
-        transform:isInView?"none":"translateY(10vh)",
-        transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-      }} className="flex flex-col justify-center items-center w-full">
+      <div  
+     className="flex flex-col justify-center items-center w-full">
         <div className="flex flex-col justify-center items-center bg-white w-20 h-20 rounded-full border border-lo">
           <div
             className="w-16 h-16 rounded-full bg-gradient-to-r from-lt to-g

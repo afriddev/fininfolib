@@ -4,8 +4,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const Technologies = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    
     const technologies = [
         {
             name: "Android",
@@ -82,12 +81,8 @@ const Technologies = () => {
 }
 
 function TechBox({ img, label }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
-    return <div ref={ref} style={{
-        transform: isInView ? "none" : "translateX(-10vh)",
-        transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-    }} className=" w-full h-fit bg-gray-100 rounded-lg flex hover:shadow-2xl lg:bg-white lg:shadow-md
+    
+    return <div  className=" w-full h-fit bg-gray-100 rounded-lg flex hover:shadow-2xl lg:bg-white lg:shadow-md
      justify-start items-center">
         <img src={img} className="w-12 h-12 m-4 p-2 rounded-lg shadow-xl bg-white 
         "/>

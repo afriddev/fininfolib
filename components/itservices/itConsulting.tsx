@@ -22,13 +22,9 @@ const ItConsulting = () => {
 }
 
 function Box1() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-        }} className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
+        <div className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
             <label className="text-2xl font-bold text-pH">IT Consulting</label>
             <p className="font-light text-sm mt-4 lg:pb-4 md:pb-10">Our IT consulting services are designed to help you make informed decisions about your IT infrastructure
                 and technology investments. We provide expert advice and guidance on a wide range of IT-related topics,
@@ -38,13 +34,8 @@ function Box1() {
     )
 }
 function Box2() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
-    return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-        }} className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
+    
+    return  <div className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
             <label className="text-2xl font-bold text-pH">Digital Marketing</label>
             <p className="font-light text-sm mt-4 ">To succeed in the digital world, your business needs a strong online presence. Our digital
                 marketing services are designed to help you increase your
@@ -53,16 +44,12 @@ function Box2() {
                 and content marketing.</p>
         </div>
 
-    )
+    
 }
 function Box3() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-        }} className="rounded-md shadow-xl p-4 hover:shadow-2xl  ">
+        <div className="rounded-md shadow-xl p-4 hover:shadow-2xl  ">
             <label className="text-2xl font-bold text-pH">Software Development</label>
             <p className="font-light text-sm mt-4 ">Our software development services are designed to help you develop custom software solutions
                 that streamline your business operations and improve your efficiency. We have a team of experienced
@@ -74,13 +61,9 @@ function Box3() {
     )
 }
 function Box4() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-        }} className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
+        <div  className="rounded-md shadow-xl p-4 hover:shadow-2xl ">
             <label className="text-2xl font-bold text-pH">Cloud Services</label>
             <p className="font-light text-sm mt-4 md:pb-3 lg:pb-2 ">Our cloud services are designed to help you move your business to the cloud, giving you access
                 to a wide range of benefits, including increased flexibility, scalability, and security.

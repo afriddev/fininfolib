@@ -27,13 +27,9 @@ const WorkingProccess = () => {
 }
 
 function Box1() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return (
-        <div className="" ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-        }} >
+        <div className="" >
             <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
                 <a className=" bg-sec flex justify-center items-center 
                                 w-14 h-14 rounded-full text-xl font-bold text-white">01</a>
@@ -54,13 +50,9 @@ function Box1() {
     )
 }
 function Box2() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-        }} className="">
+        <div  className="">
             <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
                 <a className=" bg-sec flex justify-center items-center 
                                 w-14 h-14 rounded-full text-xl font-bold text-white">02</a>
@@ -81,13 +73,9 @@ function Box2() {
     )
 }
 function Box3() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-        }} className="">
+        <div  className="">
             <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
                 <a className=" bg-sec flex justify-center items-center 
                                 w-14 h-14 rounded-full text-xl font-bold text-white">03</a>
@@ -108,13 +96,9 @@ function Box3() {
     )
 }
 function Box4() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-        }} className="">
+        <div  className="">
             <div className="w-20 ml-10 h-20 rounded-full bg-white  shadow-2xl flex justify-center items-center">
                 <a className=" bg-sec flex justify-center items-center 
                                 w-14 h-14 rounded-full text-xl font-bold text-white">04</a>
@@ -135,13 +119,9 @@ function Box4() {
     )
 }
 function Box5() {
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    
     return (
-        <div ref={ref} style={{
-            transform: isInView ? "none" : "translateX(-10vh)",
-            transition: "all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1.3s"
-        }} className="">
+        <div  className="">
             <div className="w-20 ml-10 h-20 rounded-full bg-white shadow-2xl flex justify-center items-center">
                 <a className=" bg-sec flex justify-center items-center 
                                 w-14 h-14 rounded-full text-xl font-bold text-white">05</a>

@@ -25,7 +25,7 @@ export default function RootLayout({
        </head>
       <body
      
-      className="{inter.className} bg-lB">
+      className="{inter.className} bg-lB font-poppins scroll-smooth">
         <div><NavBar /></div>
         {children}
         </body>

@@ -33,16 +33,12 @@ const BridgingTech = ()=>{
 
 
 const Tech1 = ()=>{
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return(
         <>
         <div
-        ref={ref}
-        style={{
-            transform:isInView?"none":"translateX(-10vh)",
-            transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-          }}
+        
+        
 
         className="flex m-4  lg:shadow-xl hover:shadow-2xl hover:rounded-lg p-4 lg:p-4 lg:rounded-xl">
                 <img src="startup.png" className="w-20 h-14" />
@@ -63,15 +59,11 @@ const Tech1 = ()=>{
     )
 }
 const Tech2 = ()=>{
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return(
         <>
-        <div ref={ref}
-        style={{
-            transform:isInView?"none":"translateX(-10vh)",
-            transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-          }}
+        <div 
+        
            className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
                 <img src="manufacturing.png" className="w-20 h-14" />
                 <div className="flex flex-col  ml-4 ">
@@ -92,15 +84,11 @@ const Tech2 = ()=>{
     )
 }
 const Tech3 = ()=>{
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return(
         <>
-        <div ref={ref}
-        style={{
-            transform:isInView?"none":"translateX(-10vh)",
-            transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-          }}
+        <div 
+        
            className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
                 <img src="productbased.png" className="w-20 h-14" />
                 <div className="flex flex-col  ml-4">
@@ -121,15 +109,11 @@ const Tech3 = ()=>{
     )
 }
 const Tech4 = ()=>{
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return(
         <>
-        <div ref={ref}
-        style={{
-            transform:isInView?"none":"translateX(-10vh)",
-            transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-          }}
+        <div 
+        
            className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
                 <img src="saascompany.png" className="w-20 h-14" />
                 <div className="flex flex-col  ml-4">
@@ -148,15 +132,11 @@ const Tech4 = ()=>{
     )
 }
 const Tech5 = ()=>{
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+   
     return(
         <>
-        <div ref={ref}
-        style={{
-            transform:isInView?"none":"translateX(-10vh)",
-            transition:"all 0.9s cubic-bezier(0.6,0.01,0.05,0.95) 1s"
-          }}
+        <div 
+        
            className="flex m-4 lg:shadow-xl hover:shadow-2xl lg:p-4 lg:rounded-xl hover:rounded-lg p-4">
                 <img src="serviesbased.png" className="w-20 h-14" />
                 <div className="flex flex-col  ml-4">
