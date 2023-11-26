@@ -149,7 +149,7 @@ const EmployeeMain = ({ userData }) => {
                   </div>
                 </div>
                 <div className="flex w-full pt-6 gap-x-6">
-                  <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
+                  <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[40vh]  bg-white">
                     <div className=" pl-6 pt-6 lg:pl-0">
                       <label className="text-2xl  text-zinc-800 lg:text-md">
                         Gender Diversity
@@ -181,7 +181,7 @@ const EmployeeMain = ({ userData }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[30vh]  bg-white">
+                  <div className="flex flex-col  rounded-xl shadow-xl w-1/2 pl-6 pr-20 h-[40vh]  bg-white">
                     <div className=" pl-6 pt-6">
                       <label className="text-2xl  text-zinc-800 lg:text-xl">
                         Total Projects
