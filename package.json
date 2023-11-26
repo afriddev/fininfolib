@@ -1,6 +1,6 @@
 {
-  "name": "infolib",
-  "version": "0.1.0",
+  "name": "fininfolib",
+  "version": "1.1.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
